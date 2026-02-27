@@ -1,0 +1,20 @@
+{
+  "_comment": "Maps (platform, commandKey) pairs to TextFSM template paths. Phase 2 will populate this.",
+  "templates": [
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_version",
+      "templatePath": "cisco_ios/show_version.textfsm"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interfaces_brief",
+      "templatePath": "cisco_ios/show_interfaces_brief.textfsm"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_version",
+      "templatePath": "juniper_junos/show_version.textfsm"
+    }
+  ]
+}

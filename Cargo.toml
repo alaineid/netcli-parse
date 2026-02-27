@@ -1,6 +1,6 @@
 [workspace]
 members = [
-    "textfsm_core",
-    "textfsm_ffi",
+    "crates/netcli_core",
+    "crates/netcli_ffi",
 ]
 resolver = "2"

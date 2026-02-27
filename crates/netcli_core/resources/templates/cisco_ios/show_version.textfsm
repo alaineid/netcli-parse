@@ -1,0 +1,9 @@
+# Placeholder — Cisco IOS "show version" TextFSM template
+# Phase 2 will replace this with a real template.
+Value VERSION (\S+)
+Value HOSTNAME (\S+)
+Value UPTIME (.+)
+
+Start
+  ^.*Software.*Version ${VERSION}
+  ^${HOSTNAME}\s+uptime is\s+${UPTIME} -> Record

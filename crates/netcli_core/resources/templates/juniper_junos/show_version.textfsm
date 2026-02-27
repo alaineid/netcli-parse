@@ -1,0 +1,9 @@
+# Placeholder — Juniper Junos "show version" TextFSM template
+Value HOSTNAME (\S+)
+Value MODEL (\S+)
+Value VERSION (\S+)
+
+Start
+  ^Hostname:\s+${HOSTNAME}
+  ^Model:\s+${MODEL}
+  ^Junos:\s+${VERSION} -> Record

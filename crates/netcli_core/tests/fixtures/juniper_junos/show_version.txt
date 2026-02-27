@@ -1,0 +1,3 @@
+Hostname: router2
+Model: mx480
+Junos: 21.4R3-S2.3

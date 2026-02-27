@@ -1,31 +1,56 @@
-# textfsm-rs
+# netcli-parse
 
-A TextFSM parsing engine written in Rust, designed for iOS integration via C FFI.
+Network CLI output parsing library — knows platforms, commands, and templates so
+callers don't have to.
 
-## Workspace Structure
+**This library does NOT connect to devices.** It takes raw CLI output as a
+string and returns structured records (JSON).
+
+## Workspace
 
 | Crate | Purpose |
 |---|---|
-| `textfsm_core` | Pure-Rust parsing library (placeholder) |
-| `textfsm_ffi` | C ABI layer for Swift / other language consumers |
+| `netcli_core` | Parsing SDK: platform taxonomy, command keys, template registry, normalization |
+| `netcli_ffi` | Thin C ABI wrapper (`netcli_parse_json` / `netcli_free`) for Swift and other languages |
 
-## Build
+## Quick start
 
 ```bash
 cargo build --workspace
+cargo test  --workspace
 ```
 
-## Test
+## C / Swift integration
 
-```bash
-cargo test --workspace
+Link against the static or dynamic library produced by `netcli_ffi` and include
+`include/netcli_parse.h`.
+
+```c
+#include "netcli_parse.h"
+
+const char *json = netcli_parse_json("cisco_ios", "show_version", raw_output);
+// use json …
+netcli_free(json);
 ```
 
-## C Header
+## Supported platforms
 
-The FFI surface is declared in `include/textfsm.h`.
-Link against the static or dynamic library produced by `textfsm_ffi`.
+| Slug | Aliases |
+|---|---|
+| `cisco_ios` | `ios` |
+| `cisco_nxos` | `nxos`, `nx_os` |
+| `cisco_iosxr` | `iosxr`, `ios_xr` |
+| `juniper_junos` | `junos` |
+| `arista_eos` | `eos` |
+| `drivenets_dnos` | `dnos`, `drivenets` |
 
-## iOS Integration
+## Command keys
 
-_Coming soon._
+`show_version`, `show_interfaces_brief`, `show_inventory`, `show_bgp_summary`,
+`show_ip_route`, `show_lldp_neighbors`
+
+## Roadmap
+
+- **Phase 1** (current): Input validation, JSON envelope, platform/command taxonomy — parsing returns empty records (stub).
+- **Phase 2**: Integrate a TextFSM engine crate, load templates from `resources/templates/`, return real parsed records.
+- **Phase 3**: Optional field normalization into a canonical schema per command key.

@@ -1,0 +1,10 @@
+Cisco IOS Software, C3750 Software (C3750-IPSERVICESK9-M), Version 15.0(2)SE11, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2017 by Cisco Systems, Inc.
+
+ROM: Bootstrap program is C3750 boot loader
+
+router1 uptime is 1 year, 2 weeks, 3 days, 4 hours, 5 minutes
+System returned to ROM by power-on
+
+System image file is "flash:c3750-ipservicesk9-mz.150-2.SE11.bin"
