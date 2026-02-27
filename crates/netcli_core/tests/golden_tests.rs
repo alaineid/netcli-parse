@@ -782,3 +782,57 @@ fn cisco_iosxe_command_api_show_interfaces_status() {
     assert_eq!(recs.len(), 10);
     assert_eq!(recs[0].get("port").unwrap(), "Gi0/0/0");
 }
+
+// ========================================================================
+// cisco_iosxe show_line tests (new template)
+// ========================================================================
+
+#[test]
+fn cisco_iosxe_show_line() {
+    let output = include_str!("fixtures/cisco_iosxe/show_line.txt");
+    let recs = netcli_core::parse_records("cisco_iosxe", "show_line", output).unwrap();
+
+    assert_eq!(recs.len(), 5);
+    assert_eq!(recs[0].get("tty").unwrap(), "0");
+    assert_eq!(recs[0].get("line").unwrap(), "0");
+    assert_eq!(recs[0].get("type").unwrap(), "CTY");
+    assert_eq!(recs[0].get("noise").unwrap(), "1");
+
+    assert_eq!(recs[1].get("tty").unwrap(), "1");
+    assert_eq!(recs[1].get("type").unwrap(), "AUX");
+    assert_eq!(recs[1].get("tx_rx").unwrap(), "9600/9600");
+
+    assert_eq!(recs[2].get("tty").unwrap(), "1/0/0");
+    assert_eq!(recs[2].get("line").unwrap(), "98");
+    assert_eq!(recs[2].get("type").unwrap(), "TTY");
+    assert_eq!(recs[2].get("uses").unwrap(), "106");
+}
+
+// ========================================================================
+// Abbreviated command variants (separate commandKeys, same template)
+// ========================================================================
+
+#[test]
+fn cisco_iosxe_show_ip_int_br() {
+    let output = include_str!("fixtures/cisco_iosxe/show_ip_int_br.txt");
+    let recs = netcli_core::parse_records("cisco_iosxe", "show_ip_int_br", output).unwrap();
+
+    assert_eq!(recs.len(), 3);
+    assert_eq!(recs[0].get("interface").unwrap(), "GigabitEthernet0/0/0");
+    assert_eq!(recs[0].get("ip_address").unwrap(), "10.5.146.254");
+    assert_eq!(recs[0].get("status").unwrap(), "up");
+    assert_eq!(recs[1].get("interface").unwrap(), "GigabitEthernet0/0/1");
+    assert_eq!(recs[1].get("status").unwrap(), "administratively down");
+}
+
+#[test]
+fn cisco_iosxe_show_ip_int_br_ex_unas() {
+    let output = include_str!("fixtures/cisco_iosxe/show_ip_int_br_ex_unas.txt");
+    let recs = netcli_core::parse_records("cisco_iosxe", "show_ip_int_br_ex_unas", output).unwrap();
+
+    assert_eq!(recs.len(), 1);
+    assert_eq!(recs[0].get("interface").unwrap(), "GigabitEthernet0/0/0");
+    assert_eq!(recs[0].get("ip_address").unwrap(), "10.5.146.254");
+    assert_eq!(recs[0].get("status").unwrap(), "up");
+    assert_eq!(recs[0].get("proto").unwrap(), "up");
+}

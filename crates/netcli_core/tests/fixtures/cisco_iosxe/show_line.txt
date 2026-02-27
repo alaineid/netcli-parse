@@ -1,0 +1,6 @@
+   Tty Line Typ     Tx/Rx    A Modem  Roty AccO AccI  Uses  Noise Overruns  Int
+      0    0 CTY              -    -      -    -    -     0      1    0/0     -
+      1    1 AUX   9600/9600  -    -      -    -    -     0      0    0/0     -
+  1/0/0   98 TTY 115200/115200-    -      -    -    -   106     15    0/0     -
+  1/0/1   99 TTY 115200/115200-    -      -    -    -     6      9    0/0     -
+  1/0/2  100 TTY 115200/115200-    -      -    -    -     9     10    0/0     -

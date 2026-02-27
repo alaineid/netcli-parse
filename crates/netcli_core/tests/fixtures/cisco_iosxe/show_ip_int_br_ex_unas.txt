@@ -1,0 +1,2 @@
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet0/0/0   10.5.146.254    YES NVRAM  up                    up

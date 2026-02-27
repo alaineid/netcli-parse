@@ -1,0 +1,20 @@
+Value TTY (\S+)
+Value LINE (\d+)
+Value TYPE (\S+)
+Value TX_RX (\S+)
+Value A (\S)
+Value MODEM (\S+)
+Value ROTY (\S+)
+Value ACCO (\S+)
+Value ACCI (\S+)
+Value USES (\d+)
+Value NOISE (\d+)
+Value OVERRUNS (\S+)
+Value INT (\S+)
+
+Start
+  ^\s+Tty\s+Line -> Data
+
+Data
+  ^\s*${TTY}\s+${LINE}\s+${TYPE}\s+${TX_RX}\s*${A}\s+${MODEM}\s+${ROTY}\s+${ACCO}\s+${ACCI}\s+${USES}\s+${NOISE}\s+${OVERRUNS}\s+${INT} -> Record
+  ^\s*${TTY}\s+${LINE}\s+${TYPE}\s+${A}\s+${MODEM}\s+${ROTY}\s+${ACCO}\s+${ACCI}\s+${USES}\s+${NOISE}\s+${OVERRUNS}\s+${INT} -> Record

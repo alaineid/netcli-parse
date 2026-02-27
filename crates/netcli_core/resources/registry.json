@@ -1622,6 +1622,18 @@
     },
     {
       "platform": "cisco_ios",
+      "commandKey": "show_ip_int_br",
+      "template": "templates/cisco_ios/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_int_br_ex_unas",
+      "template": "templates/cisco_ios/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
       "commandKey": "show_spanning_tree_root",
       "template": "templates/cisco_ios/show_spanning-tree_root.textfsm",
       "shape": "list"
@@ -2129,6 +2141,12 @@
       "commandKey": "show_interface_ge_include_bia",
       "template": "templates/cisco_ios/show_interface_ge_include_bia.textfsm",
       "shape": "single"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_line",
+      "template": "templates/cisco_ios/show_line.textfsm",
+      "shape": "list"
     },
     {
       "platform": "cisco_ios",
