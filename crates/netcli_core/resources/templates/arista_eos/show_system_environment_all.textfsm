@@ -1,0 +1,21 @@
+Value SENSOR (\S+.*)
+Value STATUS (\S+)
+Value READING (\S+.*)
+Value ALERT_COUNT (\d+)
+
+Start
+  ^\S+\s+temperature -> TEMP
+  ^Power\s+Supply -> POWER
+  ^Fan\s+Status -> FAN
+
+TEMP
+  ^${SENSOR}\s+${READING}\s+${STATUS}\s*$$ -> Record
+  ^$$ -> Start
+
+POWER
+  ^${SENSOR}\s+${STATUS}\s*$$ -> Record
+  ^$$ -> Start
+
+FAN
+  ^${SENSOR}\s+${STATUS}\s*$$ -> Record
+  ^$$ -> Start

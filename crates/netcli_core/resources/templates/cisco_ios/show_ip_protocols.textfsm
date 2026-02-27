@@ -1,0 +1,10 @@
+Value PROTOCOL (\S+)
+Value PROCESS_ID (\d*)
+Value ROUTER_ID (\d+\.\d+\.\d+\.\d+)
+Value NETWORKS ([\d./]+)
+Value List NEIGHBORS (\d+\.\d+\.\d+\.\d+)
+
+Start
+  ^Routing\s+Protocol\s+is\s+"${PROTOCOL}(?:\s+${PROCESS_ID})?" -> Continue
+  ^\s+Router\s+ID\s+${ROUTER_ID}
+  ^\s+${NETWORKS}\s*$$ -> Record

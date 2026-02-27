@@ -1,0 +1,7 @@
+Value COMPONENT (\S+.*)
+Value STATUS (\S+.*)
+Value VALUE (\S+.*)
+
+Start
+  ^\s*${COMPONENT}\s+${STATUS}\s*$$ -> Record
+  ^\s*${COMPONENT}\s+:\s+${VALUE}\s*$$ -> Record

@@ -1054,3 +1054,402 @@ fn dnos_command_api_show_system_version() {
     assert_eq!(v["commandKey"], "show_system_version");
     assert_eq!(records(&v)[0]["system_name"], "DN-SA-01");
 }
+
+// ========================================================================
+// Phase 1 tests: normalize_command fixes (hyphens, pipes, abbreviations)
+// ========================================================================
+
+#[test]
+fn command_api_hyphenated_running_config_interface() {
+    let output = include_str!("fixtures/cisco_ios/show_version.txt");
+    let v = parse_envelope(&netcli_core::parse_json(
+        "cisco_ios",
+        "show_running_config_interface",
+        output,
+    ));
+    assert_eq!(v["ok"], true, "show_running_config_interface should be found in registry");
+}
+
+#[test]
+fn command_api_pipe_config_flatten_dnos() {
+    let output = include_str!("fixtures/drivenets_dnos/show_config_flatten.txt");
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "drivenets_dnos",
+        "show config | flatten",
+        output,
+    ));
+    assert_success(&v);
+    assert_eq!(v["commandKey"], "show_config_flatten");
+}
+
+#[test]
+fn command_api_abbreviated_show_version() {
+    let output = include_str!("fixtures/cisco_ios/show_version.txt");
+    let v = parse_envelope(&netcli_core::parse_command_json("cisco_ios", "sho version", output));
+    assert_success(&v);
+
+    let v2 = parse_envelope(&netcli_core::parse_command_json("cisco_ios", "sh ver", output));
+    assert_success(&v2);
+}
+
+#[test]
+fn command_api_abbreviated_show_ip_int_brief() {
+    let output = include_str!("fixtures/cisco_ios/show_ip_interface_brief.txt");
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "cisco_ios",
+        "sho ip int br",
+        output,
+    ));
+    assert_success(&v);
+    assert!(
+        !records(&v).is_empty(),
+        "abbreviated 'sho ip int br' should parse via expansion"
+    );
+}
+
+#[test]
+fn command_api_mac_address_table_with_hyphens() {
+    let output = "some dummy text\n";
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "cisco_ios",
+        "show mac address-table",
+        output,
+    ));
+    assert_eq!(v["ok"], true, "show_mac_address_table should resolve via hyphen normalization");
+}
+
+#[test]
+fn command_api_spanning_tree_with_hyphens() {
+    let output = "some dummy text\n";
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "cisco_ios",
+        "show spanning-tree",
+        output,
+    ));
+    assert_eq!(v["ok"], true, "show_spanning_tree should resolve via hyphen normalization");
+}
+
+// ========================================================================
+// Phase 2 tests: platform aliases (nokia_sros, cisco_iosxr)
+// ========================================================================
+
+#[test]
+fn nokia_sros_alias_resolves_to_alcatel() {
+    let result = netcli_core::parse_records("nokia_sros", "show_system_cpu", "dummy\n");
+    assert!(result.is_ok() || {
+        let e = result.unwrap_err();
+        e.code() != "TEMPLATE_NOT_FOUND"
+    }, "nokia_sros should alias to alcatel_sros and find show_system_cpu");
+}
+
+#[test]
+fn nokia_sros_alias_lookup_works() {
+    let v = parse_envelope(&netcli_core::parse_json("nokia_sros", "show_port", "dummy\n"));
+    assert_eq!(v["ok"], true, "nokia_sros should alias to alcatel_sros");
+}
+
+#[test]
+fn cisco_iosxr_alias_resolves_to_xr() {
+    let v = parse_envelope(&netcli_core::parse_json("cisco_iosxr", "show_version", "dummy\n"));
+    assert_eq!(v["ok"], true, "cisco_iosxr should alias to cisco_xr");
+}
+
+#[test]
+fn cisco_iosxr_alias_show_ip_bgp_summary() {
+    let v = parse_envelope(&netcli_core::parse_json(
+        "cisco_iosxr",
+        "show_ip_bgp_summary",
+        "dummy\n",
+    ));
+    assert_eq!(v["ok"], true, "cisco_iosxr should resolve show_ip_bgp_summary via cisco_xr");
+}
+
+// ========================================================================
+// Phase 3 tests: registry aliases (singular/plural, expanded abbreviations)
+// ========================================================================
+
+#[test]
+fn cisco_ios_show_interface_singular_alias() {
+    let output = include_str!("fixtures/cisco_ios/show_interfaces.txt");
+    let v = parse_envelope(&netcli_core::parse_json("cisco_ios", "show_interface", output));
+    assert_success(&v);
+    assert!(!records(&v).is_empty(), "show_interface (singular) should alias to show_interfaces");
+}
+
+#[test]
+fn dnos_show_interface_brief_singular_alias() {
+    let output = include_str!("fixtures/drivenets_dnos/show_interfaces_brief.txt");
+    let v = parse_envelope(&netcli_core::parse_json(
+        "drivenets_dnos",
+        "show_interface_brief",
+        output,
+    ));
+    assert_success(&v);
+    assert!(
+        !records(&v).is_empty(),
+        "show_interface_brief (singular) should alias to show_interfaces_brief"
+    );
+}
+
+#[test]
+fn cisco_ios_expanded_abbreviated_command_entry() {
+    let output = include_str!("fixtures/cisco_ios/show_ip_interface_brief.txt");
+    let v = parse_envelope(&netcli_core::parse_json(
+        "cisco_ios",
+        "show_ip_interface_brief_exclude_unassigned",
+        output,
+    ));
+    assert_success(&v);
+}
+
+// ========================================================================
+// Phase 4-9 tests: new template lookups (verify templates compile)
+// ========================================================================
+
+#[test]
+fn new_cisco_ios_templates_compile() {
+    let keys = [
+        "show_environment",
+        "show_environment_all",
+        "show_memory_statistics",
+        "show_ip_protocols",
+        "show_diag",
+        "show_spanning_tree_summary",
+        "show_aaa_sessions",
+        "show_privilege",
+        "show_crypto_key_mypubkey_rsa",
+        "show_ntp_status",
+        "show_terminal",
+        "show_license_udi",
+    ];
+    for key in keys {
+        let v = parse_envelope(&netcli_core::parse_json("cisco_ios", key, "dummy line\n"));
+        assert_eq!(v["ok"], true, "cisco_ios template for {key} should compile and return ok");
+    }
+}
+
+#[test]
+fn new_cisco_xr_templates_compile() {
+    let keys = [
+        "show_controllers_optics",
+        "show_interface_accounting",
+        "show_controllers_fec",
+        "show_running_config_interface",
+    ];
+    for key in keys {
+        let v = parse_envelope(&netcli_core::parse_json("cisco_xr", key, "dummy line\n"));
+        assert_eq!(v["ok"], true, "cisco_xr template for {key} should compile and return ok");
+    }
+}
+
+#[test]
+fn new_cisco_xr_via_iosxr_alias_templates_compile() {
+    let keys = [
+        "show_controllers_optics",
+        "show_interface_accounting",
+        "show_controllers_fec",
+        "show_running_config_interface",
+    ];
+    for key in keys {
+        let v = parse_envelope(&netcli_core::parse_json("cisco_iosxr", key, "dummy line\n"));
+        assert_eq!(
+            v["ok"], true,
+            "cisco_iosxr (alias) template for {key} should compile and return ok"
+        );
+    }
+}
+
+#[test]
+fn new_dnos_templates_compile() {
+    let keys = [
+        "show_version",
+        "show_system_hardware_psu",
+        "show_interface",
+        "show_interface_fec",
+        "show_interface_transceiver",
+        "show_interface_counters",
+        "show_interface_fec_counters",
+        "show_lldp_neighbor_detail",
+        "show_bfd_session",
+    ];
+    for key in keys {
+        let v = parse_envelope(&netcli_core::parse_json("drivenets_dnos", key, "dummy line\n"));
+        assert_eq!(
+            v["ok"], true,
+            "drivenets_dnos template for {key} should compile and return ok"
+        );
+    }
+}
+
+#[test]
+fn new_nokia_templates_compile() {
+    let keys = [
+        "show_version",
+        "show_system_information",
+        "show_system_location",
+        "show_chassis",
+        "show_chassis_detail",
+        "show_bof",
+        "show_mda",
+        "show_port_optical",
+        "show_port_statistics",
+        "show_port_ethernet_fec",
+        "show_router_bgp_summary",
+        "show_system_lldp_neighbor",
+        "show_router_bfd_session_detail",
+        "show_service",
+        "show_snmp_location",
+        "admin_display_config",
+    ];
+    for key in keys {
+        let v = parse_envelope(&netcli_core::parse_json("alcatel_sros", key, "dummy line\n"));
+        assert_eq!(
+            v["ok"], true,
+            "alcatel_sros template for {key} should compile and return ok"
+        );
+    }
+}
+
+#[test]
+fn new_nokia_via_alias_templates_compile() {
+    let keys = [
+        "show_version",
+        "show_system_information",
+        "show_chassis",
+        "show_router_bgp_summary",
+        "show_service",
+    ];
+    for key in keys {
+        let v = parse_envelope(&netcli_core::parse_json("nokia_sros", key, "dummy line\n"));
+        assert_eq!(
+            v["ok"], true,
+            "nokia_sros (alias) template for {key} should compile and return ok"
+        );
+    }
+}
+
+#[test]
+fn new_junos_templates_compile() {
+    let keys = [
+        "show_system_information",
+        "show_system_location",
+        "show_system_contact_information",
+        "show_system_alarms",
+        "show_interfaces_terse",
+        "show_chassis_environment",
+    ];
+    for key in keys {
+        let v = parse_envelope(&netcli_core::parse_json("juniper_junos", key, "dummy line\n"));
+        assert_eq!(
+            v["ok"], true,
+            "juniper_junos template for {key} should compile and return ok"
+        );
+    }
+}
+
+#[test]
+fn new_arista_eos_templates_resolve() {
+    let keys = [
+        "show_system_environment_all",
+        "show_system_environment_cooling",
+        "show_system_environment_temperature",
+        "show_system_environment_power",
+    ];
+    for key in keys {
+        let v = parse_envelope(&netcli_core::parse_json("arista_eos", key, "dummy line\n"));
+        let err_code = v["error"]["code"].as_str().unwrap_or("");
+        assert_ne!(
+            err_code, "TEMPLATE_NOT_FOUND",
+            "arista_eos should have a template for {key}"
+        );
+        assert_ne!(
+            err_code, "TEMPLATE_INVALID",
+            "arista_eos template for {key} should compile"
+        );
+    }
+}
+
+// ========================================================================
+// Command API integration: full commands resolve after all fixes
+// ========================================================================
+
+#[test]
+fn command_api_nokia_show_system_cpu() {
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "nokia_sros",
+        "show system cpu",
+        "dummy line\n",
+    ));
+    assert_eq!(v["ok"], true, "nokia_sros 'show system cpu' should resolve");
+}
+
+#[test]
+fn command_api_nokia_show_router_interface() {
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "nokia_sros",
+        "show router interface",
+        "dummy line\n",
+    ));
+    assert_eq!(v["ok"], true, "nokia_sros 'show router interface' should resolve");
+}
+
+#[test]
+fn command_api_cisco_xr_show_version() {
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "cisco_iosxr",
+        "show version",
+        "dummy line\n",
+    ));
+    assert_eq!(v["ok"], true, "cisco_iosxr 'show version' should resolve via alias");
+}
+
+#[test]
+fn command_api_junos_show_chassis_hardware() {
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "juniper_junos",
+        "show chassis hardware",
+        "dummy line\n",
+    ));
+    assert_eq!(v["ok"], true, "juniper_junos 'show chassis hardware' should resolve");
+}
+
+#[test]
+fn command_api_arista_show_system_environment_temperature() {
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "arista_eos",
+        "show system environment temperature",
+        "dummy line\n",
+    ));
+    let err_code = v["error"]["code"].as_str().unwrap_or("");
+    assert_ne!(
+        err_code, "TEMPLATE_NOT_FOUND",
+        "arista_eos 'show system environment temperature' should resolve"
+    );
+}
+
+#[test]
+fn command_api_dnos_show_interfaces_brief() {
+    let output = include_str!("fixtures/drivenets_dnos/show_interfaces_brief.txt");
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "drivenets_dnos",
+        "show interfaces brief",
+        output,
+    ));
+    assert_success(&v);
+    assert!(!records(&v).is_empty());
+}
+
+#[test]
+fn command_api_dnos_show_interface_brief_singular() {
+    let output = include_str!("fixtures/drivenets_dnos/show_interfaces_brief.txt");
+    let v = parse_envelope(&netcli_core::parse_command_json(
+        "drivenets_dnos",
+        "show interface brief",
+        output,
+    ));
+    assert_success(&v);
+    assert!(
+        !records(&v).is_empty(),
+        "singular 'show interface brief' should work via alias"
+    );
+}

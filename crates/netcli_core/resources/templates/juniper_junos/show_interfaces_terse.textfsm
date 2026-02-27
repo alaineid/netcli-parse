@@ -1,0 +1,11 @@
+Value INTERFACE (\S+)
+Value ADMIN_STATUS (\S+)
+Value LINK_STATUS (\S+)
+Value PROTO (\S+)
+Value LOCAL_ADDRESS ([\d./]+)
+Value REMOTE_ADDRESS ([\d./]+)
+
+Start
+  ^${INTERFACE}\s+${ADMIN_STATUS}\s+${LINK_STATUS}\s*$$ -> Record
+  ^${INTERFACE}\s+${ADMIN_STATUS}\s+${LINK_STATUS}\s+${PROTO}\s+${LOCAL_ADDRESS}\s*$$ -> Record
+  ^${INTERFACE}\s+${ADMIN_STATUS}\s+${LINK_STATUS}\s+${PROTO}\s+${LOCAL_ADDRESS}\s+-->\s+${REMOTE_ADDRESS}\s*$$ -> Record

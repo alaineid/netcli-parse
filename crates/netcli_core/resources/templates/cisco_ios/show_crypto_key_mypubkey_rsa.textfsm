@@ -1,0 +1,14 @@
+Value KEY_NAME (\S+.*)
+Value KEY_TYPE (\S+)
+Value KEY_SIZE (\d+)
+Value CREATED (\S+.*)
+Value USAGE (\S+.*)
+
+Start
+  ^\s*%\s+Key\s+pair\s+was\s+generated\s+at\s+${CREATED}
+  ^Key\s+name:\s+${KEY_NAME}
+  ^Key\s+type:\s+${KEY_TYPE}
+  ^\s+Key\s+Data: -> Record
+  ^\s*Storage\s+Device:\s+
+  ^\s+Usage:\s+${USAGE}\s+Key
+  ^\s+Key\s+is\s+${KEY_SIZE}\s+bits

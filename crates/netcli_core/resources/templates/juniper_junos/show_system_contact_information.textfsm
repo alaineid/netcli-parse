@@ -1,0 +1,5 @@
+Value CONTACT (.+)
+
+Start
+  ^Contact:\s+${CONTACT} -> Record
+  ^${CONTACT}\s*$$ -> Record

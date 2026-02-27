@@ -1,0 +1,16 @@
+Value INTERFACE (\S+)
+Value NEIGHBOR (\d+\.\d+\.\d+\.\d+)
+Value STATE (\S+)
+Value TYPE (\S+)
+Value TX_INTERVAL (\d+)
+Value RX_INTERVAL (\d+)
+Value MULTIPLIER (\d+)
+
+Start
+  ^[Ii]nterface\s*:\s*${INTERFACE}
+  ^[Nn]eighbor\s*:\s*${NEIGHBOR}
+  ^[Ss]tate\s*:\s*${STATE}
+  ^[Tt]ype\s*:\s*${TYPE}
+  ^[Tt][Xx]\s+[Ii]nterval\s*:\s*${TX_INTERVAL}
+  ^[Rr][Xx]\s+[Ii]nterval\s*:\s*${RX_INTERVAL}
+  ^[Mm]ultiplier\s*:\s*${MULTIPLIER} -> Record

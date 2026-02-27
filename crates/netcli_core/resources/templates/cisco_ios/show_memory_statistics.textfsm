@@ -1,0 +1,9 @@
+Value POOL (\S+)
+Value TOTAL (\d+)
+Value USED (\d+)
+Value FREE (\d+)
+Value LOWEST (\d+)
+Value LARGEST (\d+)
+
+Start
+  ^${POOL}\s+${TOTAL}\s+${USED}\s+${FREE}\s+${LOWEST}\s+${LARGEST}\s*$$ -> Record

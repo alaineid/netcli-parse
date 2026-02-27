@@ -1,0 +1,10 @@
+Value PORT (\S+)
+Value FEC_MODE (\S+)
+Value CORRECTED_ERRORS (\d+)
+Value UNCORRECTABLE_ERRORS (\d+)
+
+Start
+  ^Port\s+:\s+${PORT}
+  ^\s+FEC\s+Mode\s+:\s+${FEC_MODE}
+  ^\s+Corrected\s+Err.*:\s+${CORRECTED_ERRORS}
+  ^\s+Uncorrectable\s+Err.*:\s+${UNCORRECTABLE_ERRORS} -> Record

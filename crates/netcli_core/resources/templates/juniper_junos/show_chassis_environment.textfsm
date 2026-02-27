@@ -1,0 +1,9 @@
+Value CLASS (\S+.*)
+Value STATUS (\S+)
+Value TEMPERATURE (\d+)
+Value MEASUREMENT (.+?)
+
+Start
+  ^${CLASS}\s+${STATUS}\s+${TEMPERATURE}\s+degrees -> Record
+  ^${CLASS}\s+${STATUS}\s*$$ -> Record
+  ^${CLASS}\s+${MEASUREMENT}\s*$$ -> Record

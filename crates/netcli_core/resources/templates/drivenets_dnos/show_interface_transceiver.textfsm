@@ -1,0 +1,20 @@
+Value INTERFACE (\S+)
+Value TEMPERATURE ([\d.\-]+)
+Value VOLTAGE ([\d.]+)
+Value TX_POWER ([\d.\-]+)
+Value RX_POWER ([\d.\-]+)
+Value LASER_BIAS ([\d.]+)
+Value VENDOR (\S+.*)
+Value PART_NUMBER (\S+)
+Value SERIAL_NUMBER (\S+)
+
+Start
+  ^[Ii]nterface\s*:\s*${INTERFACE}
+  ^[Tt]emperature\s*:\s*${TEMPERATURE}
+  ^[Vv]oltage\s*:\s*${VOLTAGE}
+  ^[Tt][Xx]\s+[Pp]ower\s*:\s*${TX_POWER}
+  ^[Rr][Xx]\s+[Pp]ower\s*:\s*${RX_POWER}
+  ^[Ll]aser\s+[Bb]ias\s*:\s*${LASER_BIAS}
+  ^[Vv]endor\s*:\s*${VENDOR}
+  ^[Pp]art\s+[Nn]umber\s*:\s*${PART_NUMBER}
+  ^[Ss]erial\s+[Nn]umber\s*:\s*${SERIAL_NUMBER} -> Record

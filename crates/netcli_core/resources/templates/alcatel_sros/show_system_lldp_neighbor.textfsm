@@ -1,0 +1,18 @@
+Value LOCAL_PORT (\S+)
+Value NEIGHBOR_NAME (\S+.*)
+Value NEIGHBOR_PORT (\S+.*)
+Value CHASSIS_ID (\S+)
+Value PORT_DESCRIPTION (.+?)
+Value SYSTEM_DESCRIPTION (.+?)
+Value MGMT_ADDRESS (\S+)
+Value CAPABILITIES (.+?)
+
+Start
+  ^Local\s+Port\s+:\s+${LOCAL_PORT}
+  ^System\s+Name\s+:\s+${NEIGHBOR_NAME}
+  ^Port\s+ID\s+:\s+${NEIGHBOR_PORT}
+  ^Chassis\s+ID\s+:\s+${CHASSIS_ID}
+  ^Port\s+Description\s+:\s+${PORT_DESCRIPTION}
+  ^System\s+Description\s+:\s+${SYSTEM_DESCRIPTION}
+  ^Mgmt\s+Address\s+:\s+${MGMT_ADDRESS}
+  ^System\s+Capabilities\s+:\s+${CAPABILITIES} -> Record

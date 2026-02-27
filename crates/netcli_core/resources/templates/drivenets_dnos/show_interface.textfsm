@@ -1,0 +1,28 @@
+Value INTERFACE (\S+)
+Value ADMIN_STATUS (\S+)
+Value OPER_STATUS (\S+)
+Value SPEED (\S+)
+Value MTU (\d+)
+Value MAC_ADDRESS (\S+)
+Value DESCRIPTION (.+?)
+Value RX_BYTES (\d+)
+Value TX_BYTES (\d+)
+Value RX_PACKETS (\d+)
+Value TX_PACKETS (\d+)
+Value RX_ERRORS (\d+)
+Value TX_ERRORS (\d+)
+
+Start
+  ^[Ii]nterface\s*:\s*${INTERFACE}
+  ^[Aa]dmin[- ][Ss]tatus\s*:\s*${ADMIN_STATUS}
+  ^[Oo]per[- ][Ss]tatus\s*:\s*${OPER_STATUS}
+  ^[Ss]peed\s*:\s*${SPEED}
+  ^[Mm][Tt][Uu]\s*:\s*${MTU}
+  ^[Mm][Aa][Cc]\s*[Aa]ddress\s*:\s*${MAC_ADDRESS}
+  ^[Dd]escription\s*:\s*${DESCRIPTION}
+  ^[Rr][Xx]\s+[Bb]ytes\s*:\s*${RX_BYTES}
+  ^[Tt][Xx]\s+[Bb]ytes\s*:\s*${TX_BYTES}
+  ^[Rr][Xx]\s+[Pp]ackets\s*:\s*${RX_PACKETS}
+  ^[Tt][Xx]\s+[Pp]ackets\s*:\s*${TX_PACKETS}
+  ^[Rr][Xx]\s+[Ee]rrors\s*:\s*${RX_ERRORS}
+  ^[Tt][Xx]\s+[Ee]rrors\s*:\s*${TX_ERRORS} -> Record

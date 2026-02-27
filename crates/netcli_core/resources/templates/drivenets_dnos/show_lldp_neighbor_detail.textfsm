@@ -1,0 +1,18 @@
+Value INTERFACE (\S+)
+Value NEIGHBOR_NAME (\S+)
+Value NEIGHBOR_PORT (\S+)
+Value NEIGHBOR_PORT_DESC (.+?)
+Value SYSTEM_DESC (.+?)
+Value CHASSIS_ID (\S+)
+Value MANAGEMENT_IP (\d+\.\d+\.\d+\.\d+)
+Value CAPABILITIES (.+?)
+
+Start
+  ^[Ll]ocal\s+[Ii]nterface\s*:\s*${INTERFACE}
+  ^[Ss]ystem\s+[Nn]ame\s*:\s*${NEIGHBOR_NAME}
+  ^[Pp]ort\s+[Ii][Dd]\s*:\s*${NEIGHBOR_PORT}
+  ^[Pp]ort\s+[Dd]escription\s*:\s*${NEIGHBOR_PORT_DESC}
+  ^[Ss]ystem\s+[Dd]escription\s*:\s*${SYSTEM_DESC}
+  ^[Cc]hassis\s+[Ii][Dd]\s*:\s*${CHASSIS_ID}
+  ^[Mm]anagement\s+[Aa]ddress\s*:\s*${MANAGEMENT_IP}
+  ^[Ss]ystem\s+[Cc]apabilities\s*:\s*${CAPABILITIES} -> Record

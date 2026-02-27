@@ -110,11 +110,11 @@ pub fn parse_command_records(
     command: &str,
     output_text: &str,
 ) -> Result<Vec<HashMap<String, String>>, ParseError> {
-    let key = registry::normalize_command(command);
+    let (key, _) = registry::lookup_command(platform, command);
     parse_records(platform, &key, output_text)
 }
 
 pub fn parse_command_json(platform: &str, command: &str, output_text: &str) -> String {
-    let key = registry::normalize_command(command);
+    let (key, _) = registry::lookup_command(platform, command);
     parse_json(platform, &key, output_text)
 }

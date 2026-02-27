@@ -1,0 +1,20 @@
+Value PORT (\S+)
+Value IN_OCTETS (\d+)
+Value OUT_OCTETS (\d+)
+Value IN_PACKETS (\d+)
+Value OUT_PACKETS (\d+)
+Value IN_ERRORS (\d+)
+Value OUT_ERRORS (\d+)
+Value IN_DISCARDS (\d+)
+Value OUT_DISCARDS (\d+)
+
+Start
+  ^Port\s+:\s+${PORT}
+  ^\s+Ingress\s+Octets\s+:\s+${IN_OCTETS}
+  ^\s+Egress\s+Octets\s+:\s+${OUT_OCTETS}
+  ^\s+Ingress\s+Packets\s+:\s+${IN_PACKETS}
+  ^\s+Egress\s+Packets\s+:\s+${OUT_PACKETS}
+  ^\s+Ingress\s+Errors\s+:\s+${IN_ERRORS}
+  ^\s+Egress\s+Errors\s+:\s+${OUT_ERRORS}
+  ^\s+Ingress\s+Discards\s+:\s+${IN_DISCARDS}
+  ^\s+Egress\s+Discards\s+:\s+${OUT_DISCARDS} -> Record

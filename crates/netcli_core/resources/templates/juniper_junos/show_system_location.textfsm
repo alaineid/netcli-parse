@@ -1,0 +1,5 @@
+Value LOCATION (.+)
+
+Start
+  ^Location:\s+${LOCATION} -> Record
+  ^${LOCATION}\s*$$ -> Record

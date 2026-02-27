@@ -5891,6 +5891,330 @@
       "commandKey": "sys_atsh",
       "template": "templates/zyxel_os/sys_atsh.textfsm",
       "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interface",
+      "template": "templates/cisco_ios/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_interface_brief_exclude_unassigned",
+      "template": "templates/cisco_ios/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_interface_brief",
+      "template": "templates/drivenets_dnos/show_interfaces_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_environment",
+      "template": "templates/cisco_ios/show_environment.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_environment_all",
+      "template": "templates/cisco_ios/show_environment_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_memory_statistics",
+      "template": "templates/cisco_ios/show_memory_statistics.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_protocols",
+      "template": "templates/cisco_ios/show_ip_protocols.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_diag",
+      "template": "templates/cisco_ios/show_diag.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_spanning_tree_summary",
+      "template": "templates/cisco_ios/show_spanning_tree_summary.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_aaa_sessions",
+      "template": "templates/cisco_ios/show_aaa_sessions.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_privilege",
+      "template": "templates/cisco_ios/show_privilege.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_crypto_key_mypubkey_rsa",
+      "template": "templates/cisco_ios/show_crypto_key_mypubkey_rsa.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ntp_status",
+      "template": "templates/cisco_ios/show_ntp_status.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_terminal",
+      "template": "templates/cisco_ios/show_terminal.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_license_udi",
+      "template": "templates/cisco_ios/show_license_udi.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_optics",
+      "template": "templates/cisco_xr/show_controllers_optics.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_interface_accounting",
+      "template": "templates/cisco_xr/show_interface_accounting.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_fec",
+      "template": "templates/cisco_xr/show_controllers_fec.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_running_config_interface",
+      "template": "templates/cisco_xr/show_running_config_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_version",
+      "template": "templates/drivenets_dnos/show_version.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_system_hardware_psu",
+      "template": "templates/drivenets_dnos/show_system_hardware_psu.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_interface",
+      "template": "templates/drivenets_dnos/show_interface.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_interface_fec",
+      "template": "templates/drivenets_dnos/show_interface_fec.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_interface_transceiver",
+      "template": "templates/drivenets_dnos/show_interface_transceiver.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_interface_counters",
+      "template": "templates/drivenets_dnos/show_interface_counters.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_interface_fec_counters",
+      "template": "templates/drivenets_dnos/show_interface_fec_counters.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_lldp_neighbor_detail",
+      "template": "templates/drivenets_dnos/show_lldp_neighbor_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "drivenets_dnos",
+      "commandKey": "show_bfd_session",
+      "template": "templates/drivenets_dnos/show_bfd_session.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_system_information",
+      "template": "templates/juniper_junos/show_system_information.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_system_location",
+      "template": "templates/juniper_junos/show_system_location.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_system_contact_information",
+      "template": "templates/juniper_junos/show_system_contact_information.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_system_alarms",
+      "template": "templates/juniper_junos/show_system_alarms.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_interfaces_terse",
+      "template": "templates/juniper_junos/show_interfaces_terse.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_chassis_environment",
+      "template": "templates/juniper_junos/show_chassis_environment.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_version",
+      "template": "templates/alcatel_sros/show_version.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_system_information",
+      "template": "templates/alcatel_sros/show_system_information.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_system_location",
+      "template": "templates/alcatel_sros/show_system_location.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_chassis",
+      "template": "templates/alcatel_sros/show_chassis.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_chassis_detail",
+      "template": "templates/alcatel_sros/show_chassis_detail.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_bof",
+      "template": "templates/alcatel_sros/show_bof.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_mda",
+      "template": "templates/alcatel_sros/show_mda.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_port_optical",
+      "template": "templates/alcatel_sros/show_port_optical.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_port_statistics",
+      "template": "templates/alcatel_sros/show_port_statistics.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_port_ethernet_fec",
+      "template": "templates/alcatel_sros/show_port_ethernet_fec.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_bgp_summary",
+      "template": "templates/alcatel_sros/show_router_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_system_lldp_neighbor",
+      "template": "templates/alcatel_sros/show_system_lldp_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_bfd_session_detail",
+      "template": "templates/alcatel_sros/show_router_bfd_session_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service",
+      "template": "templates/alcatel_sros/show_service.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_snmp_location",
+      "template": "templates/alcatel_sros/show_snmp_location.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "admin_display_config",
+      "template": "templates/alcatel_sros/admin_display_config.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_system_environment_all",
+      "template": "templates/arista_eos/show_system_environment_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_system_environment_cooling",
+      "template": "templates/arista_eos/show_environment_cooling.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_system_environment_temperature",
+      "template": "templates/arista_eos/show_environment_temperature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_system_environment_power",
+      "template": "templates/arista_eos/show_environment_power.textfsm",
+      "shape": "list"
     }
   ]
 }

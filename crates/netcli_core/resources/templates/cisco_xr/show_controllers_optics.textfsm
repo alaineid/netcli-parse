@@ -1,0 +1,27 @@
+Value CONTROLLER (\S+)
+Value TRANSPORT_ADMIN_STATE (\S+.*)
+Value TX_POWER ([\d.\-]+)
+Value RX_POWER ([\d.\-]+)
+Value LASER_BIAS_CURRENT ([\d.]+)
+Value TEMPERATURE ([\d.]+)
+Value VOLTAGE ([\d.]+)
+Value MODULE_TYPE (.+?)
+Value VENDOR (.+?)
+Value VENDOR_PART (\S+)
+Value VENDOR_SERIAL (\S+)
+Value WAVELENGTH ([\d.]+)
+
+Start
+  ^\s+Controller\s+=\s+${CONTROLLER}
+  ^\s+Transport\s+Admin\s+State\s+=\s+${TRANSPORT_ADMIN_STATE}
+  ^\s+Tx\s+Power\s+=\s+${TX_POWER}
+  ^\s+Rx\s+Power\s+=\s+${RX_POWER}
+  ^\s+Laser\s+Bias\s+Current\s+=\s+${LASER_BIAS_CURRENT}
+  ^\s+Temperature\s+=\s+${TEMPERATURE}
+  ^\s+Voltage\s+=\s+${VOLTAGE}
+  ^\s+Transceiver\s+Vendor\s+Details
+  ^\s+Form\s+Factor\s+:\s+${MODULE_TYPE}
+  ^\s+Name\s+:\s+${VENDOR}
+  ^\s+Part\s+Number\s+:\s+${VENDOR_PART}
+  ^\s+Serial\s+Number\s+:\s+${VENDOR_SERIAL}
+  ^\s+Wavelength\s+=\s+${WAVELENGTH} -> Record

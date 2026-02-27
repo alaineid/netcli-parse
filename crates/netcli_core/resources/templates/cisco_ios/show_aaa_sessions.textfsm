@@ -1,0 +1,9 @@
+Value SESSION_ID (\S+)
+Value UNIQUE_ID (\d+)
+Value USERNAME (\S+)
+Value IP_ADDRESS (\d+\.\d+\.\d+\.\d+)
+Value IDLE_TIME (\S+)
+Value CT (\S+)
+
+Start
+  ^${SESSION_ID}\s+${UNIQUE_ID}\s+${USERNAME}\s+${IP_ADDRESS}\s+${IDLE_TIME}\s+${CT}\s*$$ -> Record

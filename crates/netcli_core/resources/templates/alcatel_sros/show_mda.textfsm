@@ -1,0 +1,9 @@
+Value SLOT (\d+)
+Value MDA (\d+)
+Value PROVISIONED_TYPE (\S+.*)
+Value EQUIPPED_TYPE (\S+.*)
+Value ADMIN_STATE (\S+)
+Value OPER_STATE (\S+)
+
+Start
+  ^${SLOT}/${MDA}\s+${PROVISIONED_TYPE}\s+${EQUIPPED_TYPE}\s+${ADMIN_STATE}\s+${OPER_STATE}\s*$$ -> Record

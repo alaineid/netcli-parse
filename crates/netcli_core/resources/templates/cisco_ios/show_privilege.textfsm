@@ -1,0 +1,4 @@
+Value PRIVILEGE_LEVEL (\d+)
+
+Start
+  ^Current\s+privilege\s+level\s+is\s+${PRIVILEGE_LEVEL}\s*$$ -> Record

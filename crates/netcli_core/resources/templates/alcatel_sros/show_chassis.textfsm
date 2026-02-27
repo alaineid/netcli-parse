@@ -1,0 +1,18 @@
+Value CHASSIS_TYPE (\S+.*)
+Value PART_NUMBER (\S+)
+Value SERIAL_NUMBER (\S+)
+Value OPER_STATE (\S+)
+Value HW_VERSION (\S+)
+Value CLEI_CODE (\S+)
+Value BASE_MAC (\S+)
+Value NUM_SLOTS (\d+)
+
+Start
+  ^Chassis\s+Type\s+:\s+${CHASSIS_TYPE}
+  ^Part\s+Number\s+:\s+${PART_NUMBER}
+  ^Serial\s+Number\s+:\s+${SERIAL_NUMBER}
+  ^Oper\s+State\s+:\s+${OPER_STATE}
+  ^Hardware\s+Version\s+:\s+${HW_VERSION}
+  ^CLEI\s+Code\s+:\s+${CLEI_CODE}
+  ^Base\s+MAC\s+.*:\s+${BASE_MAC}
+  ^Number.*Slots\s+:\s+${NUM_SLOTS} -> Record

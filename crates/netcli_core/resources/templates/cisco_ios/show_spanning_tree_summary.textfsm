@@ -1,0 +1,29 @@
+Value SWITCH_IS (\S+.*)
+Value ROOT_BRIDGE (\S+)
+Value VLANS_CONFIGURED (\d+)
+Value EXTENDED_SYSTEM_ID (\S+)
+Value PORTFAST_DEFAULT (\S+)
+Value BPDU_GUARD (\S+)
+Value BPDU_FILTER (\S+)
+Value LOOPGUARD (\S+)
+Value ETHERCHANNEL_MISCONFIG (\S+)
+Value UPL_FAST (\S+)
+Value BACKB_FAST (\S+)
+Value PATHCOST_METHOD (\S+)
+Value TOTAL_BLOCKING (\d+)
+Value TOTAL_FORWARDING (\d+)
+
+Start
+  ^Switch\s+is\s+in\s+${SWITCH_IS}\s+mode
+  ^Root\s+bridge\s+for:\s+${ROOT_BRIDGE}
+  ^Extended\s+system\s+ID\s+:\s+${EXTENDED_SYSTEM_ID}
+  ^Portfast\s+Default\s+:\s+${PORTFAST_DEFAULT}
+  ^Bpdu\s+Guard\s+Default\s+:\s+${BPDU_GUARD}
+  ^Bpdu\s+Filter\s+Default\s+:\s+${BPDU_FILTER}
+  ^Loopguard\s+Default\s+:\s+${LOOPGUARD}
+  ^EtherChannel\s+misconfig\s+guard\s+:\s+${ETHERCHANNEL_MISCONFIG}
+  ^UplinkFast\s+:\s+${UPL_FAST}
+  ^BackboneFast\s+:\s+${BACKB_FAST}
+  ^Pathcost\s+method\s+used\s+:\s+${PATHCOST_METHOD}
+  ^\s*${TOTAL_BLOCKING}\s+vlans?\s+in\s+blocking
+  ^\s*${TOTAL_FORWARDING}\s+vlans?\s+in\s+forwarding -> Record

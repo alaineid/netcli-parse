@@ -1,0 +1,26 @@
+Value PRIMARY_IMAGE (\S+)
+Value SECONDARY_IMAGE (\S+)
+Value PRIMARY_CONFIG (\S+)
+Value SECONDARY_CONFIG (\S+)
+Value PRIMARY_DNS (\S+)
+Value SECONDARY_DNS (\S+)
+Value DNS_DOMAIN (\S+)
+Value STATIC_ROUTE (.+?)
+Value ADDRESS (\S+)
+Value AUTONEG (\S+)
+Value SPEED (\S+)
+Value DUPLEX (\S+)
+
+Start
+  ^primary-image\s+${PRIMARY_IMAGE}
+  ^secondary-image\s+${SECONDARY_IMAGE}
+  ^primary-config\s+${PRIMARY_CONFIG}
+  ^secondary-config\s+${SECONDARY_CONFIG}
+  ^primary-dns\s+${PRIMARY_DNS}
+  ^secondary-dns\s+${SECONDARY_DNS}
+  ^dns-domain\s+${DNS_DOMAIN}
+  ^static-route\s+${STATIC_ROUTE}
+  ^address\s+${ADDRESS}
+  ^autonegotiate\s+${AUTONEG}
+  ^speed\s+${SPEED}
+  ^duplex\s+${DUPLEX} -> Record

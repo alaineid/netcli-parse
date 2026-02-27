@@ -1,0 +1,6 @@
+Value HOSTNAME (\S+)
+Value SYSTEM_NAME (\S+)
+
+Start
+  ^\s+system\s+name\s+"${SYSTEM_NAME}"
+  ^\s+hostname\s+"${HOSTNAME}" -> Record

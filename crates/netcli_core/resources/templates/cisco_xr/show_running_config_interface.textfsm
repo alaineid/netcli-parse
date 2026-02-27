@@ -1,0 +1,16 @@
+Value INTERFACE (\S+)
+Value IP_ADDRESS (\d+\.\d+\.\d+\.\d+)
+Value SUBNET_MASK (\d+\.\d+\.\d+\.\d+)
+Value PREFIX_LENGTH (\d+)
+Value DESCRIPTION (.+?)
+Value SHUTDOWN (shutdown)
+Value MTU (\d+)
+
+Start
+  ^interface\s+${INTERFACE} -> Continue
+  ^\s+description\s+${DESCRIPTION}
+  ^\s+ipv4\s+address\s+${IP_ADDRESS}\s+${SUBNET_MASK}
+  ^\s+ipv4\s+address\s+${IP_ADDRESS}/${PREFIX_LENGTH}
+  ^\s+mtu\s+${MTU}
+  ^\s+${SHUTDOWN}
+  ^! -> Record

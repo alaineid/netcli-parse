@@ -1,0 +1,10 @@
+Value PSU_ID (\S+)
+Value STATUS (\S+)
+Value TYPE (\S+.*)
+Value INPUT_VOLTAGE (\S+)
+Value OUTPUT_POWER (\S+)
+Value SERIAL (\S+)
+
+Start
+  ^${PSU_ID}\s+${STATUS}\s+${TYPE}\s+${INPUT_VOLTAGE}\s+${OUTPUT_POWER}\s+${SERIAL}\s*$$ -> Record
+  ^\|\s*${PSU_ID}\s*\|\s*${STATUS}\s*\|\s*${TYPE}\s*\|\s*${INPUT_VOLTAGE}\s*\|\s*${OUTPUT_POWER}\s*\|\s*${SERIAL}\s*\| -> Record

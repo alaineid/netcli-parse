@@ -1,0 +1,10 @@
+Value CHASSIS_TYPE (\S+.*)
+Value SYSTEM_VERSION (\S+)
+Value CREATED (.+?)
+Value BOOT_ROM_VERSION (\S+)
+
+Start
+  ^TiMOS-${SYSTEM_VERSION}
+  ^System\s+Type\s+:\s+${CHASSIS_TYPE}
+  ^Created\s+:\s+${CREATED}
+  ^Boot\s+ROM\s+Version\s+:\s+${BOOT_ROM_VERSION} -> Record

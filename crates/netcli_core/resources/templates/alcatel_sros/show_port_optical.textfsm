@@ -1,0 +1,9 @@
+Value PORT (\S+)
+Value TX_POWER ([\d.\-]+)
+Value RX_POWER ([\d.\-]+)
+Value TX_BIAS ([\d.]+)
+Value TEMPERATURE ([\d.]+)
+Value VOLTAGE ([\d.]+)
+
+Start
+  ^${PORT}\s+${TX_POWER}\s+${RX_POWER}\s+${TX_BIAS}\s+${TEMPERATURE}\s+${VOLTAGE}\s*$$ -> Record

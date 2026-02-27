@@ -1,0 +1,11 @@
+Value LINE (\d+)
+Value LOCATION (\S*)
+Value TYPE (\S+)
+Value LENGTH (\d+)
+Value WIDTH (\d+)
+Value SPEED (\d+)
+
+Start
+  ^Line\s+${LINE},\s+Location:\s+"${LOCATION}",\s+Type:\s+"${TYPE}"
+  ^Length:\s+${LENGTH}\s+lines,\s+Width:\s+${WIDTH}\s+columns
+  ^Baud\s+rate\s+\(TX/RX\)\s+is\s+${SPEED} -> Record

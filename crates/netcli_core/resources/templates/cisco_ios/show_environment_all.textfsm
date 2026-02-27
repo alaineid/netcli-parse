@@ -1,0 +1,7 @@
+Value SENSOR (\S+.*)
+Value STATE (\S+)
+Value READING (\S+.*)
+Value THRESHOLD (\S+.*)
+
+Start
+  ^\s*${SENSOR}\s+${STATE}\s+${READING}\s+${THRESHOLD}\s*$$ -> Record

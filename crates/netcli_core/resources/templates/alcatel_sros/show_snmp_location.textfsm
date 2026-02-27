@@ -1,0 +1,5 @@
+Value LOCATION (.+)
+
+Start
+  ^SNMP\s+Location\s+:\s+${LOCATION} -> Record
+  ^Location\s+:\s+"?${LOCATION}"? -> Record

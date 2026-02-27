@@ -1,0 +1,12 @@
+Value INTERFACE (\S+)
+Value FEC_MODE (\S+.*)
+Value CORRECTED_CODEWORDS (\d+)
+Value UNCORRECTABLE_CODEWORDS (\d+)
+Value BIT_ERROR_RATE ([\d.eE\-+]+)
+
+Start
+  ^[Ii]nterface\s*:\s*${INTERFACE}
+  ^[Ff][Ee][Cc]\s+[Mm]ode\s*:\s*${FEC_MODE}
+  ^[Cc]orrected\s+[Cc]odewords\s*:\s*${CORRECTED_CODEWORDS}
+  ^[Uu]ncorrectable\s+[Cc]odewords\s*:\s*${UNCORRECTABLE_CODEWORDS}
+  ^[Bb][Ii][Tt]\s+[Ee]rror\s+[Rr]ate\s*:\s*${BIT_ERROR_RATE} -> Record

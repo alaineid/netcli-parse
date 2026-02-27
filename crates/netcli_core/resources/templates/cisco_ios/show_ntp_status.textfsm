@@ -1,0 +1,18 @@
+Value STATUS (synchronised|unsynchronised)
+Value STRATUM (\d+)
+Value REFERENCE (\S+)
+Value NOMINAL_FREQ ([\d.]+)
+Value ACTUAL_FREQ ([\d.]+)
+Value PRECISION (\S+)
+Value ROOT_DELAY ([\d.]+)
+Value ROOT_DISPERSION ([\d.]+)
+Value OFFSET ([\S.]+)
+Value POLL_INTERVAL (\d+)
+
+Start
+  ^Clock\s+is\s+${STATUS},\s+stratum\s+${STRATUM},\s+reference\s+is\s+${REFERENCE}
+  ^nominal\s+freq\s+is\s+${NOMINAL_FREQ}\s+Hz,\s+actual\s+freq\s+is\s+${ACTUAL_FREQ}
+  ^precision\s+is\s+${PRECISION}
+  ^root\s+delay\s+is\s+${ROOT_DELAY}\s+msec,\s+root\s+dispersion\s+is\s+${ROOT_DISPERSION}
+  ^Clock\s+offset\s+is\s+${OFFSET}\s+msec,
+  ^system\s+poll\s+interval\s+is\s+${POLL_INTERVAL} -> Record

@@ -1,0 +1,6 @@
+Value TIME (\d+\S+\s+\d+\s+\d+:\d+:\d+)
+Value CLASS (\S+)
+Value DESCRIPTION (.+?)
+
+Start
+  ^${TIME}\s+${CLASS}\s+${DESCRIPTION}\s*$$ -> Record

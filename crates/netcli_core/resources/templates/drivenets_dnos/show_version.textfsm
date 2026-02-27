@@ -1,0 +1,12 @@
+Value VERSION (\S+)
+Value HOSTNAME (\S+)
+Value UPTIME (.+?)
+Value MODEL (\S+)
+Value SERIAL (\S+)
+
+Start
+  ^[Vv]ersion\s*:\s*${VERSION}
+  ^[Hh]ostname\s*:\s*${HOSTNAME}
+  ^[Uu]ptime\s*:\s*${UPTIME}
+  ^[Mm]odel\s*:\s*${MODEL}
+  ^[Ss]erial\s*:\s*${SERIAL} -> Record

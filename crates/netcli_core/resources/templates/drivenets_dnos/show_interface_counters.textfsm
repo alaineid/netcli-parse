@@ -1,0 +1,32 @@
+Value INTERFACE (\S+)
+Value RX_BYTES (\d+)
+Value RX_PACKETS (\d+)
+Value RX_UNICAST (\d+)
+Value RX_MULTICAST (\d+)
+Value RX_BROADCAST (\d+)
+Value RX_ERRORS (\d+)
+Value RX_DISCARDS (\d+)
+Value TX_BYTES (\d+)
+Value TX_PACKETS (\d+)
+Value TX_UNICAST (\d+)
+Value TX_MULTICAST (\d+)
+Value TX_BROADCAST (\d+)
+Value TX_ERRORS (\d+)
+Value TX_DISCARDS (\d+)
+
+Start
+  ^[Ii]nterface\s*:\s*${INTERFACE}
+  ^[Rr][Xx]\s+[Bb]ytes\s*:\s*${RX_BYTES}
+  ^[Rr][Xx]\s+[Pp]ackets\s*:\s*${RX_PACKETS}
+  ^[Rr][Xx]\s+[Uu]nicast\s*:\s*${RX_UNICAST}
+  ^[Rr][Xx]\s+[Mm]ulticast\s*:\s*${RX_MULTICAST}
+  ^[Rr][Xx]\s+[Bb]roadcast\s*:\s*${RX_BROADCAST}
+  ^[Rr][Xx]\s+[Ee]rrors\s*:\s*${RX_ERRORS}
+  ^[Rr][Xx]\s+[Dd]iscards\s*:\s*${RX_DISCARDS}
+  ^[Tt][Xx]\s+[Bb]ytes\s*:\s*${TX_BYTES}
+  ^[Tt][Xx]\s+[Pp]ackets\s*:\s*${TX_PACKETS}
+  ^[Tt][Xx]\s+[Uu]nicast\s*:\s*${TX_UNICAST}
+  ^[Tt][Xx]\s+[Mm]ulticast\s*:\s*${TX_MULTICAST}
+  ^[Tt][Xx]\s+[Bb]roadcast\s*:\s*${TX_BROADCAST}
+  ^[Tt][Xx]\s+[Ee]rrors\s*:\s*${TX_ERRORS}
+  ^[Tt][Xx]\s+[Dd]iscards\s*:\s*${TX_DISCARDS} -> Record

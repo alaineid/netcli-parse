@@ -1,0 +1,12 @@
+Value SLOT (\S+)
+Value DESCRIPTION (.+?)
+Value SERIAL_NUMBER (\S+)
+Value PART_NUMBER (\S+)
+Value HW_REVISION (\S+)
+
+Start
+  ^Slot\s+${SLOT}: -> Continue
+  ^\s+${DESCRIPTION}\s*$$
+  ^\s+Serial\s+Number\s*:\s+${SERIAL_NUMBER}
+  ^\s+Part\s+Number\s*:\s+${PART_NUMBER}
+  ^\s+HW\s+rev\s+${HW_REVISION} -> Record

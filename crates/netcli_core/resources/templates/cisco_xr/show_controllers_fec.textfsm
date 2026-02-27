@@ -1,0 +1,16 @@
+Value CONTROLLER (\S+)
+Value FEC_MODE (\S+.*)
+Value CORRECTED_CODEWORDS (\d+)
+Value UNCORRECTABLE_CODEWORDS (\d+)
+Value TOTAL_CODEWORDS (\d+)
+Value PRE_FEC_BER ([\d.eE\-+]+)
+Value POST_FEC_BER ([\d.eE\-+]+)
+
+Start
+  ^Controller\s+:\s+${CONTROLLER}
+  ^\s+FEC\s+mode\s*:\s*${FEC_MODE}
+  ^\s+Corrected\s+Codewords\s*:\s*${CORRECTED_CODEWORDS}
+  ^\s+Uncorrectable\s+Codewords\s*:\s*${UNCORRECTABLE_CODEWORDS}
+  ^\s+Total\s+Codewords\s*:\s*${TOTAL_CODEWORDS}
+  ^\s+Pre-FEC\s+BER\s*:\s*${PRE_FEC_BER}
+  ^\s+Post-FEC\s+BER\s*:\s*${POST_FEC_BER} -> Record

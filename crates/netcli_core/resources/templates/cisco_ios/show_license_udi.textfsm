@@ -1,0 +1,7 @@
+Value DEVICE_PID (\S+)
+Value DEVICE_SN (\S+)
+Value UDI (\S+:\S+)
+
+Start
+  ^[\*\s]*${DEVICE_PID}\s+${DEVICE_SN}\s*$$ -> Record
+  ^UDI:\s+${UDI}\s*$$ -> Record

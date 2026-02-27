@@ -1,0 +1,18 @@
+Value SYSTEM_NAME (\S+)
+Value SYSTEM_TYPE (\S+.*)
+Value SYSTEM_VERSION (\S+)
+Value SYSTEM_CONTACT (.+?)
+Value SYSTEM_LOCATION (.+?)
+Value SYSTEM_UP_TIME (.+?)
+Value LAST_BOOTED (.+?)
+Value CONFIG_FILE (.+?)
+
+Start
+  ^System\s+Name\s+:\s+${SYSTEM_NAME}
+  ^System\s+Type\s+:\s+${SYSTEM_TYPE}
+  ^System\s+Version\s+:\s+${SYSTEM_VERSION}
+  ^System\s+Contact\s+:\s+${SYSTEM_CONTACT}
+  ^System\s+Location\s+:\s+${SYSTEM_LOCATION}
+  ^System\s+Up\s+Time\s+:\s+${SYSTEM_UP_TIME}
+  ^Last\s+Booted\s+:\s+${LAST_BOOTED}
+  ^Current.*Config\s+File\s+:\s+${CONFIG_FILE} -> Record
