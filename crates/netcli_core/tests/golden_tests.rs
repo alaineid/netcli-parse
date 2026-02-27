@@ -836,3 +836,221 @@ fn cisco_iosxe_show_ip_int_br_ex_unas() {
     assert_eq!(recs[0].get("status").unwrap(), "up");
     assert_eq!(recs[0].get("proto").unwrap(), "up");
 }
+
+// ========================================================================
+// DriveNets DNOS fixture tests
+// ========================================================================
+
+#[test]
+fn dnos_show_system_version() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_version.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_system_version", output).unwrap();
+
+    assert_eq!(recs.len(), 1);
+    assert_eq!(recs[0].get("system_name").unwrap(), "DN-SA-01");
+    assert_eq!(recs[0].get("hardware_model").unwrap(), "NCF-400G");
+    assert_eq!(recs[0].get("software_version").unwrap(), "DNOS 25.4.0");
+    assert_eq!(recs[0].get("serial_number").unwrap(), "DN2024010001");
+    assert_eq!(recs[0].get("system_uptime").unwrap(), "127 days, 14 hours, 33 minutes");
+    assert_eq!(recs[0].get("last_reboot").unwrap(), "2024-09-05 10:22:15 UTC");
+}
+
+#[test]
+fn dnos_show_system_status() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_status.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_system_status", output).unwrap();
+
+    assert_eq!(recs.len(), 1);
+    assert_eq!(recs[0].get("system_name").unwrap(), "DN-SA-01");
+    assert_eq!(recs[0].get("software_version").unwrap(), "DNOS 21.3.5");
+    assert_eq!(recs[0].get("overall_status").unwrap(), "Healthy");
+    assert_eq!(recs[0].get("active_ncps").unwrap(), "4");
+    assert_eq!(recs[0].get("cpu_control").unwrap(), "45%");
+    assert_eq!(recs[0].get("memory_control").unwrap(), "62%");
+}
+
+#[test]
+fn dnos_show_interfaces_brief() {
+    let output = include_str!("fixtures/drivenets_dnos/show_interfaces_brief.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_interfaces_brief", output).unwrap();
+
+    assert_eq!(recs.len(), 28);
+    assert_eq!(recs[0].get("interface").unwrap(), "bundle-12");
+    assert_eq!(recs[0].get("admin").unwrap(), "enabled");
+    assert_eq!(recs[0].get("link").unwrap(), "up");
+    assert_eq!(recs[0].get("speed").unwrap(), "200Gbps");
+    assert_eq!(recs[0].get("ipv4_address").unwrap(), "192.168.12.0/31");
+}
+
+#[test]
+fn dnos_show_interfaces_detail() {
+    let output = include_str!("fixtures/drivenets_dnos/show_interfaces_detail.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_interfaces_detail", output).unwrap();
+
+    assert_eq!(recs.len(), 52);
+    assert_eq!(recs[0].get("interface").unwrap(), "bundle-12");
+    assert_eq!(recs[0].get("admin_state").unwrap(), "enabled");
+    assert_eq!(recs[0].get("mac_address").unwrap(), "84:40:76:d9:0e:4e");
+    assert_eq!(recs[0].get("speed").unwrap(), "200Gbps");
+    assert_eq!(recs[0].get("ipv4_address").unwrap(), "192.168.12.0/31");
+    assert_eq!(recs[0].get("l2_mtu").unwrap(), "1514");
+}
+
+#[test]
+fn dnos_show_interfaces_transceiver() {
+    let output = include_str!("fixtures/drivenets_dnos/show_interfaces_transceiver.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_interfaces_transceiver", output).unwrap();
+
+    assert_eq!(recs.len(), 40);
+    assert_eq!(recs[0].get("interface").unwrap(), "ge100-0/0/0");
+    assert_eq!(recs[0].get("identifier").unwrap(), "QSFP28");
+    assert_eq!(recs[0].get("vendor_name").unwrap(), "FINISAR CORP.");
+    assert_eq!(recs[0].get("vendor_sn").unwrap(), "U4DADNU");
+}
+
+#[test]
+fn dnos_show_config_flatten() {
+    let output = include_str!("fixtures/drivenets_dnos/show_config_flatten.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_config_flatten", output).unwrap();
+
+    assert_eq!(recs.len(), 36);
+    assert_eq!(recs[0].get("line").unwrap(), "hostname DN-SA-01");
+    assert_eq!(recs[1].get("line").unwrap(), "interface Management0");
+}
+
+#[test]
+fn dnos_show_lldp() {
+    let output = include_str!("fixtures/drivenets_dnos/show_lldp.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_lldp", output).unwrap();
+
+    assert_eq!(recs.len(), 6);
+    assert_eq!(recs[0].get("interface").unwrap(), "ge100-0/0/0");
+    assert_eq!(recs[0].get("transmit").unwrap(), "enabled");
+    assert_eq!(recs[0].get("receive").unwrap(), "enabled");
+    assert_eq!(recs[0].get("keepalive").unwrap(), "30");
+    assert_eq!(recs[0].get("holdtime").unwrap(), "120");
+}
+
+#[test]
+fn dnos_show_lldp_counters() {
+    let output = include_str!("fixtures/drivenets_dnos/show_lldp_counters.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_lldp_counters", output).unwrap();
+
+    assert_eq!(recs.len(), 6);
+    assert_eq!(recs[0].get("interface").unwrap(), "ge100-0/0/0");
+    assert_eq!(recs[0].get("pdu_rx").unwrap(), "49278");
+    assert_eq!(recs[0].get("pdu_tx").unwrap(), "49278");
+    assert_eq!(recs[0].get("inserted").unwrap(), "1");
+}
+
+#[test]
+fn dnos_show_lldp_neighbors() {
+    let output = include_str!("fixtures/drivenets_dnos/show_lldp_neighbors.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_lldp_neighbors", output).unwrap();
+
+    assert_eq!(recs.len(), 6);
+    assert_eq!(recs[0].get("interface").unwrap(), "ge100-0/0/0");
+    assert_eq!(recs[0].get("neighbor_name").unwrap(), "DN-SA-02");
+    assert_eq!(recs[0].get("neighbor_interface").unwrap(), "ge100-0/0/0");
+    assert_eq!(recs[0].get("neighbor_ttl").unwrap(), "120");
+}
+
+#[test]
+fn dnos_show_route_summary() {
+    let output = include_str!("fixtures/drivenets_dnos/show_route_summary.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_route_summary", output).unwrap();
+
+    assert_eq!(recs.len(), 6);
+    assert_eq!(recs[0].get("route_source").unwrap(), "connected");
+    assert_eq!(recs[0].get("routes").unwrap(), "12");
+    assert_eq!(recs[2].get("route_source").unwrap(), "bgp");
+    assert_eq!(recs[2].get("paths").unwrap(), "2500");
+    assert_eq!(recs[5].get("route_source").unwrap(), "Total");
+}
+
+#[test]
+fn dnos_show_system_hardware() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_hardware.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_system_hardware", output).unwrap();
+
+    assert_eq!(recs.len(), 1);
+    assert_eq!(recs[0].get("model").unwrap(), "NCP-40C");
+    assert_eq!(recs[0].get("serial_number").unwrap(), "WDY1957500030");
+    assert_eq!(recs[0].get("chassis_mac").unwrap(), "e8:c5:7a:03:56:1a");
+    assert_eq!(recs[0].get("host_name").unwrap(), "WDY1957500030");
+}
+
+#[test]
+fn dnos_show_system_hardware_cpu() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_hardware_cpu.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_system_hardware_cpu", output).unwrap();
+
+    assert_eq!(recs.len(), 16);
+    assert_eq!(recs[0].get("cpu").unwrap(), "0");
+    assert_eq!(recs[0].get("use_percent").unwrap(), "28");
+    assert_eq!(recs[15].get("cpu").unwrap(), "15");
+    assert_eq!(recs[15].get("use_percent").unwrap(), "45");
+}
+
+#[test]
+fn dnos_show_system_hardware_fan() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_hardware_fan.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_system_hardware_fan", output).unwrap();
+
+    assert_eq!(recs.len(), 8);
+    assert_eq!(recs[0].get("fan_id").unwrap(), "FAN0_RPM");
+    assert_eq!(recs[0].get("status").unwrap(), "OK");
+    assert_eq!(recs[0].get("speed_rpm").unwrap(), "6300");
+    assert_eq!(recs[0].get("max_rpm").unwrap(), "28500");
+}
+
+#[test]
+fn dnos_show_system_hardware_inventory() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_hardware_inventory.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_system_hardware_inventory", output).unwrap();
+
+    assert_eq!(recs.len(), 2);
+    assert_eq!(recs[0].get("component").unwrap(), "dn-ncc-0");
+    assert_eq!(recs[0].get("model").unwrap(), "NCP-40C");
+    assert_eq!(recs[1].get("component").unwrap(), "dn-ncp-0");
+    assert_eq!(recs[1].get("serial_number").unwrap(), "WDY1957500030");
+}
+
+#[test]
+fn dnos_show_system_hardware_power() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_hardware_power.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_system_hardware_power", output).unwrap();
+
+    assert_eq!(recs.len(), 2);
+    assert_eq!(recs[0].get("psu_id").unwrap(), "0");
+    assert_eq!(recs[0].get("status").unwrap(), "OK");
+    assert_eq!(recs[0].get("type").unwrap(), "AC 110V-220V");
+    assert_eq!(recs[0].get("serial").unwrap(), "S0A030Z851915000883");
+}
+
+#[test]
+fn dnos_show_system_hardware_temperature() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_hardware_temperature.txt");
+    let recs = netcli_core::parse_records("drivenets_dnos", "show_system_hardware_temperature", output).unwrap();
+
+    assert_eq!(recs.len(), 20);
+    assert_eq!(recs[0].get("sensor_name").unwrap(), "PSU0_TEMP");
+    assert_eq!(recs[0].get("temperature").unwrap(), "33.0");
+    assert_eq!(recs[0].get("status").unwrap(), "OK");
+    assert_eq!(recs[0].get("high_warning").unwrap(), "65");
+    assert_eq!(recs[0].get("high_critical").unwrap(), "70");
+}
+
+// ========================================================================
+// DNOS command API test
+// ========================================================================
+
+#[test]
+fn dnos_command_api_show_system_version() {
+    let output = include_str!("fixtures/drivenets_dnos/show_system_version.txt");
+    let v = parse_envelope(&netcli_core::parse_command_json("drivenets_dnos", "show system version", output));
+
+    assert_success(&v);
+    assert_eq!(v["commandKey"], "show_system_version");
+    assert_eq!(records(&v)[0]["system_name"], "DN-SA-01");
+}

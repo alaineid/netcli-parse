@@ -1,0 +1,13 @@
+Value INTERFACE (\S+)
+Value NEIGHBOR_NAME (\S*)
+Value NEIGHBOR_INTERFACE (\S*)
+Value NEIGHBOR_TTL (\S*)
+
+Start
+  ^\|\s+Interface\s+\| -> Header
+
+Header
+  ^\|{1,2}-+ -> Data
+
+Data
+  ^\|\s+${INTERFACE}\s+\|\s+${NEIGHBOR_NAME}\s*\|\s+${NEIGHBOR_INTERFACE}\s*\|\s+${NEIGHBOR_TTL}\s*\| -> Record

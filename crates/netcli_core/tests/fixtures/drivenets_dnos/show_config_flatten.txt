@@ -1,0 +1,52 @@
+! DriveNets DNOS Configuration - Flattened View
+! Generated: 2024-01-10 12:00:00 UTC
+! Software Version: DNOS 22.4.1
+!
+hostname DN-SA-01
+!
+interface Management0
+  ip address 10.10.10.1 255.255.255.0
+  no shutdown
+!
+interface Loopback0
+  ip address 192.168.0.1 255.255.255.255
+  no shutdown
+!
+interface GigabitEthernet0/0/0
+  description "Uplink to Core Router"
+  ip address 172.16.1.1 255.255.255.252
+  mtu 9000
+  no shutdown
+!
+interface GigabitEthernet0/0/1
+  description "Downlink to Access Switch"
+  ip address 172.16.2.1 255.255.255.252
+  no shutdown
+!
+router bgp 65000
+  bgp router-id 192.168.0.1
+  neighbor 10.10.10.2 remote-as 65001
+  neighbor 172.16.1.2 remote-as 65002
+  address-family ipv4 unicast
+    network 192.168.0.1/32
+    redistribute connected
+!
+ip route 0.0.0.0/0 10.10.10.254
+!
+logging host 10.10.10.100
+logging level informational
+!
+ntp server 10.10.10.50
+!
+snmp-server community public ro
+snmp-server contact admin@example.com
+snmp-server location "Data Center A, Rack 12"
+!
+line console
+  exec-timeout 30
+!
+line vty 0 15
+  transport input ssh
+  exec-timeout 60
+!
+end

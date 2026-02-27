@@ -1,0 +1,17 @@
+Value INTERFACE (\S+)
+Value PDU_RX (\d+)
+Value PDU_TX (\d+)
+Value INVALID_RX (\d+)
+Value DISCARDED (\d+)
+Value UNRECOGNIZED (\d+)
+Value INSERTED (\d+)
+Value DELETED (\d+)
+
+Start
+  ^\|\s+Interface -> Header
+
+Header
+  ^\|{1,2}-+ -> Data
+
+Data
+  ^\|\s+${INTERFACE}\s+\|\s+${PDU_RX}\s+\|\s+${PDU_TX}\s+\|\s+${INVALID_RX}\s+\|\s+${DISCARDED}\s+\|\s+${UNRECOGNIZED}\s+\|\s+${INSERTED}\s+\|\s+${DELETED}\s+\| -> Record

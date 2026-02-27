@@ -1,0 +1,17 @@
+Value FAN_ID (\S+)
+Value PRESENT (\S+)
+Value STATUS (\S+)
+Value SERIAL_NUMBER (\S+)
+Value SPEED_RPM (\d+)
+Value MAX_RPM (\d+)
+Value RPM_PERCENT (\d+)
+Value UPTIME (.+?)
+
+Start
+  ^\|\s+Fan\s+ID\s+\| -> Header
+
+Header
+  ^\|{1,2}-+ -> Data
+
+Data
+  ^\|\s+${FAN_ID}\s+\|\s+${PRESENT}\s+\|\s+${STATUS}\s+\|\s+${SERIAL_NUMBER}\s+\|\s+${SPEED_RPM}\s+\|\s+${MAX_RPM}\s+\|\s+${RPM_PERCENT}\s+\|\s+${UPTIME}\s*\| -> Record

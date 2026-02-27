@@ -1,0 +1,16 @@
+Value PSU_ID (\d+)
+Value PRESENT (\S+)
+Value STATUS (\S+)
+Value SERIAL (\S+)
+Value REVISION (\S+)
+Value TYPE (.+?)
+Value UPTIME (.+?)
+
+Start
+  ^\|\s+PSU\s+ID\s+\| -> Header
+
+Header
+  ^\|{1,2}-+ -> Data
+
+Data
+  ^\|\s+${PSU_ID}\s+\|\s+${PRESENT}\s+\|\s+${STATUS}\s+\|\s+${SERIAL}\s+\|\s+${REVISION}\s+\|\s+${TYPE}\s*\|\s+${UPTIME}\s*\| -> Record

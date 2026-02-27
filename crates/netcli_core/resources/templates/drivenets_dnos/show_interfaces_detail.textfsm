@@ -1,0 +1,22 @@
+Value Required INTERFACE (\S+)
+Value ADMIN_STATE (\S+)
+Value OPER_STATE (\S+)
+Value DESCRIPTION (.*)
+Value MAC_ADDRESS (\S+)
+Value SPEED (\S+)
+Value IPV4_ADDRESS (\S+)
+Value L2_MTU (\d+)
+Value IPV4_MTU (\d+)
+
+Start
+  ^Interface\s+${INTERFACE}\s*$$ -> IntBlock
+
+IntBlock
+  ^\tAdmin\s+state:\s+${ADMIN_STATE},\s+Operational\s+state:\s+${OPER_STATE}
+  ^\tDescription:\s+${DESCRIPTION}\s*$$
+  ^\tMAC\s+Address:\s+${MAC_ADDRESS}\s*$$
+  ^\tSpeed:\s+${SPEED},
+  ^\tIPv4\s+Address:\s+${IPV4_ADDRESS}\s*$$
+  ^\tL2\s+MTU:\s+${L2_MTU},.*IPv4\s+MTU:\s+${IPV4_MTU}
+  ^Interface\s+ -> Continue.Record
+  ^Interface\s+${INTERFACE}\s*$$ -> IntBlock

@@ -1,0 +1,18 @@
+Value SYSTEM_NAME (\S+)
+Value SYSTEM_TYPE (.+?)
+Value HARDWARE_MODEL (\S+)
+Value PLATFORM (\S+)
+Value SOFTWARE_VERSION (.+?)
+Value SERIAL_NUMBER (\S+)
+Value SYSTEM_UPTIME (.+?)
+Value LAST_REBOOT (.+?)
+
+Start
+  ^System\s+Name\s+:\s+${SYSTEM_NAME}\s*$$
+  ^System\s+Type\s+:\s+${SYSTEM_TYPE}\s*$$
+  ^Hardware\s+Model\s+:\s+${HARDWARE_MODEL}\s*$$
+  ^Platform\s+:\s+${PLATFORM}\s*$$
+  ^Software\s+Version\s*:\s+${SOFTWARE_VERSION}\s*$$
+  ^Serial\s+Number\s+:\s+${SERIAL_NUMBER}\s*$$
+  ^System\s+Uptime\s+:\s+${SYSTEM_UPTIME}\s*$$
+  ^Last\s+Reboot\s+:\s+${LAST_REBOOT}\s*$$ -> Record

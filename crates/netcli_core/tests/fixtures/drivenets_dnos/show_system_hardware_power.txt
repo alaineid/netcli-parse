@@ -1,0 +1,9 @@
+ncp 0 (dn-ncp-0)
+
+Power Supply Units:
+Redundancy mode: 1+1
+| PSU ID   | Present   | Status   | Serial              | Revision   | Type         | Uptime           |
+|----------+-----------+----------+---------------------+------------+--------------+------------------|
+| 0        | YES       | OK       | S0A030Z851915000883 | AM-2A02P10 | AC 110V-220V | 4 days, 22:32:21 |
+| 1        | YES       | OK       | S0A030Z851915000884 | AM-2A02P10 | AC 110V-220V | 4 days, 22:32:21 |
+

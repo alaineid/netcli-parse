@@ -1,0 +1,15 @@
+No data available for ncc0
+ncp 0 (dn-ncp-0)
+Fans:
+Redundancy mode: 3+1
+| Fan ID    | Present   | Status   | Serial Number   | Speed [RPM]   | Max RPM   | RPM %   | Uptime           |
+|-----------+-----------+----------+-----------------+---------------+-----------+---------+------------------|
+| FAN0_RPM  | YES       | OK       | N/A             | 6300          | 28500     | 22      | 17 days, 9:03:41 |
+| FAN1_RPM  | YES       | OK       | N/A             | 6300          | 28500     | 22      | 17 days, 9:03:41 |
+| FAN2_RPM  | YES       | OK       | N/A             | 6300          | 28500     | 22      | 17 days, 9:03:41 |
+| FAN3_RPM  | YES       | OK       | N/A             | 6200          | 28500     | 21      | 17 days, 9:03:41 |
+| PSU0_FAN1 | YES       | OK       | N/A             | 18432         | 31350     | 58      | 17 days, 9:03:41 |
+| PSU0_FAN2 | YES       | OK       | N/A             | 14848         | 28600     | 51      | 17 days, 9:03:41 |
+| PSU1_FAN1 | YES       | OK       | N/A             | 11776         | 31350     | 37      | 17 days, 9:03:41 |
+| PSU1_FAN2 | YES       | OK       | N/A             | 9344          | 28600     | 32      | 17 days, 9:03:41 |
+

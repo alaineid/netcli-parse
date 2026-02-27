@@ -1,0 +1,21 @@
+Value Filldown SYSTEM_NAME (.+?)
+Value Filldown CHASSIS_ID (.+?)
+Value Filldown KEEPALIVE (\d+)
+Value Filldown HOLDTIME (\d+)
+Value Required INTERFACE (\S+)
+Value TRANSMIT (\S+)
+Value RECEIVE (\S+)
+
+Start
+  ^System\s+Name:\s+${SYSTEM_NAME}\s*$$
+  ^Chassis\s+ID:\s+.*?(\S+)\s+\(Type -> Continue
+  ^Chassis\s+ID:\s+\S+\s+${CHASSIS_ID}\s+\(
+  ^\s+Keep-alive:\s+${KEEPALIVE}
+  ^\s+Hold-time:\s+${HOLDTIME}
+  ^Interfaces -> Interfaces
+
+Interfaces
+  ^\|{1,2}-+ -> IntData
+
+IntData
+  ^\|\s+${INTERFACE}\s+\|\s+${TRANSMIT}\s+\|\s+${RECEIVE}\s+\| -> Record

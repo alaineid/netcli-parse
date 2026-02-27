@@ -1,0 +1,15 @@
+================================================================================
+System Information
+================================================================================
+System Name     : DN-SA-01
+System Type     : DriveNets Network Cloud
+Hardware Model  : NCF-400G
+Platform        : NCF-400G
+Software Version: DNOS 25.4.0
+Version         : DNOS [25.4.0] build [234_dev], Copyright 2025 DRIVENETS LTD.
+Patch           : N/A
+Serial Number   : DN2024010001
+System Uptime   : 127 days, 14 hours, 33 minutes
+Last Reboot     : 2024-09-05 10:22:15 UTC
+
+================================================================================

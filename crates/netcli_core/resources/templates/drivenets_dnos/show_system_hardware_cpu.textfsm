@@ -1,0 +1,15 @@
+Value CPU (\d+)
+Value USE_PERCENT (\d+)
+
+Start
+  ^CPU\s+Usage -> CpuHeader
+
+CpuHeader
+  ^\|\s+CPU\s+\| -> CpuSep
+
+CpuSep
+  ^\|{1,2}-+ -> CpuData
+
+CpuData
+  ^\|\s+${CPU}\s+\|\s+${USE_PERCENT}\s+\| -> Record
+  ^\s*$$ -> Start

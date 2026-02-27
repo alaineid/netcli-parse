@@ -1,0 +1,30 @@
+System Status
+=============
+System Name       : DN-SA-01
+System Type       : DriveNets Network Cloud
+Software Version  : DNOS 21.3.5
+Uptime            : 45 days, 12:34:56
+
+Control Plane Status
+--------------------
+Primary NCC       : Active (Slot 1)
+Backup NCC        : Standby (Slot 2)
+Redundancy Mode   : 1+1 Hot Standby
+
+Data Plane Status
+-----------------
+Active NCPs       : 4
+NCF Status        : Operational
+NCP Utilization   : 35%
+
+System Health
+-------------
+Overall Status    : Healthy
+Alarms Active     : 0
+Warnings Active   : 2
+
+Resource Utilization
+--------------------
+CPU (Control)     : 45%
+Memory (Control)  : 62%
+Storage           : 28%

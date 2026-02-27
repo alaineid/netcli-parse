@@ -1,0 +1,790 @@
+Interface ge100-0/0/0
+Identifier                                    : QSFP28
+Extended identifier                           : 0xcc
+Extended identifier description               : Power Class 4 Module (3.5W max.)
+Extended identifier description               : CDR present in TX, CDR present in RX
+Connector                                     : 0x7 (LC type fiber connector)
+Transceiver class                             : active-optical
+Transceiver codes                             : 80 00 00 00 00 00 00 00
+Transceiver type                              : Ethernet compliance code: 100GBASE_LR4
+BR, Nominal                                   : 25500 Mbps
+Rate identifier                               : 00
+Length (SMF,km)                               : 10.0km
+Transmitter technology                        : 0x04 1310 nm DFB
+Laser wavelength                              : 1302 nm
+Laser wavelength tolerance                    : 0 nm
+Vendor name                                   : FINISAR CORP.   
+Vendor OUI                                    : 00:90:65
+Vendor PN                                     : FTLC1154RDPL    
+Vendor rev                                    : A0
+Vendor SN                                     : U4DADNU         
+Revision compliance                           : SFF-8636 Rev 2.5, 2.6 and 2.7
+Module temperature                            : 31.7 degrees C / 89.0 degrees F
+Module voltage                                : 3.3 V
+Alarm/warning flags implemented               : Yes
+Laser tx bias current (Channel 0)             : 41.3 mA
+Laser tx bias current (Channel 1)             : 40.7 mA
+Laser tx bias current (Channel 2)             : 41.0 mA
+Laser tx bias current (Channel 3)             : 41.6 mA
+Transmit avg optical power (Channel 0)        : 2.2 dBm / 1.6 mW
+Transmit avg optical power (Channel 1)        : 2.4 dBm / 1.7 mW
+Transmit avg optical power (Channel 2)        : 2.2 dBm / 1.7 mW
+Transmit avg optical power (Channel 3)        : 1.9 dBm / 1.5 mW
+Rcvr signal avg optical power (Channel 0)     : 2.2 dBm / 1.6 mW
+Rcvr signal avg optical power (Channel 1)     : 2.4 dBm / 1.7 mW
+Rcvr signal avg optical power (Channel 2)     : 2.3 dBm / 1.7 mW
+Rcvr signal avg optical power (Channel 3)     : 2.5 dBm / 1.8 mW
+Laser bias current high alarm (Chan 0)        : off
+Laser bias current low alarm (Chan 0)         : off
+Laser bias current high warning (Chan 0)      : off
+Laser bias current low warning (Chan 0)       : off
+Laser bias current high alarm (Chan 1)        : off
+Laser bias current low alarm (Chan 1)         : off
+Laser bias current high warning (Chan 1)      : off
+Laser bias current low warning (Chan 1)       : off
+Laser bias current high alarm (Chan 2)        : off
+Laser bias current low alarm (Chan 2)         : off
+Laser bias current high warning (Chan 2)      : off
+Laser bias current low warning (Chan 2)       : off
+Laser bias current high alarm (Chan 3)        : off
+Laser bias current low alarm (Chan 3)         : off
+Laser bias current high warning (Chan 3)      : off
+Laser bias current low warning (Chan 3)       : off
+Module temperature high alarm                 : off
+Module temperature low alarm                  : off
+Module temperature high warning               : off
+Module temperature low warning                : off
+Module voltage high alarm                     : off
+Module voltage low alarm                      : off
+Module voltage high warning                   : off
+Module voltage low warning                    : off
+Laser tx power high alarm (Channel 0)         : off
+Laser tx power low alarm (Channel 0)          : off
+Laser tx power high warning (Channel 0)       : off
+Laser tx power low warning (Channel 0)        : off
+Laser tx power high alarm (Channel 1)         : off
+Laser tx power low alarm (Channel 1)          : off
+Laser tx power high warning (Channel 1)       : off
+Laser tx power low warning (Channel 1)        : off
+Laser tx power high alarm (Channel 2)         : off
+Laser tx power low alarm (Channel 2)          : off
+Laser tx power high warning (Channel 2)       : off
+Laser tx power low warning (Channel 2)        : off
+Laser tx power high alarm (Channel 3)         : off
+Laser tx power low alarm (Channel 3)          : off
+Laser tx power high warning (Channel 3)       : off
+Laser tx power low warning (Channel 3)        : off
+Laser rx power high alarm (Channel 0)         : off
+Laser rx power low alarm (Channel 0)          : off
+Laser rx power high warning (Channel 0)       : off
+Laser rx power low warning (Channel 0)        : off
+Laser rx power high alarm (Channel 1)         : off
+Laser rx power low alarm (Channel 1)          : off
+Laser rx power high warning (Channel 1)       : off
+Laser rx power low warning (Channel 1)        : off
+Laser rx power high alarm (Channel 2)         : off
+Laser rx power low alarm (Channel 2)          : off
+Laser rx power high warning (Channel 2)       : off
+Laser rx power low warning (Channel 2)        : off
+Laser rx power high alarm (Channel 3)         : off
+Laser rx power low alarm (Channel 3)          : off
+Laser rx power high warning (Channel 3)       : off
+Laser rx power low warning (Channel 3)        : off
+Laser bias current high alarm threshold       : 55.0 mA
+Laser bias current low alarm threshold        : 25.0 mA
+Laser bias current high warning threshold     : 50.0 mA
+Laser bias current low warning threshold      : 30.0 mA
+Laser output power high alarm threshold       : 7.5 dBm / 5.6 mW
+Laser output power low alarm threshold        : -8.3 dBm / 0.1 mW
+Laser output power high warning threshold     : 4.5 dBm / 2.8 mW
+Laser output power low warning threshold      : -4.3 dBm / 0.4 mW
+Module temperature high alarm threshold       : 75.0 degrees C / 167.0 degrees F
+Module temperature low alarm threshold        : -5.0 degrees C / 23.0 degrees F
+Module temperature high warning threshold     : 70.0 degrees C / 158.0 degrees F
+Module temperature low warning threshold      : 0.0 degrees C / 32.0 degrees F
+Module voltage high alarm threshold           : 3.6 V
+Module voltage low alarm threshold            : 3.0 V
+Module voltage high warning threshold         : 3.5 V
+Module voltage low warning threshold          : 3.1 V
+Laser rx power high alarm threshold           : 5.5 dBm / 3.5 mW
+Laser rx power low alarm threshold            : -14.6 dBm / 0.0 mW
+Laser rx power high warning threshold         : 4.5 dBm / 2.8 mW
+Laser rx power low warning threshold          : -10.6 dBm / 0.1 mW
+
+
+
+Interface ge100-0/0/1
+Identifier                                    : QSFP28
+Extended identifier                           : 0xcc
+Extended identifier description               : Power Class 4 Module (3.5W max.)
+Extended identifier description               : CDR present in TX, CDR present in RX
+Connector                                     : 0x7 (LC type fiber connector)
+Transceiver class                             : active-optical
+Transceiver codes                             : 80 00 00 00 00 00 00 00
+Transceiver type                              : Ethernet compliance code: 100GBASE_LR4
+BR, Nominal                                   : 25500 Mbps
+Rate identifier                               : 00
+Length (SMF,km)                               : 10.0km
+Transmitter technology                        : 0x04 1310 nm DFB
+Laser wavelength                              : 1302 nm
+Laser wavelength tolerance                    : 0 nm
+Vendor name                                   : FINISAR CORP.   
+Vendor OUI                                    : 00:90:65
+Vendor PN                                     : FTLC1154RDPL    
+Vendor rev                                    : A0
+Vendor SN                                     : U22AJSM         
+Revision compliance                           : SFF-8636 Rev 2.5, 2.6 and 2.7
+Module temperature                            : 32.9 degrees C / 91.1 degrees F
+Module voltage                                : 3.3 V
+Alarm/warning flags implemented               : Yes
+Laser tx bias current (Channel 0)             : 42.2 mA
+Laser tx bias current (Channel 1)             : 41.4 mA
+Laser tx bias current (Channel 2)             : 40.9 mA
+Laser tx bias current (Channel 3)             : 40.2 mA
+Transmit avg optical power (Channel 0)        : 2.7 dBm / 1.9 mW
+Transmit avg optical power (Channel 1)        : 2.7 dBm / 1.9 mW
+Transmit avg optical power (Channel 2)        : 2.8 dBm / 1.9 mW
+Transmit avg optical power (Channel 3)        : 3.0 dBm / 2.0 mW
+Rcvr signal avg optical power (Channel 0)     : 2.4 dBm / 1.7 mW
+Rcvr signal avg optical power (Channel 1)     : 2.5 dBm / 1.8 mW
+Rcvr signal avg optical power (Channel 2)     : 2.9 dBm / 1.9 mW
+Rcvr signal avg optical power (Channel 3)     : 3.0 dBm / 2.0 mW
+Laser bias current high alarm (Chan 0)        : off
+Laser bias current low alarm (Chan 0)         : off
+Laser bias current high warning (Chan 0)      : off
+Laser bias current low warning (Chan 0)       : off          
+Laser bias current high alarm (Chan 1)        : off
+Laser bias current low alarm (Chan 1)         : off
+Laser bias current high warning (Chan 1)      : off
+Laser bias current low warning (Chan 1)       : off
+Laser bias current high alarm (Chan 2)        : off
+Laser bias current low alarm (Chan 2)         : off
+Laser bias current high warning (Chan 2)      : off
+Laser bias current low warning (Chan 2)       : off
+Laser bias current high alarm (Chan 3)        : off
+Laser bias current low alarm (Chan 3)         : off
+Laser bias current high warning (Chan 3)      : off
+Laser bias current low warning (Chan 3)       : off
+Module temperature high alarm                 : off
+Module temperature low alarm                  : off
+Module temperature high warning               : off
+Module temperature low warning                : off
+Module voltage high alarm                     : off
+Module voltage low alarm                      : off
+Module voltage high warning                   : off
+Module voltage low warning                    : off
+Laser tx power high alarm (Channel 0)         : off
+Laser tx power low alarm (Channel 0)          : off
+Laser tx power high warning (Channel 0)       : off
+Laser tx power low warning (Channel 0)        : off
+Laser tx power high alarm (Channel 1)         : off
+Laser tx power low alarm (Channel 1)          : off
+Laser tx power high warning (Channel 1)       : off
+Laser tx power low warning (Channel 1)        : off
+Laser tx power high alarm (Channel 2)         : off
+Laser tx power low alarm (Channel 2)          : off
+Laser tx power high warning (Channel 2)       : off
+Laser tx power low warning (Channel 2)        : off
+Laser tx power high alarm (Channel 3)         : off
+Laser tx power low alarm (Channel 3)          : off
+Laser tx power high warning (Channel 3)       : off
+Laser tx power low warning (Channel 3)        : off
+Laser rx power high alarm (Channel 0)         : off
+Laser rx power low alarm (Channel 0)          : off
+Laser rx power high warning (Channel 0)       : off
+Laser rx power low warning (Channel 0)        : off
+Laser rx power high alarm (Channel 1)         : off
+Laser rx power low alarm (Channel 1)          : off
+Laser rx power high warning (Channel 1)       : off
+Laser rx power low warning (Channel 1)        : off
+Laser rx power high alarm (Channel 2)         : off
+Laser rx power low alarm (Channel 2)          : off
+Laser rx power high warning (Channel 2)       : off
+Laser rx power low warning (Channel 2)        : off
+Laser rx power high alarm (Channel 3)         : off
+Laser rx power low alarm (Channel 3)          : off
+Laser rx power high warning (Channel 3)       : off
+Laser rx power low warning (Channel 3)        : off          
+Laser bias current high alarm threshold       : 55.0 mA
+Laser bias current low alarm threshold        : 25.0 mA
+Laser bias current high warning threshold     : 50.0 mA
+Laser bias current low warning threshold      : 30.0 mA
+Laser output power high alarm threshold       : 7.5 dBm / 5.6 mW
+Laser output power low alarm threshold        : -8.3 dBm / 0.1 mW
+Laser output power high warning threshold     : 4.5 dBm / 2.8 mW
+Laser output power low warning threshold      : -4.3 dBm / 0.4 mW
+Module temperature high alarm threshold       : 75.0 degrees C / 167.0 degrees F
+Module temperature low alarm threshold        : -5.0 degrees C / 23.0 degrees F
+Module temperature high warning threshold     : 70.0 degrees C / 158.0 degrees F
+Module temperature low warning threshold      : 0.0 degrees C / 32.0 degrees F
+Module voltage high alarm threshold           : 3.6 V
+Module voltage low alarm threshold            : 3.0 V
+Module voltage high warning threshold         : 3.5 V
+Module voltage low warning threshold          : 3.1 V
+Laser rx power high alarm threshold           : 5.5 dBm / 3.5 mW
+Laser rx power low alarm threshold            : -14.6 dBm / 0.0 mW
+Laser rx power high warning threshold         : 4.5 dBm / 2.8 mW
+Laser rx power low warning threshold          : -10.6 dBm / 0.1 mW
+
+
+
+Interface ge100-0/0/2
+Identifier                                    : QSFP28
+Extended identifier                           : 0xcc
+Extended identifier description               : Power Class 4 Module (3.5W max.)
+Extended identifier description               : CDR present in TX, CDR present in RX
+Connector                                     : 0x7 (LC type fiber connector)
+Transceiver class                             : active-optical
+Transceiver codes                             : 80 00 00 00 00 00 00 00
+Transceiver type                              : Ethernet compliance code: 100GBASE_LR4
+BR, Nominal                                   : 25500 Mbps
+Rate identifier                               : 00
+Length (SMF,km)                               : 10.0km
+Transmitter technology                        : 0x04 1310 nm DFB
+Laser wavelength                              : 1302 nm
+Laser wavelength tolerance                    : 0 nm
+Vendor name                                   : FINISAR CORP.   
+Vendor OUI                                    : 00:90:65
+Vendor PN                                     : FTLC1154RDPL    
+Vendor rev                                    : A0
+Vendor SN                                     : U1EAEPT         
+Revision compliance                           : SFF-8636 Rev 2.5, 2.6 and 2.7
+Module temperature                            : 31.6 degrees C / 88.8 degrees F
+Module voltage                                : 3.3 V
+Alarm/warning flags implemented               : Yes
+Laser tx bias current (Channel 0)             : 40.0 mA
+Laser tx bias current (Channel 1)             : 39.3 mA
+Laser tx bias current (Channel 2)             : 38.4 mA
+Laser tx bias current (Channel 3)             : 36.9 mA
+Transmit avg optical power (Channel 0)        : 2.6 dBm / 1.8 mW
+Transmit avg optical power (Channel 1)        : 2.2 dBm / 1.6 mW
+Transmit avg optical power (Channel 2)        : 2.0 dBm / 1.6 mW
+Transmit avg optical power (Channel 3)        : 2.7 dBm / 1.9 mW
+Rcvr signal avg optical power (Channel 0)     : 2.1 dBm / 1.6 mW
+Rcvr signal avg optical power (Channel 1)     : 2.7 dBm / 1.9 mW
+Rcvr signal avg optical power (Channel 2)     : 3.0 dBm / 2.0 mW
+Rcvr signal avg optical power (Channel 3)     : 2.8 dBm / 1.9 mW
+Laser bias current high alarm (Chan 0)        : off
+Laser bias current low alarm (Chan 0)         : off
+Laser bias current high warning (Chan 0)      : off
+Laser bias current low warning (Chan 0)       : off
+Laser bias current high alarm (Chan 1)        : off
+Laser bias current low alarm (Chan 1)         : off
+Laser bias current high warning (Chan 1)      : off
+Laser bias current low warning (Chan 1)       : off
+Laser bias current high alarm (Chan 2)        : off
+Laser bias current low alarm (Chan 2)         : off
+Laser bias current high warning (Chan 2)      : off
+Laser bias current low warning (Chan 2)       : off
+Laser bias current high alarm (Chan 3)        : off
+Laser bias current low alarm (Chan 3)         : off
+Laser bias current high warning (Chan 3)      : off
+Laser bias current low warning (Chan 3)       : off
+Module temperature high alarm                 : off
+Module temperature low alarm                  : off
+Module temperature high warning               : off
+Module temperature low warning                : off
+Module voltage high alarm                     : off
+Module voltage low alarm                      : off
+Module voltage high warning                   : off
+Module voltage low warning                    : off
+Laser tx power high alarm (Channel 0)         : off
+Laser tx power low alarm (Channel 0)          : off
+Laser tx power high warning (Channel 0)       : off
+Laser tx power low warning (Channel 0)        : off
+Laser tx power high alarm (Channel 1)         : off
+Laser tx power low alarm (Channel 1)          : off
+Laser tx power high warning (Channel 1)       : off
+Laser tx power low warning (Channel 1)        : off
+Laser tx power high alarm (Channel 2)         : off
+Laser tx power low alarm (Channel 2)          : off
+Laser tx power high warning (Channel 2)       : off
+Laser tx power low warning (Channel 2)        : off
+Laser tx power high alarm (Channel 3)         : off
+Laser tx power low alarm (Channel 3)          : off
+Laser tx power high warning (Channel 3)       : off
+Laser tx power low warning (Channel 3)        : off
+Laser rx power high alarm (Channel 0)         : off
+Laser rx power low alarm (Channel 0)          : off
+Laser rx power high warning (Channel 0)       : off
+Laser rx power low warning (Channel 0)        : off
+Laser rx power high alarm (Channel 1)         : off
+Laser rx power low alarm (Channel 1)          : off
+Laser rx power high warning (Channel 1)       : off
+Laser rx power low warning (Channel 1)        : off
+Laser rx power high alarm (Channel 2)         : off
+Laser rx power low alarm (Channel 2)          : off
+Laser rx power high warning (Channel 2)       : off
+Laser rx power low warning (Channel 2)        : off
+Laser rx power high alarm (Channel 3)         : off
+Laser rx power low alarm (Channel 3)          : off
+Laser rx power high warning (Channel 3)       : off
+Laser rx power low warning (Channel 3)        : off
+Laser bias current high alarm threshold       : 55.0 mA
+Laser bias current low alarm threshold        : 25.0 mA
+Laser bias current high warning threshold     : 50.0 mA
+Laser bias current low warning threshold      : 30.0 mA
+Laser output power high alarm threshold       : 7.5 dBm / 5.6 mW
+Laser output power low alarm threshold        : -8.3 dBm / 0.1 mW
+Laser output power high warning threshold     : 4.5 dBm / 2.8 mW
+Laser output power low warning threshold      : -4.3 dBm / 0.4 mW
+Module temperature high alarm threshold       : 75.0 degrees C / 167.0 degrees F
+Module temperature low alarm threshold        : -5.0 degrees C / 23.0 degrees F
+Module temperature high warning threshold     : 70.0 degrees C / 158.0 degrees F
+Module temperature low warning threshold      : 0.0 degrees C / 32.0 degrees F
+Module voltage high alarm threshold           : 3.6 V
+Module voltage low alarm threshold            : 3.0 V
+Module voltage high warning threshold         : 3.5 V
+Module voltage low warning threshold          : 3.1 V
+Laser rx power high alarm threshold           : 5.5 dBm / 3.5 mW
+Laser rx power low alarm threshold            : -14.6 dBm / 0.0 mW
+Laser rx power high warning threshold         : 4.5 dBm / 2.8 mW
+Laser rx power low warning threshold          : -10.6 dBm / 0.1 mW
+
+
+
+Interface ge100-0/0/3
+Identifier                                    : QSFP28
+Extended identifier                           : 0xcc
+Extended identifier description               : Power Class 4 Module (3.5W max.)
+Extended identifier description               : CDR present in TX, CDR present in RX
+Connector                                     : 0x7 (LC type fiber connector)
+Transceiver class                             : active-optical
+Transceiver codes                             : 80 00 00 00 00 00 00 00
+Transceiver type                              : Ethernet compliance code: 100GBASE_LR4
+BR, Nominal                                   : 25500 Mbps
+Rate identifier                               : 00
+Length (SMF,km)                               : 10.0km
+Transmitter technology                        : 0x04 1310 nm DFB
+Laser wavelength                              : 1302 nm
+Laser wavelength tolerance                    : 0 nm
+Vendor name                                   : FINISAR CORP.   
+Vendor OUI                                    : 00:90:65
+Vendor PN                                     : FTLC1154RDPL    
+Vendor rev                                    : A0
+Vendor SN                                     : U1AA54A         
+Revision compliance                           : SFF-8636 Rev 2.5, 2.6 and 2.7
+Module temperature                            : 34.7 degrees C / 94.5 degrees F
+Module voltage                                : 3.3 V
+Alarm/warning flags implemented               : Yes
+Laser tx bias current (Channel 0)             : 39.5 mA
+Laser tx bias current (Channel 1)             : 38.6 mA
+Laser tx bias current (Channel 2)             : 39.1 mA
+Laser tx bias current (Channel 3)             : 38.3 mA
+Transmit avg optical power (Channel 0)        : 1.9 dBm / 1.5 mW
+Transmit avg optical power (Channel 1)        : 2.1 dBm / 1.6 mW
+Transmit avg optical power (Channel 2)        : 1.9 dBm / 1.5 mW
+Transmit avg optical power (Channel 3)        : 2.4 dBm / 1.7 mW
+Rcvr signal avg optical power (Channel 0)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 1)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 2)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 3)     : -40.0 dBm / 0.0 mW
+Laser bias current high alarm (Chan 0)        : off
+Laser bias current low alarm (Chan 0)         : off
+Laser bias current high warning (Chan 0)      : off
+Laser bias current low warning (Chan 0)       : off
+Laser bias current high alarm (Chan 1)        : off
+Laser bias current low alarm (Chan 1)         : off
+Laser bias current high warning (Chan 1)      : off
+Laser bias current low warning (Chan 1)       : off
+Laser bias current high alarm (Chan 2)        : off
+Laser bias current low alarm (Chan 2)         : off
+Laser bias current high warning (Chan 2)      : off
+Laser bias current low warning (Chan 2)       : off
+Laser bias current high alarm (Chan 3)        : off
+Laser bias current low alarm (Chan 3)         : off
+Laser bias current high warning (Chan 3)      : off
+Laser bias current low warning (Chan 3)       : off
+Module temperature high alarm                 : off
+Module temperature low alarm                  : off
+Module temperature high warning               : off
+Module temperature low warning                : off
+Module voltage high alarm                     : off
+Module voltage low alarm                      : off
+Module voltage high warning                   : off
+Module voltage low warning                    : off
+Laser tx power high alarm (Channel 0)         : off
+Laser tx power low alarm (Channel 0)          : off
+Laser tx power high warning (Channel 0)       : off
+Laser tx power low warning (Channel 0)        : off
+Laser tx power high alarm (Channel 1)         : off
+Laser tx power low alarm (Channel 1)          : off
+Laser tx power high warning (Channel 1)       : off
+Laser tx power low warning (Channel 1)        : off
+Laser tx power high alarm (Channel 2)         : off
+Laser tx power low alarm (Channel 2)          : off          
+Laser tx power high warning (Channel 2)       : off
+Laser tx power low warning (Channel 2)        : off
+Laser tx power high alarm (Channel 3)         : off
+Laser tx power low alarm (Channel 3)          : off
+Laser tx power high warning (Channel 3)       : off
+Laser tx power low warning (Channel 3)        : off
+Laser rx power high alarm (Channel 0)         : off
+Laser rx power low alarm (Channel 0)          : on
+Laser rx power high warning (Channel 0)       : off
+Laser rx power low warning (Channel 0)        : on
+Laser rx power high alarm (Channel 1)         : off
+Laser rx power low alarm (Channel 1)          : on
+Laser rx power high warning (Channel 1)       : off
+Laser rx power low warning (Channel 1)        : on
+Laser rx power high alarm (Channel 2)         : off
+Laser rx power low alarm (Channel 2)          : on
+Laser rx power high warning (Channel 2)       : off
+Laser rx power low warning (Channel 2)        : on
+Laser rx power high alarm (Channel 3)         : off
+Laser rx power low alarm (Channel 3)          : on
+Laser rx power high warning (Channel 3)       : off
+Laser rx power low warning (Channel 3)        : on
+Laser bias current high alarm threshold       : 55.0 mA
+Laser bias current low alarm threshold        : 25.0 mA
+Laser bias current high warning threshold     : 50.0 mA
+Laser bias current low warning threshold      : 30.0 mA
+Laser output power high alarm threshold       : 7.5 dBm / 5.6 mW
+Laser output power low alarm threshold        : -8.3 dBm / 0.1 mW
+Laser output power high warning threshold     : 4.5 dBm / 2.8 mW
+Laser output power low warning threshold      : -4.3 dBm / 0.4 mW
+Module temperature high alarm threshold       : 75.0 degrees C / 167.0 degrees F
+Module temperature low alarm threshold        : -5.0 degrees C / 23.0 degrees F
+Module temperature high warning threshold     : 70.0 degrees C / 158.0 degrees F
+Module temperature low warning threshold      : 0.0 degrees C / 32.0 degrees F
+Module voltage high alarm threshold           : 3.6 V
+Module voltage low alarm threshold            : 3.0 V
+Module voltage high warning threshold         : 3.5 V
+Module voltage low warning threshold          : 3.1 V
+Laser rx power high alarm threshold           : 5.5 dBm / 3.5 mW
+Laser rx power low alarm threshold            : -14.6 dBm / 0.0 mW
+Laser rx power high warning threshold         : 4.5 dBm / 2.8 mW
+Laser rx power low warning threshold          : -10.6 dBm / 0.1 mW
+
+
+
+Interface ge100-0/0/4
+Identifier                                    : QSFP28
+Extended identifier                           : 0xcc
+Extended identifier description               : Power Class 4 Module (3.5W max.)
+Extended identifier description               : CDR present in TX, CDR present in RX
+Connector                                     : 0x7 (LC type fiber connector)
+Transceiver class                             : active-optical          
+Transceiver codes                             : 80 00 00 00 00 00 00 00
+Transceiver type                              : Ethernet compliance code: 100GBASE_LR4
+BR, Nominal                                   : 25500 Mbps
+Rate identifier                               : 00
+Length (SMF,km)                               : 10.0km
+Transmitter technology                        : 0x04 1310 nm DFB
+Laser wavelength                              : 1302 nm
+Laser wavelength tolerance                    : 0 nm
+Vendor name                                   : FINISAR CORP.   
+Vendor OUI                                    : 00:90:65
+Vendor PN                                     : FTLC1154RDPL    
+Vendor rev                                    : A0
+Vendor SN                                     : U2NAHZE         
+Revision compliance                           : SFF-8636 Rev 2.5, 2.6 and 2.7
+Module temperature                            : 28.1 degrees C / 82.7 degrees F
+Module voltage                                : 3.3 V
+Alarm/warning flags implemented               : Yes
+Laser tx bias current (Channel 0)             : 42.1 mA
+Laser tx bias current (Channel 1)             : 41.8 mA
+Laser tx bias current (Channel 2)             : 41.6 mA
+Laser tx bias current (Channel 3)             : 42.3 mA
+Transmit avg optical power (Channel 0)        : 2.7 dBm / 1.9 mW
+Transmit avg optical power (Channel 1)        : 2.4 dBm / 1.7 mW
+Transmit avg optical power (Channel 2)        : 2.3 dBm / 1.7 mW
+Transmit avg optical power (Channel 3)        : 2.3 dBm / 1.7 mW
+Rcvr signal avg optical power (Channel 0)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 1)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 2)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 3)     : -40.0 dBm / 0.0 mW
+Laser bias current high alarm (Chan 0)        : off
+Laser bias current low alarm (Chan 0)         : off
+Laser bias current high warning (Chan 0)      : off
+Laser bias current low warning (Chan 0)       : off
+Laser bias current high alarm (Chan 1)        : off
+Laser bias current low alarm (Chan 1)         : off
+Laser bias current high warning (Chan 1)      : off
+Laser bias current low warning (Chan 1)       : off
+Laser bias current high alarm (Chan 2)        : off
+Laser bias current low alarm (Chan 2)         : off
+Laser bias current high warning (Chan 2)      : off
+Laser bias current low warning (Chan 2)       : off
+Laser bias current high alarm (Chan 3)        : off
+Laser bias current low alarm (Chan 3)         : off
+Laser bias current high warning (Chan 3)      : off
+Laser bias current low warning (Chan 3)       : off
+Module temperature high alarm                 : off
+Module temperature low alarm                  : off
+Module temperature high warning               : off
+Module temperature low warning                : off
+Module voltage high alarm                     : off
+Module voltage low alarm                      : off
+Module voltage high warning                   : off
+Module voltage low warning                    : off
+Laser tx power high alarm (Channel 0)         : off
+Laser tx power low alarm (Channel 0)          : off
+Laser tx power high warning (Channel 0)       : off
+Laser tx power low warning (Channel 0)        : off
+Laser tx power high alarm (Channel 1)         : off
+Laser tx power low alarm (Channel 1)          : off
+Laser tx power high warning (Channel 1)       : off
+Laser tx power low warning (Channel 1)        : off
+Laser tx power high alarm (Channel 2)         : off
+Laser tx power low alarm (Channel 2)          : off
+Laser tx power high warning (Channel 2)       : off
+Laser tx power low warning (Channel 2)        : off
+Laser tx power high alarm (Channel 3)         : off
+Laser tx power low alarm (Channel 3)          : off
+Laser tx power high warning (Channel 3)       : off
+Laser tx power low warning (Channel 3)        : off
+Laser rx power high alarm (Channel 0)         : off
+Laser rx power low alarm (Channel 0)          : on
+Laser rx power high warning (Channel 0)       : off
+Laser rx power low warning (Channel 0)        : on
+Laser rx power high alarm (Channel 1)         : off
+Laser rx power low alarm (Channel 1)          : on
+Laser rx power high warning (Channel 1)       : off
+Laser rx power low warning (Channel 1)        : on
+Laser rx power high alarm (Channel 2)         : off
+Laser rx power low alarm (Channel 2)          : on
+Laser rx power high warning (Channel 2)       : off
+Laser rx power low warning (Channel 2)        : on
+Laser rx power high alarm (Channel 3)         : off
+Laser rx power low alarm (Channel 3)          : on
+Laser rx power high warning (Channel 3)       : off
+Laser rx power low warning (Channel 3)        : on
+Laser bias current high alarm threshold       : 55.0 mA
+Laser bias current low alarm threshold        : 25.0 mA
+Laser bias current high warning threshold     : 50.0 mA
+Laser bias current low warning threshold      : 30.0 mA
+Laser output power high alarm threshold       : 7.5 dBm / 5.6 mW
+Laser output power low alarm threshold        : -8.3 dBm / 0.1 mW
+Laser output power high warning threshold     : 4.5 dBm / 2.8 mW
+Laser output power low warning threshold      : -4.3 dBm / 0.4 mW
+Module temperature high alarm threshold       : 75.0 degrees C / 167.0 degrees F
+Module temperature low alarm threshold        : -5.0 degrees C / 23.0 degrees F
+Module temperature high warning threshold     : 70.0 degrees C / 158.0 degrees F
+Module temperature low warning threshold      : 0.0 degrees C / 32.0 degrees F
+Module voltage high alarm threshold           : 3.6 V
+Module voltage low alarm threshold            : 3.0 V
+Module voltage high warning threshold         : 3.5 V
+Module voltage low warning threshold          : 3.1 V
+Laser rx power high alarm threshold           : 5.5 dBm / 3.5 mW
+Laser rx power low alarm threshold            : -14.6 dBm / 0.0 mW
+Laser rx power high warning threshold         : 4.5 dBm / 2.8 mW          
+Laser rx power low warning threshold          : -10.6 dBm / 0.1 mW
+
+
+
+Interface ge100-0/0/5
+Transceiver not present
+
+Interface ge100-0/0/6
+Transceiver not present
+
+Interface ge100-0/0/7
+Transceiver not present
+
+Interface ge100-0/0/8
+Transceiver not present
+
+Interface ge100-0/0/9
+Transceiver not present
+
+Interface ge100-0/0/10
+Transceiver not present
+
+Interface ge100-0/0/11
+Transceiver not present
+
+Interface ge100-0/0/12
+Transceiver not present
+
+Interface ge100-0/0/13
+Transceiver not present
+
+Interface ge100-0/0/14
+Transceiver not present
+
+Interface ge100-0/0/15
+Transceiver not present
+
+Interface ge100-0/0/16
+Transceiver not present
+
+Interface ge100-0/0/17
+Transceiver not present
+
+Interface ge100-0/0/18
+Transceiver not present
+
+Interface ge100-0/0/19
+Transceiver not present
+
+Interface ge100-0/0/20
+Transceiver not present
+                      
+Interface ge100-0/0/21
+Transceiver not present
+
+Interface ge100-0/0/22
+Transceiver not present
+
+Interface ge100-0/0/23
+Transceiver not present
+
+Interface ge100-0/0/24
+Transceiver not present
+
+Interface ge100-0/0/25
+Transceiver not present
+
+Interface ge100-0/0/26
+Transceiver not present
+
+Interface ge100-0/0/27
+Transceiver not present
+
+Interface ge100-0/0/28
+Transceiver not present
+
+Interface ge100-0/0/29
+Transceiver not present
+
+Interface ge100-0/0/30
+Transceiver not present
+
+Interface ge100-0/0/31
+Transceiver not present
+
+Interface ge100-0/0/32
+Transceiver not present
+
+Interface ge100-0/0/33
+Transceiver not present
+
+Interface ge100-0/0/34
+Transceiver not present
+
+Interface ge100-0/0/35
+Transceiver not present
+
+Interface ge100-0/0/36
+Transceiver not present
+
+Interface ge100-0/0/37
+Transceiver not present
+
+Interface ge100-0/0/38                     
+Transceiver not present
+
+Interface ge100-0/0/39
+Identifier                                    : QSFP28
+Extended identifier                           : 0xcc
+Extended identifier description               : Power Class 4 Module (3.5W max.)
+Extended identifier description               : CDR present in TX, CDR present in RX
+Connector                                     : 0x7 (LC type fiber connector)
+Transceiver class                             : active-optical
+Transceiver codes                             : 80 00 00 00 00 00 00 00
+Transceiver type                              : Ethernet compliance code: 100GBASE_LR4
+BR, Nominal                                   : 25500 Mbps
+Rate identifier                               : 00
+Length (SMF,km)                               : 10.0km
+Transmitter technology                        : 0x04 1310 nm DFB
+Laser wavelength                              : 1302 nm
+Laser wavelength tolerance                    : 0 nm
+Vendor name                                   : FINISAR CORP.   
+Vendor OUI                                    : 00:90:65
+Vendor PN                                     : FTLC1154RDPL    
+Vendor rev                                    : A0
+Vendor SN                                     : U2NAHY0         
+Revision compliance                           : SFF-8636 Rev 2.5, 2.6 and 2.7
+Module temperature                            : 28.8 degrees C / 83.9 degrees F
+Module voltage                                : 3.3 V
+Alarm/warning flags implemented               : Yes
+Laser tx bias current (Channel 0)             : 42.2 mA
+Laser tx bias current (Channel 1)             : 42.8 mA
+Laser tx bias current (Channel 2)             : 43.2 mA
+Laser tx bias current (Channel 3)             : 41.6 mA
+Transmit avg optical power (Channel 0)        : 2.6 dBm / 1.8 mW
+Transmit avg optical power (Channel 1)        : 2.8 dBm / 1.9 mW
+Transmit avg optical power (Channel 2)        : 2.7 dBm / 1.9 mW
+Transmit avg optical power (Channel 3)        : 2.7 dBm / 1.8 mW
+Rcvr signal avg optical power (Channel 0)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 1)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 2)     : -40.0 dBm / 0.0 mW
+Rcvr signal avg optical power (Channel 3)     : -40.0 dBm / 0.0 mW
+Laser bias current high alarm (Chan 0)        : off
+Laser bias current low alarm (Chan 0)         : off
+Laser bias current high warning (Chan 0)      : off
+Laser bias current low warning (Chan 0)       : off
+Laser bias current high alarm (Chan 1)        : off
+Laser bias current low alarm (Chan 1)         : off
+Laser bias current high warning (Chan 1)      : off
+Laser bias current low warning (Chan 1)       : off
+Laser bias current high alarm (Chan 2)        : off
+Laser bias current low alarm (Chan 2)         : off
+Laser bias current high warning (Chan 2)      : off
+Laser bias current low warning (Chan 2)       : off
+Laser bias current high alarm (Chan 3)        : off
+Laser bias current low alarm (Chan 3)         : off
+Laser bias current high warning (Chan 3)      : off
+Laser bias current low warning (Chan 3)       : off
+Module temperature high alarm                 : off
+Module temperature low alarm                  : off
+Module temperature high warning               : off
+Module temperature low warning                : off
+Module voltage high alarm                     : off
+Module voltage low alarm                      : off
+Module voltage high warning                   : off
+Module voltage low warning                    : off
+Laser tx power high alarm (Channel 0)         : off
+Laser tx power low alarm (Channel 0)          : off
+Laser tx power high warning (Channel 0)       : off
+Laser tx power low warning (Channel 0)        : off
+Laser tx power high alarm (Channel 1)         : off
+Laser tx power low alarm (Channel 1)          : off
+Laser tx power high warning (Channel 1)       : off
+Laser tx power low warning (Channel 1)        : off
+Laser tx power high alarm (Channel 2)         : off
+Laser tx power low alarm (Channel 2)          : off
+Laser tx power high warning (Channel 2)       : off
+Laser tx power low warning (Channel 2)        : off
+Laser tx power high alarm (Channel 3)         : off
+Laser tx power low alarm (Channel 3)          : off
+Laser tx power high warning (Channel 3)       : off
+Laser tx power low warning (Channel 3)        : off
+Laser rx power high alarm (Channel 0)         : off
+Laser rx power low alarm (Channel 0)          : on
+Laser rx power high warning (Channel 0)       : off
+Laser rx power low warning (Channel 0)        : on
+Laser rx power high alarm (Channel 1)         : off
+Laser rx power low alarm (Channel 1)          : on
+Laser rx power high warning (Channel 1)       : off
+Laser rx power low warning (Channel 1)        : on
+Laser rx power high alarm (Channel 2)         : off
+Laser rx power low alarm (Channel 2)          : on
+Laser rx power high warning (Channel 2)       : off
+Laser rx power low warning (Channel 2)        : on
+Laser rx power high alarm (Channel 3)         : off
+Laser rx power low alarm (Channel 3)          : on
+Laser rx power high warning (Channel 3)       : off
+Laser rx power low warning (Channel 3)        : on
+Laser bias current high alarm threshold       : 55.0 mA
+Laser bias current low alarm threshold        : 25.0 mA
+Laser bias current high warning threshold     : 50.0 mA
+Laser bias current low warning threshold      : 30.0 mA
+Laser output power high alarm threshold       : 7.5 dBm / 5.6 mW
+Laser output power low alarm threshold        : -8.3 dBm / 0.1 mW
+Laser output power high warning threshold     : 4.5 dBm / 2.8 mW
+Laser output power low warning threshold      : -4.3 dBm / 0.4 mW
+Module temperature high alarm threshold       : 75.0 degrees C / 167.0 degrees F
+Module temperature low alarm threshold        : -5.0 degrees C / 23.0 degrees F          
+Module temperature high warning threshold     : 70.0 degrees C / 158.0 degrees F
+Module temperature low warning threshold      : 0.0 degrees C / 32.0 degrees F
+Module voltage high alarm threshold           : 3.6 V
+Module voltage low alarm threshold            : 3.0 V
+Module voltage high warning threshold         : 3.5 V
+Module voltage low warning threshold          : 3.1 V
+Laser rx power high alarm threshold           : 5.5 dBm / 3.5 mW
+Laser rx power low alarm threshold            : -14.6 dBm / 0.0 mW
+Laser rx power high warning threshold         : 4.5 dBm / 2.8 mW
+Laser rx power low warning threshold          : -10.6 dBm / 0.1 mW
+

@@ -1,0 +1,2289 @@
+Interface bundle-12
+	SNMP ifindex: 12291, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: up, Uptime: 17 days, 9:00:09
+	State transitions: 0, Last cleared: not present
+	Description: [A-ROUTER=DN-SA-01][A-PORT=bundle-12][Z-ROUTER=DN-SA-02][Z-PORT=bundle-12]
+	MAC Address: 84:40:76:d9:0e:4e
+	Speed: 200Gbps, Duplex: FULL, Bundle-id: N/A
+	Min-links: 1, Min-bandwidth: 0 kbps, Mixed-type: none
+	Max-links: 64 (non-revertive)
+	MPLS: enabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: 9300)
+	IPv4 Address: 192.168.12.0/31
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: fe80::8640:76ff:fed9:e4e/64, Status: Preferred
+	IPv6 Address: 2001::168:12:0/127, Status: Preferred
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: test_v4
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Number of configured members: 2
+	Members Information:
+| Interface   | Member State   | LACP Port State   | LACP Port Id    | LACP Period     | uBFD State   | EFM State   | BER State   |
+|             |                | actor/partner     | actor/partner   | actor/partner   |              |             |             |
+|-------------+----------------+-------------------+-----------------+-----------------+--------------+-------------+-------------|
+| ge100-0/0/0 | active         |                   |                 |                 |              |             | N/A         |
+| ge100-0/0/1 | active         |                   |                 |                 |              |             | N/A         |
+
+Interface bundle-12.1
+	SNMP ifindex: 13313, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: up, Uptime: 17 days, 9:00:09
+	Description: 
+	MAC Address: 84:40:76:d9:0e:4e
+	Speed: 200Gbps, Duplex: N/A, Bundle-id: N/A
+	MPLS: enabled
+	L2 MTU: 1518, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: 192.168.121.1/24
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: 802.1q, Vlan-Id: 121 (0x8100)
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+
+Interface bundle-12.2
+	SNMP ifindex: 13314, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: up, Uptime: 17 days, 9:00:09
+	Description: 
+	MAC Address: 84:40:76:d9:0e:4e
+	Speed: 200Gbps, Duplex: N/A, Bundle-id: N/A
+	MPLS: enabled
+	L2 MTU: 1518, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: 192.168.122.1/24
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: 802.1q, Vlan-Id: 122 (0x8100)
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+
+Interface bundle-12.3
+	SNMP ifindex: 13317, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: up, Uptime: 17 days, 9:00:09
+	Description: 
+	MAC Address: 84:40:76:d9:0e:4e
+	Speed: 200Gbps, Duplex: N/A, Bundle-id: N/A
+	MPLS: enabled
+	L2 MTU: 1518, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: 192.168.123.1/24
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: 802.1q, Vlan-Id: 123 (0x8100)
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+
+Interface bundle-15
+	SNMP ifindex: 12292, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: not present
+	Description: [A-ROUTER=DN-SA-01][A-PORT=bundle-15][Z-ROUTER=DN-SA-05][Z-PORT=bundle-15]
+	MAC Address: 84:40:76:ea:96:dc
+	Speed: N/A, Duplex: FULL, Bundle-id: N/A
+	Min-links: 1, Min-bandwidth: 0 kbps, Mixed-type: none
+	Max-links: 64 (non-revertive)
+	MPLS: enabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: 9300)
+	IPv4 Address: 192.168.15.1/30
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Number of configured members: 1
+	Members Information:
+| Interface   | Member State   | LACP Port State   | LACP Port Id    | LACP Period     | uBFD State   | EFM State   | BER State   |
+|             |                | actor/partner     | actor/partner   | actor/partner   |              |             |             |
+|-------------+----------------+-------------------+-----------------+-----------------+--------------+-------------+-------------|
+| ge100-0/0/4 | link-down      |                   |                 |                 |              |             | N/A         |
+
+Interface bundle-111
+	SNMP ifindex: 12290, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: not present
+	Description: [A-ROUTER=DN-SA-01][A-PORT=bundle-111][Z-ROUTER=DN-CL-01][Z-PORT=bundle-111]
+	MAC Address: 84:40:76:af:80:e0
+	Speed: N/A, Duplex: FULL, Bundle-id: N/A
+	Min-links: 1, Min-bandwidth: 0 kbps, Mixed-type: none
+	Max-links: 10 (non-revertive)
+	MPLS: enabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: 9300)
+	IPv4 Address: 192.168.111.0/31
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: 192:168:111::/127, Status: Unknown
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Number of configured members: 1
+	Members Information:
+| Interface   | Member State   | LACP Port State   | LACP Port Id    | LACP Period     | uBFD State   | EFM State   | BER State   |
+|             |                | actor/partner     | actor/partner   | actor/partner   |              |             |             |
+|-------------+----------------+-------------------+-----------------+-----------------+--------------+-------------+-------------|
+| ge100-0/0/3 | link-down      |                   |                 |                 |              |             | N/A         |
+
+Interface bundle-225
+	SNMP ifindex: 12293, Network-Service: EVPN (evpn-lan-mh)
+	Admin state: enabled, Operational state: down, Uptime: 0 days, 0:00:00
+	startup-delay: None, estimated-remaining-time: 0 seconds
+	State transitions: 0, Last cleared: not present
+	Description: 
+	MAC Address: 84:40:76:7b:4c:ed
+	Speed: N/A, Duplex: FULL, Bundle-id: N/A
+	Min-links: 1, Min-bandwidth: 0 kbps, Mixed-type: none
+	Max-links: 64 (non-revertive)
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	VLAN manipulation:
+		Ingress mapping: N/A
+		Egress mapping: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	L2-service state: enabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Number of configured members: 0
+
+Interface ge100-0/0/0
+	SNMP ifindex: 1, Network-Service: VRF (default)
+	Admin state: enabled, Physical link state: up, Operational state: up, Uptime: 17 days, 9:00:09
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: [A-ROUTER=DN-SA-01][A-PORT=ge100-0/0/0][Z-ROUTER=DN-SA-02][Z-PORT=ge100-0/0/0]
+	MAC Address: 84:40:76:d9:0e:4e (HW: e8:c5:7a:39:bc:21)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: 12
+	Port-priority: 32768
+	Port-number: 1
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 1, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/1
+	SNMP ifindex: 2, Network-Service: VRF (default)
+	Admin state: enabled, Physical link state: up, Operational state: up, Uptime: 17 days, 9:00:09
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: [A-ROUTER=DN-SA-01][A-PORT=ge100-0/0/1][Z-ROUTER=DN-SA-02][Z-PORT=ge100-0/0/1]
+	MAC Address: 84:40:76:d9:0e:4e (HW: e8:c5:7a:39:bc:25)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: 12
+	Port-priority: 32768
+	Port-number: 2
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 1, Remote Faults: 1
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/2
+	SNMP ifindex: 13, Network-Service: VRF (default)
+	Admin state: enabled, Physical link state: up, Operational state: up, Uptime: 17 days, 9:00:08
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: [A-ROUTER=DN-SA-01][A-PORT=ge100-0/0/2][Z-ROUTER=DN-CL-01][Z-PORT=ge100-0/0/0]
+	MAC Address: e8:c5:7a:39:bc:29 (HW: e8:c5:7a:39:bc:29)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 3
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 1, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/2.10
+	SNMP ifindex: 13315, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: up, Uptime: 17 days, 9:00:08
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:29
+	Speed: 100Gbps, Duplex: N/A, Bundle-id: N/A
+	MPLS: disabled
+	L2 MTU: 1518, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: 802.1q, Vlan-Id: 10 (0x8100)
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: 
+
+Interface ge100-0/0/3
+	SNMP ifindex: 24, Network-Service: VRF (default)
+	Admin state: enabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: [A-ROUTER=DN-SA-01][A-PORT=ge100-0/0/3][Z-ROUTER=DN-CL-01][Z-PORT=ge400-1/0/0]
+	MAC Address: 84:40:76:af:80:e0 (HW: e8:c5:7a:39:bc:2d)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: 111
+	Port-priority: 32768
+	Port-number: 4
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: Local Fault, Local Faults: 1, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/4
+	SNMP ifindex: 35, Network-Service: VRF (default)
+	Admin state: enabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: [A-ROUTER=DN-SA-01][A-PORT=ge100-0/0/4][Z-ROUTER=DN-SA-05][Z-PORT=ge100-0/0/0]
+	MAC Address: 84:40:76:ea:96:dc (HW: e8:c5:7a:39:bc:31)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: 15
+	Port-priority: 32768
+	Port-number: 5
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: Local Fault, Local Faults: 1, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/5
+	SNMP ifindex: 36, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: TEST
+	MAC Address: e8:c5:7a:39:bc:35 (HW: e8:c5:7a:39:bc:35)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 6
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/5.10
+	SNMP ifindex: 13316, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: down, Uptime: 0 days, 0:00:00
+	Description: TEST
+	MAC Address: e8:c5:7a:39:bc:35
+	Speed: 100Gbps, Duplex: N/A, Bundle-id: N/A
+	MPLS: disabled
+	L2 MTU: 1518, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: 802.1q, Vlan-Id: 10 (0x8100)
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+
+Interface ge100-0/0/6
+	SNMP ifindex: 37, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:39 (HW: e8:c5:7a:39:bc:39)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 7
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/7
+	SNMP ifindex: 38, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:3d (HW: e8:c5:7a:39:bc:3d)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 8
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/8
+	SNMP ifindex: 39, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:41 (HW: e8:c5:7a:39:bc:41)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 9
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/9
+	SNMP ifindex: 40, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:45 (HW: e8:c5:7a:39:bc:45)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 10
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/10
+	SNMP ifindex: 3, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:49 (HW: e8:c5:7a:39:bc:49)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 11
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/11
+	SNMP ifindex: 4, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:4d (HW: e8:c5:7a:39:bc:4d)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 12
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/12
+	SNMP ifindex: 5, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:51 (HW: e8:c5:7a:39:bc:51)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 13
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/13
+	SNMP ifindex: 6, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:55 (HW: e8:c5:7a:39:bc:55)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 14
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/14
+	SNMP ifindex: 7, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:59 (HW: e8:c5:7a:39:bc:59)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 15
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/15
+	SNMP ifindex: 8, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:5d (HW: e8:c5:7a:39:bc:5d)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 16
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/16
+	SNMP ifindex: 9, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:61 (HW: e8:c5:7a:39:bc:61)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 17
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/17
+	SNMP ifindex: 10, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:65 (HW: e8:c5:7a:39:bc:65)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 18
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/18
+	SNMP ifindex: 11, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:69 (HW: e8:c5:7a:39:bc:69)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 19
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/19
+	SNMP ifindex: 12, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:6d (HW: e8:c5:7a:39:bc:6d)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 20
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/20
+	SNMP ifindex: 14, Network-Service: VRF (default)
+	Admin state: enabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 2 days, 16:59:52
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:71 (HW: e8:c5:7a:39:bc:71)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 21
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: 100.100.100.100/24
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: Local Fault, Local Faults: 1, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/21
+	SNMP ifindex: 15, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:73 (HW: e8:c5:7a:39:bc:73)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 22
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/22
+	SNMP ifindex: 16, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:75 (HW: e8:c5:7a:39:bc:75)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 23
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/23
+	SNMP ifindex: 17, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:77 (HW: e8:c5:7a:39:bc:77)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 24
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/24
+	SNMP ifindex: 18, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:79 (HW: e8:c5:7a:39:bc:79)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 25
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/25
+	SNMP ifindex: 19, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:7b (HW: e8:c5:7a:39:bc:7b)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 26
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/26
+	SNMP ifindex: 20, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	Tracking-policy:
+		Member of Tracking Groups: evpn
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:7d (HW: e8:c5:7a:39:bc:7d)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 27
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/27
+	SNMP ifindex: 21, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:7f (HW: e8:c5:7a:39:bc:7f)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 28
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/28
+	SNMP ifindex: 22, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:81 (HW: e8:c5:7a:39:bc:81)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 29
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/29
+	SNMP ifindex: 23, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:83 (HW: e8:c5:7a:39:bc:83)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 30
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/30
+	SNMP ifindex: 25, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:85 (HW: e8:c5:7a:39:bc:85)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 31
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/31
+	SNMP ifindex: 26, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:87 (HW: e8:c5:7a:39:bc:87)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 32
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/32
+	SNMP ifindex: 27, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:89 (HW: e8:c5:7a:39:bc:89)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 33
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/33
+	SNMP ifindex: 28, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:8b (HW: e8:c5:7a:39:bc:8b)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 34
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/34
+	SNMP ifindex: 29, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:8d (HW: e8:c5:7a:39:bc:8d)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 35
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/35
+	SNMP ifindex: 30, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:8f (HW: e8:c5:7a:39:bc:8f)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 36
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/36
+	SNMP ifindex: 31, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:91 (HW: e8:c5:7a:39:bc:91)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 37
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/37
+	SNMP ifindex: 32, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:93 (HW: e8:c5:7a:39:bc:93)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 38
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/38
+	SNMP ifindex: 33, Network-Service: VRF (default)
+	Admin state: disabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: 
+	MAC Address: e8:c5:7a:39:bc:95 (HW: e8:c5:7a:39:bc:95)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 39
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: None, Local Faults: 0, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface ge100-0/0/39
+	SNMP ifindex: 34, Network-Service: VRF (default)
+	Admin state: enabled, Physical link state: down, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: 17 days, 9:07:09
+	Description: [A-ROUTER=DN-SA-01][A-PORT=ge100-0/0/39][Z-ROUTER=IXIA-1][Z-PORT=ens1f0np0]
+	MAC Address: e8:c5:7a:39:bc:97 (HW: e8:c5:7a:39:bc:97)
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	Port-priority: 32768
+	Port-number: 40
+	MPLS: disabled
+	L2 MTU: 1514, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Priority Flow Control: disabled
+		Deadlock: disabled, Deadlock occurrences: 0
+	Carrier-delay: up: 0 ms, down: 0 ms, on-startup: 0 seconds (on-startup remaining time: 0 seconds)
+	FEC: none
+	LFS: Current Fault: Local Fault, Local Faults: 1, Remote Faults: 0
+	EFM: Admin state: N/A, Status: N/A
+	BER: Current-BER: None, Status: Disabled
+		BER-SD: admin-state: disabled, Threshold: 1e-8, Number of Hits: 0
+		BER-SF: admin-state: disabled, Threshold: 1e-5, Number of Hits: 0
+	Synchronous-Ethernet: non-synchronous
+	PTP Admin-state: disabled
+	PTP Port State: N/A
+	Interface-Dampening: disabled, current penalty counter: 0
+		Half-life: 60 seconds, reuse-threshold: 750, suppress-threshold: 2000,
+		Penalty: 1000, max-suppress: 300 seconds
+	L2-service state: disabled
+	Flowspec: disabled
+	Reason for last down state: N/A
+	Utilization rates (input/output): 0%/0%
+	Utilization rate threshold: 100%
+
+Interface irb1
+	SNMP ifindex: 41985, Network-Service: VRF (default), BD (bd1)
+	Admin state: enabled, Operational state: down, Uptime: 0 days, 0:00:00
+	State transitions: 0, Last cleared: not present
+	Description: 
+	MAC Address: 84:40:76:3e:63:dd
+	Speed: 100Gbps, Duplex: FULL, Bundle-id: N/A
+	MPLS: disabled
+	L2 MTU: 1522, MPLS MTU: 1500, IPv4 MTU: 1500, IPv6 MTU: 1500 (Hardware MTU: N/A)
+	IPv4 Address: 10.1.1.3/24
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	ARP Timeout: 3600 seconds
+	NDP Timeout: 3600 seconds
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+		Install-default-route: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+	uRPF IPv4 check: disabled
+	uRPF IPv6 check: disabled
+	Flowspec: disabled
+	Reason for last down state: no operational attachment-circuits in the bridge-domain associated with interface irb1
+
+Interface lo0
+	SNMP ifindex: 8193, Network-Service: VRF (default)
+	Admin state: enabled, Operational state: up, Uptime: 17 days, 9:07:10
+	Description: 
+	MAC Address: N/A
+	Speed: N/A, Duplex: N/A, Bundle-id: N/A
+	MPLS: disabled, MTU: 1514
+	IPv4 Address: N/A
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+
+Interface lo10
+	SNMP ifindex: 8194, Network-Service: VRF (test-vrf-interfaces-audit)
+	Admin state: enabled, Operational state: up, Uptime: 17 days, 9:07:10
+	Description: 
+	MAC Address: N/A
+	Speed: N/A, Duplex: N/A, Bundle-id: N/A
+	MPLS: disabled, MTU: 1514
+	IPv4 Address: 111.111.111.111/32
+	Secondary IPv4 addresses: N/A
+	IPv6 Admin state: enabled
+	IPv6 local: N/A, Status: N/A
+	IPv6 Address: N/A, Status: N/A
+	NDP Router-advertisement
+		Prefix-advertisement: disabled
+	Encapsulation: ethernet
+	L2 originated VLAN tags: N/A
+	Access-list IPv4: In: N/A, Out: N/A
+	Access-list IPv6: In: N/A, Out: N/A
+	Access-list Eth: In: N/A, Out: N/A
+
+
+	

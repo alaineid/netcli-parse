@@ -1,0 +1,13 @@
+Value INTERFACE (\S+)
+Value ADMIN (\S+)
+Value LINK (\S+)
+Value OPER (\S+)
+Value SPEED (\S+)
+Value MTU (\d+)
+Value IPV4_ADDRESS (\S+)
+
+Start
+  ^-{10,} -> Data
+
+Data
+  ^${INTERFACE}\s+${ADMIN}\s+${LINK}\s+${OPER}\s+${SPEED}\s+${MTU}\s+${IPV4_ADDRESS}\s*$$ -> Record

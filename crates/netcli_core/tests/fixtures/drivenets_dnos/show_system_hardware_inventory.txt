@@ -1,0 +1,53 @@
+ncc 0 (dn-ncc-0)
+Model: NCP-40C
+Hardware Model: N/A
+Hardware Revision: N/A
+Serial Number: N/A
+CPU Model: N/A
+Disk Information
+
+| Location   | Capacity   | Model   | Serial   |
+|------------+------------+---------+----------|
+
+Power Supply Units:
+
+| PSU ID   | Serial   | Revision   | Type   |
+|----------+----------+------------+--------|
+
+Fan Information:
+
+| Fan ID   | Serial   |
+|----------+----------|
+
+ncp 0 (dn-ncp-0)
+Model: NCP-40C
+Hardware Model: S9700-53DX (configured: S9700-53DX)
+Hardware Revision: 2, Build: 2
+Serial Number: WDY1957500030
+CPU Model: Intel(R) Xeon(R) CPU D-1548 @ 2.00GHz
+Disk Information
+
+| Location   | Capacity   | Model               | Serial               |
+|------------+------------+---------------------+----------------------|
+| 1          | 128.04 GB  | ATP I-Temp M.2 2280 | 99001190625000000178 |
+
+Power Supply Units:
+
+| PSU ID   | Serial              | Revision   | Type         |
+|----------+---------------------+------------+--------------|
+| 0        | S0A030Z851915000883 | AM-2A02P10 | AC 110V-220V |
+| 1        | S0A030Z851915000884 | AM-2A02P10 | AC 110V-220V |
+
+Fan Information:
+
+| Fan ID    | Serial   |
+|-----------+----------|
+| FAN0_RPM  | N/A      |
+| FAN1_RPM  | N/A      |
+| FAN2_RPM  | N/A      |
+| FAN3_RPM  | N/A      |
+| PSU0_FAN1 | N/A      |
+| PSU0_FAN2 | N/A      |
+| PSU1_FAN1 | N/A      |
+| PSU1_FAN2 | N/A      |
+

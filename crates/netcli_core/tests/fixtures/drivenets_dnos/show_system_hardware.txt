@@ -1,0 +1,206 @@
+No data available for ncc0
+ncp 0 (dn-ncp-0)
+Model: NCP-40C
+Hardware Model: S9700-53DX (configured: S9700-53DX)
+Hardware revision: 2, Build: 2
+Serial Number: WDY1957500030
+Chassis MAC: e8:c5:7a:03:56:1a
+Host Name: WDY1957500030
+Host Operating System: DriveNets BaseOS 2.25405748287
+ONIE version: 2021.02v15
+Manufacturer: Ufi Space
+
+Hardware Information:
+
+| Item          | Value                                 |
+|---------------+---------------------------------------|
+| CPU Model     | Intel(R) Xeon(R) CPU D-1548 @ 2.00GHz |
+| Hyper-Threads | 16 (2 per Core)                       |
+
+CPU Usage:
+
+| CPU   | Use %   |
+|-------+---------|
+| 0     | 28      |
+| 1     | 37      |
+| 2     | 17      |
+| 3     | 25      |
+| 4     | 21      |
+| 5     | 27      |
+| 6     | 20      |
+| 7     | 15      |
+| 8     | 22      |
+| 9     | 26      |
+| 10    | 24      |
+| 11    | 24      |
+| 12    | 26      |
+| 13    | 39      |
+| 14    | 25      |
+| 15    | 100     |
+
+Last 1 minute CPU load average: 28
+Last 5 minute CPU load average: 26
+
+
+Memory Usage:
+
+| Type     | Total    | Used     | Available   | Free     | Shared    | Buffers   | Cached   |
+|----------+----------+----------+-------------+----------+-----------+-----------+----------|
+| Physical | 66.78 GB | 35.59 GB | 30.31 GB    | 24.35 GB | 235.57 MB | 573.03 MB | 6.27 GB  |
+| Swap     | 0 bytes  | 0 bytes  |             | 0 bytes  |           |           |          |
+
+Memory channel 0 failure prediction test: PASS (0 days, 22:40:50)
+Memory channel 1 failure prediction test: PASS (0 days, 22:40:50)
+
+Disk Information:
+                                            
+| Item                 | Disk 1               |
+|----------------------+----------------------|
+| Physical location    | 1                    |
+| Capacity             | 128.04 GB            |
+| Model                | ATP I-Temp M.2 2280  |
+| Firmware revision    | P1228BF2             |
+| Serial Number        | 99001190625000000178 |
+| Health status        | OK                   |
+| Lifetime Utilization | 7%                   |
+| kB Written/s         | 1129                 |
+
+Disk Usage:
+
+| File System   | Size      | Used     | Avail     | Use%   | Mounted on                |
+|---------------+-----------+----------+-----------+--------+---------------------------|
+| /dev/loop1    | 1.02 GB   | 8.19 KB  | 1 GB      | 1.0%   | /packet-capture           |
+| /dev/sda1     | 268.15 MB | 3.58 MB  | 264.57 MB | 2.0%   | /boot/efi                 |
+| /dev/sda14    | 51.46 GB  | 14.99 GB | 36.46 GB  | 30.0%  | /docker                   |
+| /dev/sda15    | 4.14 GB   | 47.31 MB | 4.08 GB   | 2.0%   | /redis                    |
+| /dev/sda16    | 10.46 GB  | 4.98 GB  | 5.47 GB   | 48.0%  | /root-alt                 |
+| /dev/sda17    | 5.2 GB    | 102.4 KB | 5.18 GB   | 1.0%   | /home                     |
+| /dev/sda18    | 5.2 GB    | 45.06 KB | 5.18 GB   | 1.0%   | /tmp                      |
+| /dev/sda19    | 12.57 GB  | 5.64 GB  | 6.91 GB   | 45.0%  | /core                     |
+| /dev/sda2     | 124.21 MB | 37.79 MB | 83.73 MB  | 32.0%  | /mnt/onie-boot            |
+| /dev/sda20    | 10.46 GB  | 3.71 GB  | 6.73 GB   | 36.0%  | /                         |
+| /dev/sda21    | 19.76 GB  | 16.38 KB | 19.74 GB  | 1.0%   | /techsupport              |
+| efivarfs      | 262.14 KB | 29.04 KB | 227.99 KB | 12.0%  | /sys/firmware/efi/efivars |
+
+BIOS Version:
+	T99O114T12_R04.27
+
+	BIOS Mode:
+		UEFI
+
+PCIe Switch Version: 3
+
+PCIe Packet Processor Version:
+
+| Module Name   | HW Revision   | Image Version   |
+|---------------+---------------+-----------------|
+| BCM88690      | B1            | 2.505           |
+
+CPLD Version:
+
+| Module Name   | Image Version   |
+|---------------+-----------------|
+| CPU CPLD      | v0.33           |
+| MB CPLD1      | v1.25           |
+| MB CPLD2      | v0.24           |
+| MB CPLD3      | v0.24           |
+| MB CPLD4      | v0.24           |
+| MB CPLD5      | v0.24           |
+
+IPMI version:
+
+| Module   | Image 1     | Image 2     |    
+|          | version     | Version     |
+|----------+-------------+-------------|
+| ast2400e | 3.81.000000 | 3.81.000000 |
+
+On-board Management Ethernet Controller Version:
+
+| NIC   | Version   | Description                                   |
+|-------+-----------+-----------------------------------------------|
+| 1     | 2.10.0    | Intel(R) Ethernet Connection X552 10 GbE SFP+ |
+| 2     | 2.10.0    | Intel(R) Ethernet Connection X552 10 GbE SFP+ |
+| 3     | 3.25      | Intel(R) I210 Gigabit Network Connection      |
+
+Re-Timer Version:
+
+| Module name   | Image version   |
+|---------------+-----------------|
+| Retimer-1     | D032            |
+| Retimer-2     | D032            |
+| Retimer-3     | D032            |
+| Retimer-4     | D032            |
+| Retimer-5     | D032            |
+
+Gearbox Version:
+
+| Module name   | Image version   |
+|---------------+-----------------|
+| Gearbox-1     | D037            |
+| Gearbox-2     | D037            |
+| Gearbox-3     | D037            |
+| Gearbox-4     | D037            |
+| Gearbox-5     | D037            |
+| Gearbox-6     | D037            |
+| Gearbox-7     | D037            |
+| Gearbox-8     | D037            |
+| Gearbox-9     | D037            |
+| Gearbox-10    | D037            |
+
+UCD Version:
+
+| Module name   | Image version   |
+|---------------+-----------------|
+| TOP-MB        | R01             |
+
+USB Ports:
+	Port 0
+		Admin state: disabled
+
+
+Power Supply Units:
+Redundancy mode: 1+1
+| PSU ID   | Present   | Status   | Serial              | Revision   | Type         | Uptime           |
+|----------+-----------+----------+---------------------+------------+--------------+------------------|
+| 0        | YES       | FAIL     | S0A030Z851915000883 | AM-2A02P10 | AC 110V-220V |                  |
+| 1        | YES       | OK       | S0A030Z851915000884 | AM-2A02P10 | AC 110V-220V | 4 days, 22:32:21 |
+
+Temperature alarm raised: False             
+
+Temperature Sensors:
+
+| Sensor Name    | Temperature [C]   | Status   | High Warning    | High Critical   | Fan 100%             |
+|                |                   |          | Threshold [C]   | Threshold [C]   | User Threshold [C]   |
+|----------------+-------------------+----------+-----------------+-----------------+----------------------|
+| PSU0_TEMP      | 35.0              | OK       | 65              | 70              | N/A                  |
+| PSU0_TEMP2     | 35.0              | OK       | 115             | 120             | N/A                  |
+| PSU1_TEMP      | 32.0              | OK       | 65              | 70              | N/A                  |
+| PSU1_TEMP2     | 42.0              | OK       | 115             | 120             | N/A                  |
+| PSU1_TEMP3     | 44.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_BMC_ENV   | 38.0              | OK       | 60              | 65              | N/A                  |
+| TEMP_CPU_PECI  | 60.0              | OK       | 85              | 95              | N/A                  |
+| TEMP_ENV       | 40.0              | OK       | 60              | 65              | N/A                  |
+| TEMP_ENV_FRONT | 30.0              | OK       | 60              | 65              | N/A                  |
+| TEMP_J2_DIE_1  | 59.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_DIE_2  | 58.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_ENV_1  | 40.0              | OK       | 75              | 80              | N/A                  |
+| TEMP_J2_ENV_2  | 42.0              | OK       | 75              | 80              | N/A                  |
+| TEMP_J2_PM0    | 45.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_PM1    | 45.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_PM2    | 42.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_PM3    | 45.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_OP2       | 36.0              | OK       | 90              | 95              | N/A                  |
+| TEMP_OP2_ENV   | 39.0              | OK       | 70              | 75              | N/A                  |
+
+Fans:
+Redundancy mode: 3+1
+| Fan ID    | Present   | Status   | Serial Number   | Speed [RPM]   | Max RPM   | RPM %   | Uptime           |
+|-----------+-----------+----------+-----------------+---------------+-----------+---------+------------------|
+| FAN0_RPM  | YES       | OK       | N/A             | 6200          | 28500     | 21      | 4 days, 22:32:21 |
+| FAN1_RPM  | YES       | OK       | N/A             | 6300          | 28500     | 22      | 4 days, 22:32:21 |
+| FAN2_RPM  | YES       | OK       | N/A             | 6300          | 28500     | 22      | 4 days, 22:32:21 |
+| FAN3_RPM  | YES       | OK       | N/A             | 6200          | 28500     | 21      | 4 days, 22:32:21 |
+| PSU0_FAN1 | YES       | FAIL     | N/A             | 0             | 31350     | 0       |                  |
+| PSU0_FAN2 | YES       | FAIL     | N/A             | 0             | 28600     | 0       |                  |
+| PSU1_FAN1 | YES       | OK       | N/A             | 16896         | 31350     | 53      | 4 days, 22:32:21 |
+| PSU1_FAN2 | YES       | OK       | N/A             | 13440         | 28600     | 46      | 4 days, 22:32:21 |

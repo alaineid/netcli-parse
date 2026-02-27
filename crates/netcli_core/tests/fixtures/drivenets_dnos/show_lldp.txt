@@ -1,0 +1,28 @@
+System Name:  None
+Chassis ID: system-id None (Type: MAC Address)
+System Description: DRIVENETS LTD. DNOS [25.2.0.14]
+System Capabilities: 
+
+Timers
+ Keep-alive: 30 (seconds)
+ Hold-time: 120 (seconds)
+
+Supported TX for optional TLVs:
+| TLV                 | Status   |
+|---------------------+----------|
+| Management Address  | enabled  |
+| Port Description    | enabled  |
+| System Capabilities | enabled  |
+| System Description  | enabled  |
+| System Name         | enabled  |
+
+Interfaces:
+| Interface    | Transmit   | Receive   |
+|--------------+------------+-----------|
+| ge100-0/0/0  | enabled    | enabled   |
+| ge100-0/0/1  | enabled    | enabled   |
+| ge100-0/0/2  | enabled    | enabled   |
+| ge100-0/0/3  | enabled    | enabled   |
+| ge100-0/0/4  | enabled    | enabled   |
+| ge100-0/0/39 | enabled    | enabled   |
+

@@ -1,0 +1,30 @@
+No data available for ncc0
+ncp 0 (dn-ncp-0)
+Temperature alarm raised: False
+
+Temperature Sensors:
+
+| Sensor Name    | Temperature [C]   | Status   | High Warning    | High Critical   | Fan 100%             |
+|                |                   |          | Threshold [C]   | Threshold [C]   | User Threshold [C]   |
+|----------------+-------------------+----------+-----------------+-----------------+----------------------|
+| PSU0_TEMP      | 33.0              | OK       | 65              | 70              | N/A                  |
+| PSU0_TEMP2     | 33.0              | OK       | 115             | 120             | N/A                  |
+| PSU0_TEMP3     | 35.0              | OK       | 100             | 105             | N/A                  |
+| PSU1_TEMP      | 24.0              | OK       | 65              | 70              | N/A                  |
+| PSU1_TEMP2     | 34.0              | OK       | 115             | 120             | N/A                  |
+| PSU1_TEMP3     | 39.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_BMC_ENV   | 31.0              | OK       | 60              | 65              | N/A                  |
+| TEMP_CPU_PECI  | 51.0              | OK       | 85              | 95              | N/A                  |
+| TEMP_ENV       | 32.0              | OK       | 60              | 65              | N/A                  |
+| TEMP_ENV_FRONT | 26.0              | OK       | 60              | 65              | N/A                  |
+| TEMP_J2_DIE_1  | 52.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_DIE_2  | 50.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_ENV_1  | 35.0              | OK       | 75              | 80              | N/A                  |
+| TEMP_J2_ENV_2  | 35.0              | OK       | 75              | 80              | N/A                  |
+| TEMP_J2_PM0    | 38.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_PM1    | 39.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_PM2    | 37.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_J2_PM3    | 39.0              | OK       | 100             | 105             | N/A                  |
+| TEMP_OP2       | 33.0              | OK       | 90              | 95              | N/A                  |
+| TEMP_OP2_ENV   | 35.0              | OK       | 70              | 75              | N/A                  |
+

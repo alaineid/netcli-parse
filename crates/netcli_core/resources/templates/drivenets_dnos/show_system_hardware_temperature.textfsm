@@ -1,0 +1,15 @@
+Value SENSOR_NAME (\S+)
+Value TEMPERATURE (\S+)
+Value STATUS (\S+)
+Value HIGH_WARNING (\S+)
+Value HIGH_CRITICAL (\S+)
+Value FAN_100 (\S+)
+
+Start
+  ^\|\s+Sensor\s+Name\s+\| -> Header
+
+Header
+  ^\|{1,2}-+ -> Data
+
+Data
+  ^\|\s+${SENSOR_NAME}\s+\|\s+${TEMPERATURE}\s+\|\s+${STATUS}\s+\|\s+${HIGH_WARNING}\s+\|\s+${HIGH_CRITICAL}\s+\|\s+${FAN_100}\s+\| -> Record

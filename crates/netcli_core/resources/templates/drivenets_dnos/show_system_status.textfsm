@@ -1,0 +1,32 @@
+Value SYSTEM_NAME (.+?)
+Value SOFTWARE_VERSION (.+?)
+Value UPTIME (.+?)
+Value PRIMARY_NCC (.+?)
+Value BACKUP_NCC (.+?)
+Value REDUNDANCY_MODE (.+?)
+Value ACTIVE_NCPS (\d+)
+Value NCF_STATUS (\S+)
+Value NCP_UTILIZATION (.+?)
+Value OVERALL_STATUS (\S+)
+Value ALARMS_ACTIVE (\d+)
+Value WARNINGS_ACTIVE (\d+)
+Value CPU_CONTROL (.+?)
+Value MEMORY_CONTROL (.+?)
+Value STORAGE (.+?)
+
+Start
+  ^System\s+Name\s+:\s+${SYSTEM_NAME}\s*$$
+  ^Software\s+Version\s+:\s+${SOFTWARE_VERSION}\s*$$
+  ^Uptime\s+:\s+${UPTIME}\s*$$
+  ^Primary\s+NCC\s+:\s+${PRIMARY_NCC}\s*$$
+  ^Backup\s+NCC\s+:\s+${BACKUP_NCC}\s*$$
+  ^Redundancy\s+Mode\s+:\s+${REDUNDANCY_MODE}\s*$$
+  ^Active\s+NCPs\s+:\s+${ACTIVE_NCPS}\s*$$
+  ^NCF\s+Status\s+:\s+${NCF_STATUS}\s*$$
+  ^NCP\s+Utilization\s+:\s+${NCP_UTILIZATION}\s*$$
+  ^Overall\s+Status\s+:\s+${OVERALL_STATUS}\s*$$
+  ^Alarms\s+Active\s+:\s+${ALARMS_ACTIVE}\s*$$
+  ^Warnings\s+Active\s+:\s+${WARNINGS_ACTIVE}\s*$$
+  ^CPU\s+\(Control\)\s+:\s+${CPU_CONTROL}\s*$$
+  ^Memory\s+\(Control\)\s+:\s+${MEMORY_CONTROL}\s*$$
+  ^Storage\s+:\s+${STORAGE}\s*$$ -> Record

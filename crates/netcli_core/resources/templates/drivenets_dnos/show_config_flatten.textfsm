@@ -1,0 +1,6 @@
+Value Required LINE (.+)
+
+Start
+  ^!\s*$$
+  ^!\s+.+$$
+  ^${LINE} -> Record

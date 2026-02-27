@@ -1,0 +1,12 @@
+Value ROUTE_SOURCE (\S+)
+Value ROUTES (\d+)
+Value ACTIVE (\d+)
+Value BEST (\d+)
+Value PATHS (\d+)
+
+Start
+  ^={10,} -> Data
+
+Data
+  ^${ROUTE_SOURCE}\s+${ROUTES}\s+${ACTIVE}\s+${BEST}\s+${PATHS}\s*$$ -> Record
+  ^-{10,}

@@ -1,0 +1,20 @@
+Value Required INTERFACE (\S+)
+Value IDENTIFIER (.+?)
+Value VENDOR_NAME (.+?)
+Value VENDOR_PN (.+?)
+Value VENDOR_SN (.+?)
+Value MODULE_TEMPERATURE (.+?)
+Value MODULE_VOLTAGE (.+?)
+
+Start
+  ^Interface\s+${INTERFACE}\s*$$ -> IntBlock
+
+IntBlock
+  ^Identifier\s+:\s+${IDENTIFIER}\s*$$
+  ^Vendor\s+name\s+:\s+${VENDOR_NAME}\s*$$
+  ^Vendor\s+PN\s+:\s+${VENDOR_PN}\s*$$
+  ^Vendor\s+SN\s+:\s+${VENDOR_SN}\s*$$
+  ^Module\s+temperature\s+:\s+${MODULE_TEMPERATURE}\s*$$
+  ^Module\s+voltage\s+:\s+${MODULE_VOLTAGE}\s*$$
+  ^Interface\s+ -> Continue.Record
+  ^Interface\s+${INTERFACE}\s*$$ -> IntBlock

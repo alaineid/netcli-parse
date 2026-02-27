@@ -1,0 +1,14 @@
+Value MODEL (\S+)
+Value HARDWARE_MODEL (.+?)
+Value SERIAL_NUMBER (\S+)
+Value CHASSIS_MAC (\S+)
+Value HOST_NAME (\S+)
+Value CPU_MODEL (.+?)
+
+Start
+  ^Model:\s+${MODEL}\s*$$
+  ^Hardware\s+Model:\s+${HARDWARE_MODEL}\s*$$
+  ^Serial\s+Number:\s+${SERIAL_NUMBER}\s*$$
+  ^Chassis\s+MAC:\s+${CHASSIS_MAC}\s*$$
+  ^Host\s+Name:\s+${HOST_NAME}\s*$$
+  ^CPU\s+Model:\s+${CPU_MODEL}\s*$$ -> Record
