@@ -1,0 +1,14 @@
+Value PORT (\S+)
+Value XCVR_TYPE (\S+)
+Value VENDOR (\S+)
+Value TX_POWER (\S+)
+Value RX_POWER (\S+)
+Value TEMPERATURE (\S+)
+Value VOLTAGE (\S+)
+
+Start
+  ^-{5,} -> Data
+
+Data
+  ^${PORT}\s+${XCVR_TYPE}\s+${VENDOR}\s+${TX_POWER}\s+dBm\s+${RX_POWER}\s+dBm\s+${TEMPERATURE}\s+C\s+${VOLTAGE}\s+V -> Record
+  ^\s*$$

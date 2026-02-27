@@ -1,0 +1,8 @@
+  BIOS: version 07.61
+  NXOS: version 9.3(8)
+  NXOS image file is: bootflash:///nxos.9.3.8.bin
+  cisco Nexus9000 C93180YC-EX Chassis
+  Device name: nxos-switch1
+  Processor Board ID FDO21120ABC
+Kernel uptime is 45 day(s), 3 hour(s), 22 minute(s), 10 second(s)
+  Reason: Unknown

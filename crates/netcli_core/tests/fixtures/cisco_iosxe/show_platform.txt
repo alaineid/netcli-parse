@@ -1,0 +1,22 @@
+Chassis type: C8300-2N2S-4T2X
+
+Slot      Type                State                 Insert time (ago)
+--------- ------------------- --------------------- -----------------
+0         C8300-2N2S-4T2X     ok                    14w0d
+ 0/0      4x1G-2xSFP+         ok                    14w0d
+1         C8300-2N2S-4T2X     ok                    14w0d
+ 1/0      SM-X-64A            ok                    14w0d
+2         C8300-2N2S-4T2X     ok                    14w0d
+R0        C8300-2N2S-4T2X     ok, active            14w0d
+F0        C8300-2N2S-4T2X     ok, active            14w0d
+P0        PWR-CC1-650WDCR     ok                    14w0d
+P1        PWR-CC1-650WDCR     ok                    14w0d
+P2        C8300-FAN-2R-R      ok                    14w0d
+
+Slot      CPLD Version        Firmware Version
+--------- ------------------- ---------------------------------------
+0         20061845            17.18(2r)
+1         20061845            17.18(2r)
+2         20061845            17.18(2r)
+R0        20061845            17.18(2r)
+F0        20061845            17.18(2r)

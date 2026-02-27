@@ -1,0 +1,11 @@
+Arista DCS-7050TX-64
+Hardware version:    01.02
+Serial number:       JPE14080459
+System MAC address:  001c.7300.0001
+Software image version: 4.20.1F
+Architecture:          i386
+Internal build version: 4.20.1F-6820520.4201F
+Image format version: 1.0
+Uptime:                2 weeks, 3 days, 12 hours and 34 minutes
+Total memory:  8069292 kB
+Free memory:   5765088 kB

@@ -1,0 +1,12 @@
+Sensor Summary:  Environmental Monitoring
+Sensor: RPM: fan0         Location: P0
+Current State: Normal             Reading: 9936 RPM
+Sensor: RPM: fan0         Location: P2
+Current State: Normal             Reading: 6780 RPM
+Sensor: RPM: fan1         Location: P2
+Current State: Normal             Reading: 6720 RPM
+Sensor: RPM: fan2         Location: P2
+Current State: Normal             Reading: 6720 RPM
+Sensor: RPM: fan3         Location: P2
+Current State: Normal             Reading: 6720 RPM
+

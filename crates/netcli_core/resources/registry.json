@@ -2096,6 +2096,42 @@
     },
     {
       "platform": "cisco_ios",
+      "commandKey": "show_environment_sensor_rpm",
+      "template": "templates/cisco_ios/show_environment_sensor_rpm.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_environment_sensor_temperature",
+      "template": "templates/cisco_ios/show_environment_sensor_temperature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interfaces_transceiver",
+      "template": "templates/cisco_ios/show_interfaces_transceiver.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interfaces_transceiver_detail",
+      "template": "templates/cisco_ios/show_interfaces_transceiver_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_platform_resources",
+      "template": "templates/cisco_ios/show_platform_resources.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interface_ge_include_bia",
+      "template": "templates/cisco_ios/show_interface_ge_include_bia.textfsm",
+      "shape": "single"
+    },
+    {
+      "platform": "cisco_ios",
       "commandKey": "show_ip_arp",
       "template": "templates/cisco_ios/show_ip_arp.textfsm",
       "shape": "list"

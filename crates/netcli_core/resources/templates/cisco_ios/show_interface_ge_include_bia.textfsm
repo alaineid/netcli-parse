@@ -1,0 +1,6 @@
+Value HARDWARE_TYPE (.+?)
+Value MAC_ADDRESS ([a-fA-F0-9.]+)
+Value BIA ([a-fA-F0-9.]+)
+
+Start
+  ^Hardware\s+is\s+${HARDWARE_TYPE},\s+address\s+is\s+${MAC_ADDRESS}\s+\(bia\s+${BIA}\) -> Record

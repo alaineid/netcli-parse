@@ -1,0 +1,49 @@
+ITU Channel not available (Alarm reported)
+
+mA: milliamperes, dBm: decibels (milliwatts), NA or N/A: not applicable.
+++ : high alarm, +  : high warning, -  : low warning, -- : low alarm.
+A2D readance for internal calibration not supported by different vendors.
+
+                                         Optical   Optical
+                            Bias         Output    Input
+Port      Temp     Voltage  Current      Power     Power
+          (Celsius)(Volts)  (mA)         (dBm)     (dBm)
+---------+---------+-------+------------+---------+----------
+Te0/0/0    31.7     3.29      7.3         -2.1      -3.4
+Te0/0/1    32.9     3.30      7.1         -2.3      -4.1
+Te0/0/2    28.5     3.31      6.9         -1.8      -2.8
+Te0/0/3    29.1     3.30      7.0         -2.0      -3.2
+Hu0/0/0    31.7     3.30     41.3          2.2       2.2
+Hu0/0/1    32.9     3.30     42.2          2.7       2.4
+Gi0/0/0    25.4     3.28      5.2         -5.2      -6.8
+Gi0/0/1    26.2     3.29      5.4         -4.8      -7.1
+
+          Threshold Values
+                 Alarm              Warning
+Port     Temp     Voltage     Temp     Voltage
+         High/Low High/Low    High/Low High/Low
+         (Celsius)(Volts)     (Celsius)(Volts)
+---------+--------+---------+---------+---------+
+Te0/0/0   75/-5    3.60/3.00  70/0     3.50/3.10
+Te0/0/1   75/-5    3.60/3.00  70/0     3.50/3.10
+Te0/0/2   75/-5    3.60/3.00  70/0     3.50/3.10
+Te0/0/3   75/-5    3.60/3.00  70/0     3.50/3.10
+Hu0/0/0   75/-5    3.60/3.00  70/0     3.50/3.10
+Hu0/0/1   75/-5    3.60/3.00  70/0     3.50/3.10
+Gi0/0/0   75/-5    3.60/3.00  70/0     3.50/3.10
+Gi0/0/1   75/-5    3.60/3.00  70/0     3.50/3.10
+
+         Bias Current      Optical TX Power  Optical RX Power
+         Alarm   Warning   Alarm   Warning   Alarm   Warning
+Port     Hi/Lo   Hi/Lo     Hi/Lo   Hi/Lo     Hi/Lo   Hi/Lo
+         (mA)    (mA)      (dBm)   (dBm)     (dBm)   (dBm)
+---------+-------+---------+-------+---------+-------+---------+
+Te0/0/0   12/2   10/3      1/-11   -1/-9     1/-23   -1/-21
+Te0/0/1   12/2   10/3      1/-11   -1/-9     1/-23   -1/-21
+Te0/0/2   12/2   10/3      1/-11   -1/-9     1/-23   -1/-21
+Te0/0/3   12/2   10/3      1/-11   -1/-9     1/-23   -1/-21
+Hu0/0/0   55/25  50/30     8/-8    5/-4      6/-15   5/-11
+Hu0/0/1   55/25  50/30     8/-8    5/-4      6/-15   5/-11
+Gi0/0/0   10/1   8/2       -3/-12  -4/-10    -3/-28  -5/-26
+Gi0/0/1   10/1   8/2       -3/-12  -4/-10    -3/-28  -5/-26
+

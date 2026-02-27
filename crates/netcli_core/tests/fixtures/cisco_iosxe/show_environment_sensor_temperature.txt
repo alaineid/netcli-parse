@@ -1,0 +1,18 @@
+Sensor Summary:  Environmental Monitoring
+Sensor: Temp: Temp 1      Location: P0
+Current State: Normal             Reading: 25 Celsius
+Sensor: Temp: Temp 2      Location: P0
+Current State: Normal             Reading: 32 Celsius
+Sensor: Temp: Temp 3      Location: P0
+Current State: Normal             Reading: 55 Celsius
+Sensor: Temp: Inlet 1     Location: R0
+Current State: Normal             Reading: 27 Celsius
+Sensor: Temp: Inlet 2     Location: R0
+Current State: Normal             Reading: 26 Celsius
+Sensor: Temp: Outlet 1    Location: R0
+Current State: Normal             Reading: 34 Celsius
+Sensor: Temp: Outlet 2    Location: R0
+Current State: Normal             Reading: 26 Celsius
+Sensor: Temp: CP-CPU      Location: R0
+Current State: Normal             Reading: 45 Celsius
+

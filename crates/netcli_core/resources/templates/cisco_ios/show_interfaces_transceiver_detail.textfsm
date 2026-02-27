@@ -1,0 +1,17 @@
+Value PORT (\S+)
+Value TEMPERATURE (\S+)
+Value VOLTAGE (\S+)
+Value BIAS_CURRENT (\S+)
+Value TX_POWER (\S+)
+Value RX_POWER (\S+)
+
+Start
+  ^Port\s+Temp\s+Voltage -> ReadingsHeader
+  ^\s*$$
+
+ReadingsHeader
+  ^---------\+ -> Readings
+
+Readings
+  ^${PORT}\s+${TEMPERATURE}\s+${VOLTAGE}\s+${BIAS_CURRENT}\s+${TX_POWER}\s+${RX_POWER}\s*$$ -> Record
+  ^\s*$$ -> Start

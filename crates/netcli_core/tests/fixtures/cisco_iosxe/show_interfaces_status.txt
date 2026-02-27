@@ -1,0 +1,12 @@
+Port         Name               Status       Vlan       Duplex  Speed Type
+Gi0/0/0      Uplink-to-Core     connected    trunk      a-full  a-1000 1000BaseSX
+Gi0/0/1      Management         connected    1          a-full  a-1000 1000BaseTX
+Gi0/0/2                         notconnect   1            auto   auto 1000BaseTX
+Gi0/0/3                         notconnect   1            auto   auto 1000BaseTX
+Te0/0/0      Core-Link-1        connected    trunk      full    10G   10GBase-SR
+Te0/0/1      Core-Link-2        connected    trunk      full    10G   10GBase-SR
+Te0/0/2                         notconnect   1          full    10G   10GBase-SR
+Te0/0/3                         notconnect   1          full    10G   10GBase-SR
+Hu0/0/0      100G-Core          connected    trunk      full   100G   100GBase-LR4
+Hu0/0/1      100G-Backup        connected    trunk      full   100G   100GBase-LR4
+

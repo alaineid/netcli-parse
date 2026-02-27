@@ -1,0 +1,5 @@
+Device ID          Local Intrfce  Hldtme Capability  Platform      Port ID
+switch2.example.com
+                    Eth1/1         170    R S I s     N9K-C93180YC  Eth1/1
+switch3.example.com
+                    Eth1/2         163    R S I s     N9K-C9336C-FX Eth1/2

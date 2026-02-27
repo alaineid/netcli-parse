@@ -166,6 +166,128 @@ mod tests {
     }
 
     #[test]
+    fn ffi_null_command_key_returns_error() {
+        let platform = make_c("cisco_ios");
+        let output = make_c("text");
+
+        unsafe {
+            let ptr = netcli_parse_json(platform.as_ptr(), std::ptr::null(), output.as_ptr());
+            assert!(!ptr.is_null());
+
+            let json_str = CStr::from_ptr(ptr).to_str().unwrap();
+            let v: serde_json::Value = serde_json::from_str(json_str).unwrap();
+            assert_eq!(v["ok"], false);
+            assert_eq!(v["error"]["code"], "INVALID_INPUT");
+
+            netcli_free(ptr);
+        }
+    }
+
+    #[test]
+    fn ffi_null_output_returns_error() {
+        let platform = make_c("cisco_ios");
+        let cmd = make_c("show_version");
+
+        unsafe {
+            let ptr = netcli_parse_json(platform.as_ptr(), cmd.as_ptr(), std::ptr::null());
+            assert!(!ptr.is_null());
+
+            let json_str = CStr::from_ptr(ptr).to_str().unwrap();
+            let v: serde_json::Value = serde_json::from_str(json_str).unwrap();
+            assert_eq!(v["ok"], false);
+            assert_eq!(v["error"]["code"], "INVALID_INPUT");
+
+            netcli_free(ptr);
+        }
+    }
+
+    #[test]
+    fn ffi_all_null_returns_error() {
+        unsafe {
+            let ptr = netcli_parse_json(std::ptr::null(), std::ptr::null(), std::ptr::null());
+            assert!(!ptr.is_null());
+
+            let json_str = CStr::from_ptr(ptr).to_str().unwrap();
+            let v: serde_json::Value = serde_json::from_str(json_str).unwrap();
+            assert_eq!(v["ok"], false);
+
+            netcli_free(ptr);
+        }
+    }
+
+    #[test]
+    fn ffi_command_null_platform_returns_error() {
+        let cmd = make_c("show version");
+        let output = make_c("text");
+
+        unsafe {
+            let ptr = netcli_parse_command_json(std::ptr::null(), cmd.as_ptr(), output.as_ptr());
+            assert!(!ptr.is_null());
+
+            let json_str = CStr::from_ptr(ptr).to_str().unwrap();
+            let v: serde_json::Value = serde_json::from_str(json_str).unwrap();
+            assert_eq!(v["ok"], false);
+
+            netcli_free(ptr);
+        }
+    }
+
+    #[test]
+    fn ffi_command_null_command_returns_error() {
+        let platform = make_c("cisco_ios");
+        let output = make_c("text");
+
+        unsafe {
+            let ptr = netcli_parse_command_json(platform.as_ptr(), std::ptr::null(), output.as_ptr());
+            assert!(!ptr.is_null());
+
+            let json_str = CStr::from_ptr(ptr).to_str().unwrap();
+            let v: serde_json::Value = serde_json::from_str(json_str).unwrap();
+            assert_eq!(v["ok"], false);
+            assert_eq!(v["error"]["code"], "INVALID_INPUT");
+
+            netcli_free(ptr);
+        }
+    }
+
+    #[test]
+    fn ffi_command_null_output_returns_error() {
+        let platform = make_c("cisco_ios");
+        let cmd = make_c("show version");
+
+        unsafe {
+            let ptr = netcli_parse_command_json(platform.as_ptr(), cmd.as_ptr(), std::ptr::null());
+            assert!(!ptr.is_null());
+
+            let json_str = CStr::from_ptr(ptr).to_str().unwrap();
+            let v: serde_json::Value = serde_json::from_str(json_str).unwrap();
+            assert_eq!(v["ok"], false);
+            assert_eq!(v["error"]["code"], "INVALID_INPUT");
+
+            netcli_free(ptr);
+        }
+    }
+
+    #[test]
+    fn ffi_returns_valid_json_for_unknown_platform() {
+        let platform = make_c("nonexistent_os");
+        let cmd = make_c("show_version");
+        let output = make_c("some output");
+
+        unsafe {
+            let ptr = netcli_parse_json(platform.as_ptr(), cmd.as_ptr(), output.as_ptr());
+            assert!(!ptr.is_null());
+
+            let json_str = CStr::from_ptr(ptr).to_str().unwrap();
+            let v: serde_json::Value = serde_json::from_str(json_str).unwrap();
+            assert_eq!(v["ok"], false);
+            assert_eq!(v["error"]["code"], "TEMPLATE_NOT_FOUND");
+
+            netcli_free(ptr);
+        }
+    }
+
+    #[test]
     fn ffi_free_null_is_safe() {
         unsafe {
             netcli_free(std::ptr::null());

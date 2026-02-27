@@ -1,0 +1,14 @@
+Value Filldown PROCESSOR (\S+)
+Value Required RESOURCE (.+?)
+Value USAGE (\S+)
+Value MAX (\S+)
+Value WARNING (\S+)
+Value CRITICAL (\S+)
+Value STATE ([HWC])
+
+Start
+  ^-{10,} -> Data
+
+Data
+  ^${PROCESSOR}\s*\(
+  ^\s+${RESOURCE}\s\s+${USAGE}\s+${MAX}\s+${WARNING}\s+${CRITICAL}\s+${STATE} -> Record

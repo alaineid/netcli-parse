@@ -1,0 +1,15 @@
+If device is externally calibrated, only different calibration values are supported.
+
+                                            Optical   Optical
+           Xcvr     Xcvr        Output     Receive   Laser
+Port       Type     Vendor      Power      Power     Temp      Voltage
+---------  -------  ----------  ---------  --------  --------  -------
+Te0/0/0    SFP-10G  FINISAR     -2.1 dBm   -3.4 dBm  31.7 C    3.29 V
+Te0/0/1    SFP-10G  FINISAR     -2.3 dBm   -4.1 dBm  32.9 C    3.30 V
+Te0/0/2    SFP-10G  CISCO-LUXS  -1.8 dBm   -2.8 dBm  28.5 C    3.31 V
+Te0/0/3    SFP-10G  CISCO-LUXS  -2.0 dBm   -3.2 dBm  29.1 C    3.30 V
+Hu0/0/0    QSFP28   FINISAR      2.2 dBm    2.2 dBm  31.7 C    3.30 V
+Hu0/0/1    QSFP28   FINISAR      2.7 dBm    2.4 dBm  32.9 C    3.30 V
+Gi0/0/0    SFP-1G   CISCO-FINI  -5.2 dBm   -6.8 dBm  25.4 C    3.28 V
+Gi0/0/1    SFP-1G   CISCO-FINI  -4.8 dBm   -7.1 dBm  26.2 C    3.29 V
+
