@@ -2,8 +2,6 @@ pub mod commands;
 pub mod normalize;
 pub mod parse;
 pub mod platform;
-pub mod registry;
+pub(crate) mod registry;
 
-pub use parse::{parse_json, parse_records, ParseError};
-pub use platform::Platform;
-pub use commands::CommandKey;
+pub use parse::{parse_command_json, parse_command_records, parse_json, parse_records, ParseError};

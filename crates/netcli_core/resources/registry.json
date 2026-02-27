@@ -1,20 +1,5746 @@
 {
-  "_comment": "Maps (platform, commandKey) pairs to TextFSM template paths. Phase 2 will populate this.",
   "templates": [
     {
-      "platform": "cisco_ios",
+      "platform": "alcatel_aos",
+      "commandKey": "show_interfaces_ethernet",
+      "template": "templates/alcatel_aos/show_interfaces_ethernet.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_lldp_remote_system",
+      "template": "templates/alcatel_aos/show_lldp_remote-system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_interfaces_status",
+      "template": "templates/alcatel_aos/show_interfaces_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_mac_address_table",
+      "template": "templates/alcatel_aos/show_mac-address-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_interfaces_alias",
+      "template": "templates/alcatel_aos/show_interfaces_alias.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_interfaces_port",
+      "template": "templates/alcatel_aos/show_interfaces_port.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_linkagg_alias",
+      "template": "templates/alcatel_aos/show_linkagg_alias.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_port_security",
+      "template": "templates/alcatel_aos/show_port-security.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_linkagg_port",
+      "template": "templates/alcatel_aos/show_linkagg_port.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_vlan_port",
+      "template": "templates/alcatel_aos/show_vlan_port.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_chassis",
+      "template": "templates/alcatel_aos/show_chassis.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_system",
+      "template": "templates/alcatel_aos/show_system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_aos",
+      "commandKey": "show_vlan",
+      "template": "templates/alcatel_aos/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_bgp_routes_vpn_ipv4",
+      "template": "templates/alcatel_sros/show_router_bgp_routes_vpn-ipv4.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service_service_name_using",
+      "template": "templates/alcatel_sros/show_service_service-name-using.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_bgp_summary_family",
+      "template": "templates/alcatel_sros/show_router_bgp_summary_family.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_isis_adjacency",
+      "template": "templates/alcatel_sros/show_router_isis_adjacency.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_isis_interface",
+      "template": "templates/alcatel_sros/show_router_isis_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_mpls_interface",
+      "template": "templates/alcatel_sros/show_router_mpls_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_ospf_interface",
+      "template": "templates/alcatel_sros/show_router_ospf_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_rsvp_interface",
+      "template": "templates/alcatel_sros/show_router_rsvp_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service_service_using",
+      "template": "templates/alcatel_sros/show_service_service-using.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_ldp_interface",
+      "template": "templates/alcatel_sros/show_router_ldp_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_pim_interface",
+      "template": "templates/alcatel_sros/show_router_pim_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service_id_interface",
+      "template": "templates/alcatel_sros/show_service_id_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service_sap_using",
+      "template": "templates/alcatel_sros/show_service_sap-using.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service_sdp_using",
+      "template": "templates/alcatel_sros/show_service_sdp-using.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_port_description",
+      "template": "templates/alcatel_sros/show_port_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_interface",
+      "template": "templates/alcatel_sros/show_router_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service_id_0_sap",
+      "template": "templates/alcatel_sros/show_service_id_0_sap.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_router_mpls_lsp",
+      "template": "templates/alcatel_sros/show_router_mpls_lsp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service_id_base",
+      "template": "templates/alcatel_sros/show_service_id_base.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_service_sdp",
+      "template": "templates/alcatel_sros/show_service_sdp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_system_cpu",
+      "template": "templates/alcatel_sros/show_system_cpu.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_lag_port",
+      "template": "templates/alcatel_sros/show_lag_port.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "oam_mac_ping",
+      "template": "templates/alcatel_sros/oam_mac-ping.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_port",
+      "template": "templates/alcatel_sros/show_port.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "show_lag",
+      "template": "templates/alcatel_sros/show_lag.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "alcatel_sros",
+      "commandKey": "ping",
+      "template": "templates/alcatel_sros/ping.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_lldp_neighbors_detail",
+      "template": "templates/allied_telesis_awplus/show_lldp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_etherchannel_summary",
+      "template": "templates/allied_telesis_awplus/show_etherchannel_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_interface_switchport",
+      "template": "templates/allied_telesis_awplus/show_interface_switchport.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_static_channel_group",
+      "template": "templates/allied_telesis_awplus/show_static-channel-group.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_mac_address_table",
+      "template": "templates/allied_telesis_awplus/show_mac_address-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_interface",
+      "template": "templates/allied_telesis_awplus/show_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_ip_route",
+      "template": "templates/allied_telesis_awplus/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_vlan_all",
+      "template": "templates/allied_telesis_awplus/show_vlan_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_system",
+      "template": "templates/allied_telesis_awplus/show_system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "allied_telesis_awplus",
+      "commandKey": "show_arp",
+      "template": "templates/allied_telesis_awplus/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_mac_security_participants_detail",
+      "template": "templates/arista_eos/show_mac_security_participants_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_interfaces_transceiver_hardware",
+      "template": "templates/arista_eos/show_interfaces_transceiver_hardware.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_interfaces_transceiver_detail",
+      "template": "templates/arista_eos/show_interfaces_transceiver_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_mac_security_mka_counters",
+      "template": "templates/arista_eos/show_mac_security_mka_counters.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_mroute_vrf_all_detail",
+      "template": "templates/arista_eos/show_ip_mroute_vrf_all_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_environment_temperature",
+      "template": "templates/arista_eos/show_environment_temperature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_ospf_interface_brief",
+      "template": "templates/arista_eos/show_ip_ospf_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_interfaces_description",
+      "template": "templates/arista_eos/show_interfaces_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_interfaces_transceiver",
+      "template": "templates/arista_eos/show_interfaces_transceiver.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_mac_security_interface",
+      "template": "templates/arista_eos/show_mac_security_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_lldp_neighbors_detail",
+      "template": "templates/arista_eos/show_lldp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_port_channel_summary",
+      "template": "templates/arista_eos/show_port-channel_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_environment_cooling",
+      "template": "templates/arista_eos/show_environment_cooling.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_interface_brief",
+      "template": "templates/arista_eos/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_pim_ipv4_interface",
+      "template": "templates/arista_eos/show_pim_ipv4_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_processes_top_once",
+      "template": "templates/arista_eos/show_processes_top_once.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_environment_power",
+      "template": "templates/arista_eos/show_environment_power.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_interfaces_status",
+      "template": "templates/arista_eos/show_interfaces_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_helper_address",
+      "template": "templates/arista_eos/show_ip_helper-address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_mac_address_table",
+      "template": "templates/arista_eos/show_mac_address-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_pim_ipv4_neighbor",
+      "template": "templates/arista_eos/show_pim_ipv4_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_ospf_database",
+      "template": "templates/arista_eos/show_ip_ospf_database.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_ospf_neighbor",
+      "template": "templates/arista_eos/show_ip_ospf_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ipv6_bgp_summary",
+      "template": "templates/arista_eos/show_ipv6_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_access_lists",
+      "template": "templates/arista_eos/show_ip_access-lists.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_ospf_summary",
+      "template": "templates/arista_eos/show_ip_ospf_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_bgp_summary",
+      "template": "templates/arista_eos/show_ip_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_isis_neighbors",
+      "template": "templates/arista_eos/show_isis_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_lldp_neighbors",
+      "template": "templates/arista_eos/show_lldp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_snmp_community",
+      "template": "templates/arista_eos/show_snmp_community.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_bgp_detail",
+      "template": "templates/arista_eos/show_ip_bgp_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_reload_cause",
+      "template": "templates/arista_eos/show_reload_cause.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_boot_config",
+      "template": "templates/arista_eos/show_boot-config.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_interfaces",
+      "template": "templates/arista_eos/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_inventory",
+      "template": "templates/arista_eos/show_inventory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_hostname",
+      "template": "templates/arista_eos/show_hostname.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_route",
+      "template": "templates/arista_eos/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
       "commandKey": "show_version",
-      "templatePath": "cisco_ios/show_version.textfsm"
+      "template": "templates/arista_eos/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_arp",
+      "template": "templates/arista_eos/show_ip_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_ip_bgp",
+      "template": "templates/arista_eos/show_ip_bgp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_module",
+      "template": "templates/arista_eos/show_module.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "bash_df__h",
+      "template": "templates/arista_eos/bash_df_-h.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_clock",
+      "template": "templates/arista_eos/show_clock.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_mlag",
+      "template": "templates/arista_eos/show_mlag.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_vlan",
+      "template": "templates/arista_eos/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "show_vrf",
+      "template": "templates/arista_eos/show_vrf.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "arista_eos",
+      "commandKey": "dir",
+      "template": "templates/arista_eos/dir.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_aaa_authentication_port_access_interface_all_client_status",
+      "template": "templates/aruba_aoscx/show_aaa_authentication_port-access_interface_all_client-status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_lldp_neighbors_info_detail",
+      "template": "templates/aruba_aoscx/show_lldp_neighbors-info_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_bgp_all_vrfs_all_summary",
+      "template": "templates/aruba_aoscx/show_bgp_all-vrfs_all_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_interface_dom_detail",
+      "template": "templates/aruba_aoscx/show_interface_dom_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_ip_route_all_vrfs",
+      "template": "templates/aruba_aoscx/show_ip_route_all-vrfs.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_mac_address_table",
+      "template": "templates/aruba_aoscx/show_mac-address-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_ntp_associations",
+      "template": "templates/aruba_aoscx/show_ntp_associations.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_arp_all_vrfs",
+      "template": "templates/aruba_aoscx/show_arp_all-vrfs.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_bfd_all_vrfs",
+      "template": "templates/aruba_aoscx/show_bfd_all-vrfs.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_vsf_detail",
+      "template": "templates/aruba_aoscx/show_vsf_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_interface",
+      "template": "templates/aruba_aoscx/show_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_system",
+      "template": "templates/aruba_aoscx/show_system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_aoscx",
+      "commandKey": "show_vlan",
+      "template": "templates/aruba_aoscx/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_ap_bss_table_details",
+      "template": "templates/aruba_os/show_ap_bss-table_details.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_ipv6_interface_brief",
+      "template": "templates/aruba_os/show_ipv6_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_ip_interface_brief",
+      "template": "templates/aruba_os/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_ap_radio_database",
+      "template": "templates/aruba_os/show_ap_radio-database.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_ap_database_long",
+      "template": "templates/aruba_os/show_ap_database_long.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_ap_database",
+      "template": "templates/aruba_os/show_ap_database.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_inventory",
+      "template": "templates/aruba_os/show_inventory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_hostname",
+      "template": "templates/aruba_os/show_hostname.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_version",
+      "template": "templates/aruba_os/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_vlan",
+      "template": "templates/aruba_os/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "aruba_os",
+      "commandKey": "show_arp",
+      "template": "templates/aruba_os/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "avaya_ers",
+      "commandKey": "show_mac_address_table",
+      "template": "templates/avaya_ers/show_mac-address-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "avaya_ers",
+      "commandKey": "show_mlt_all_members",
+      "template": "templates/avaya_ers/show_mlt_all-members.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "avaya_ers",
+      "commandKey": "show_interface_name",
+      "template": "templates/avaya_ers/show_interface_name.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "avaya_ers",
+      "commandKey": "show_logging_config",
+      "template": "templates/avaya_ers/show_logging_config.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "avaya_ers",
+      "commandKey": "show_sys_info",
+      "template": "templates/avaya_ers/show_sys-info.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "avaya_ers",
+      "commandKey": "show_vlan",
+      "template": "templates/avaya_ers/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "avaya_ers",
+      "commandKey": "show_mlt",
+      "template": "templates/avaya_ers/show_mlt.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "avaya_vsp",
+      "commandKey": "show_software",
+      "template": "templates/avaya_vsp/show_software.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "broadcom_icos",
+      "commandKey": "show_lldp_remote_device_all",
+      "template": "templates/broadcom_icos/show_lldp_remote-device_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "broadcom_icos",
+      "commandKey": "show_isdp_neighbors",
+      "template": "templates/broadcom_icos/show_isdp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "broadcom_icos",
+      "commandKey": "show_mac_addr_table",
+      "template": "templates/broadcom_icos/show_mac-addr-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "broadcom_icos",
+      "commandKey": "show_vlan_brief",
+      "template": "templates/broadcom_icos/show_vlan_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "broadcom_icos",
+      "commandKey": "show_version",
+      "template": "templates/broadcom_icos/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_lldp_neighbors_detail",
+      "template": "templates/brocade_fastiron/show_lldp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_running_config_vlan",
+      "template": "templates/brocade_fastiron/show_running-config_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_interfaces_brief",
+      "template": "templates/brocade_fastiron/show_interfaces_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_lldp_neighbors",
+      "template": "templates/brocade_fastiron/show_lldp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_mac_address",
+      "template": "templates/brocade_fastiron/show_mac-address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_interfaces",
+      "template": "templates/brocade_fastiron/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_lag_brief",
+      "template": "templates/brocade_fastiron/show_lag_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_monitor",
+      "template": "templates/brocade_fastiron/show_monitor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_version",
+      "template": "templates/brocade_fastiron/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_metro",
+      "template": "templates/brocade_fastiron/show_metro.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_trunk",
+      "template": "templates/brocade_fastiron/show_trunk.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_span",
+      "template": "templates/brocade_fastiron/show_span.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_topo",
+      "template": "templates/brocade_fastiron/show_topo.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_fastiron",
+      "commandKey": "show_arp",
+      "template": "templates/brocade_fastiron/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_running_config_interface",
+      "template": "templates/brocade_netiron/show_running-config_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_lldp_neighbors_detail",
+      "template": "templates/brocade_netiron/show_lldp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_running_config_vlan",
+      "template": "templates/brocade_netiron/show_running-config_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_interfaces_brief",
+      "template": "templates/brocade_netiron/show_interfaces_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_monitor_actual",
+      "template": "templates/brocade_netiron/show_monitor_actual.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_interfaces",
+      "template": "templates/brocade_netiron/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_lag_brief",
+      "template": "templates/brocade_netiron/show_lag_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_metro",
+      "template": "templates/brocade_netiron/show_metro.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_span",
+      "template": "templates/brocade_netiron/show_span.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "brocade_netiron",
+      "commandKey": "show_topo",
+      "template": "templates/brocade_netiron/show_topo.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_virtual_system_all",
+      "template": "templates/checkpoint_gaia/show_virtual-system_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_arp_dynamic_all",
+      "template": "templates/checkpoint_gaia/show_arp_dynamic_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_interfaces_all",
+      "template": "templates/checkpoint_gaia/show_interfaces_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_ntp_servers",
+      "template": "templates/checkpoint_gaia/show_ntp_servers.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_version_all",
+      "template": "templates/checkpoint_gaia/show_version_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_domainname",
+      "template": "templates/checkpoint_gaia/show_domainname.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_ipv6_route",
+      "template": "templates/checkpoint_gaia/show_ipv6_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_asset_all",
+      "template": "templates/checkpoint_gaia/show_asset_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_route",
+      "template": "templates/checkpoint_gaia/show_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_dns",
+      "template": "templates/checkpoint_gaia/show_dns.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "show_lom",
+      "template": "templates/checkpoint_gaia/show_lom.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "checkpoint_gaia",
+      "commandKey": "fw_stat",
+      "template": "templates/checkpoint_gaia/fw_stat.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "traffic_profiling_standard_profile_show",
+      "template": "templates/ciena_saos/traffic-profiling_standard-profile_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "port_show_ethernet_config",
+      "template": "templates/ciena_saos/port_show_ethernet-config.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "chassis_show_temperature",
+      "template": "templates/ciena_saos/chassis_show_temperature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "port_show_network_config",
+      "template": "templates/ciena_saos/port_show_network-config.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "lldp_show_neighbors",
+      "template": "templates/ciena_saos/lldp_show_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "ssh_server_show_key",
+      "template": "templates/ciena_saos/ssh_server_show_key.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "port_show_status",
+      "template": "templates/ciena_saos/port_show_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "port_xcvr_show",
+      "template": "templates/ciena_saos/port_xcvr_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "software_show",
+      "template": "templates/ciena_saos/software_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "port_show",
+      "template": "templates/ciena_saos/port_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "rstp_show",
+      "template": "templates/ciena_saos/rstp_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ciena_saos",
+      "commandKey": "vlan_show",
+      "template": "templates/ciena_saos/vlan_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_apic",
+      "commandKey": "fabric_show_vlan_extended",
+      "template": "templates/cisco_apic/fabric_show_vlan_extended.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_module",
+      "template": "templates/cisco_asa/show_module.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_object_group_service",
+      "template": "templates/cisco_asa/show_running-config_object-group_service.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_all_crypto_map",
+      "template": "templates/cisco_asa/show_running-config_all_crypto_map.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_object_network",
+      "template": "templates/cisco_asa/show_running-config_object_network.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_object_service",
+      "template": "templates/cisco_asa/show_running-config_object_service.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_asp_table_vpn_context_detail",
+      "template": "templates/cisco_asa/show_asp_table_vpn-context_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_access_group",
+      "template": "templates/cisco_asa/show_running-config_access-group.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_crypto_ikev1",
+      "template": "templates/cisco_asa/show_running-config_crypto_ikev1.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_tunnel_group",
+      "template": "templates/cisco_asa/show_running-config_tunnel-group.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_crypto_map",
+      "template": "templates/cisco_asa/show_running-config_crypto_map.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_vpn_sessiondb_anyconnect",
+      "template": "templates/cisco_asa/show_vpn-sessiondb_anyconnect.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_vpn_sessiondb_detail_l2l",
+      "template": "templates/cisco_asa/show_vpn-sessiondb_detail_l2l.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_crypto_ikev1_sa_detail",
+      "template": "templates/cisco_asa/show_crypto_ikev1_sa_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_object_group_network",
+      "template": "templates/cisco_asa/show_object-group_network.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_ospf_interface_brief",
+      "template": "templates/cisco_asa/show_ospf_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_port_channel_summary",
+      "template": "templates/cisco_asa/show_port-channel_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_running_config_ipsec",
+      "template": "templates/cisco_asa/show_running-config_ipsec.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_cpu_usage_detailed",
+      "template": "templates/cisco_asa/show_cpu_usage_detailed.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_interface_ip_brief",
+      "template": "templates/cisco_asa/show_interface_ip_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_access_list_brief",
+      "template": "templates/cisco_asa/show_access-list_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_interface_detail",
+      "template": "templates/cisco_asa/show_interface_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_crypto_ipsec_sa",
+      "template": "templates/cisco_asa/show_crypto_ipsec_sa.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_resource_usage",
+      "template": "templates/cisco_asa/show_resource_usage.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_ospf_neighbor",
+      "template": "templates/cisco_asa/show_ospf_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_vpn_sessiondb",
+      "template": "templates/cisco_asa/show_vpn-sessiondb.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_access_list",
+      "template": "templates/cisco_asa/show_access-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_bgp_summary",
+      "template": "templates/cisco_asa/show_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_license_all",
+      "template": "templates/cisco_asa/show_license_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_interface",
+      "template": "templates/cisco_asa/show_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_inventory",
+      "template": "templates/cisco_asa/show_inventory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_asp_drop",
+      "template": "templates/cisco_asa/show_asp_drop.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_failover",
+      "template": "templates/cisco_asa/show_failover.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_logging",
+      "template": "templates/cisco_asa/show_logging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_version",
+      "template": "templates/cisco_asa/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_route",
+      "template": "templates/cisco_asa/show_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_xlate",
+      "template": "templates/cisco_asa/show_xlate.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_name",
+      "template": "templates/cisco_asa/show_name.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_arp",
+      "template": "templates/cisco_asa/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "show_nat",
+      "template": "templates/cisco_asa/show_nat.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "ping",
+      "template": "templates/cisco_asa/ping.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_asa",
+      "commandKey": "dir",
+      "template": "templates/cisco_asa/dir.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ftd",
+      "commandKey": "show_vpn_sessiondb_anyconnect",
+      "template": "templates/cisco_ftd/show_vpn-sessiondb_anyconnect.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_fxos",
+      "commandKey": "show_system_firmware",
+      "template": "templates/cisco_fxos/show_system_firmware.textfsm",
+      "shape": "list"
     },
     {
       "platform": "cisco_ios",
+      "commandKey": "show_module",
+      "template": "templates/cisco_ios/show_module.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_switch_detail",
+      "template": "templates/cisco_ios/show_switch_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_authentication_sessions_method_details",
+      "template": "templates/cisco_ios/show_authentication_sessions_method_details.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_running_config_partition_access_list",
+      "template": "templates/cisco_ios/show_running-config_partition_access-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_bgp_neighbors_advertised_routes",
+      "template": "templates/cisco_ios/show_ip_bgp_neighbors_advertised-routes.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_running_config_partition_route_map",
+      "template": "templates/cisco_ios/show_running-config_partition_route-map.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_port_security_interface_interface",
+      "template": "templates/cisco_ios/show_port-security_interface_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_endpoint_tracker_tracker_group",
+      "template": "templates/cisco_ios/show_endpoint-tracker_tracker-group.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interfaces_status_err_disabled",
+      "template": "templates/cisco_ios/show_interfaces_status_err-disabled.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_sdwan_tunnel_statistics_table",
+      "template": "templates/cisco_ios/show_sdwan_tunnel_statistics_table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_wireless_tag_policy_summary",
+      "template": "templates/cisco_ios/show_wireless_tag_policy_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_capability_feature_routing",
+      "template": "templates/cisco_ios/show_capability_feature_routing.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_bgp_vpnv4_all_neighbors",
+      "template": "templates/cisco_ios/show_ip_bgp_vpnv4_all_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_eigrp_interfaces_detail",
+      "template": "templates/cisco_ios/show_ip_eigrp_interfaces_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_eigrp_neighbors_detail",
+      "template": "templates/cisco_ios/show_ip_eigrp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_sdwan_control_connections",
+      "template": "templates/cisco_ios/show_sdwan_control_connections.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_dhcp_snooping_binding",
+      "template": "templates/cisco_ios/show_ip_dhcp_snooping_binding.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_ospf_database_network",
+      "template": "templates/cisco_ios/show_ip_ospf_database_network.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_running_config_interface",
+      "template": "templates/cisco_ios/show_running-config_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_sdwan_bfd_sessions_table",
+      "template": "templates/cisco_ios/show_sdwan_bfd_sessions_table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_authentication_sessions",
+      "template": "templates/cisco_ios/show_authentication_sessions.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_crypto_pki_certificates",
+      "template": "templates/cisco_ios/show_crypto_pki_certificates.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_environment_temperature",
+      "template": "templates/cisco_ios/show_environment_temperature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_ospf_database_router",
+      "template": "templates/cisco_ios/show_ip_ospf_database_router.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_ospf_interface_brief",
+      "template": "templates/cisco_ios/show_ip_ospf_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_ospf_neighbor_detail",
+      "template": "templates/cisco_ios/show_ip_ospf_neighbor_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_processes_memory_sorted",
+      "template": "templates/cisco_ios/show_processes_memory_sorted.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_crypto_ipsec_sa_detail",
+      "template": "templates/cisco_ios/show_crypto_ipsec_sa_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interfaces_description",
+      "template": "templates/cisco_ios/show_interfaces_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_device_tracking_all",
+      "template": "templates/cisco_ios/show_ip_device_tracking_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_bfd_neighbors_details",
+      "template": "templates/cisco_ios/show_bfd_neighbors_details.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_crypto_session_detail",
+      "template": "templates/cisco_ios/show_crypto_session_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_environment_power_all",
+      "template": "templates/cisco_ios/show_environment_power_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interface_transceiver",
+      "template": "templates/cisco_ios/show_interface_transceiver.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interfaces_switchport",
+      "template": "templates/cisco_ios/show_interfaces_switchport.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_http_server_status",
+      "template": "templates/cisco_ios/show_ip_http_server_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_lldp_neighbors_detail",
+      "template": "templates/cisco_ios/show_lldp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_cdp_neighbors_detail",
+      "template": "templates/cisco_ios/show_cdp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_etherchannel_summary",
+      "template": "templates/cisco_ios/show_etherchannel_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ipv6_interface_brief",
+      "template": "templates/cisco_ios/show_ipv6_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_nat_translations",
+      "template": "templates/cisco_ios/show_ip_nat_translations.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_mpls_l2transport_vc",
+      "template": "templates/cisco_ios/show_mpls_l2transport_vc.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_eigrp_neighbors",
+      "template": "templates/cisco_ios/show_ip_eigrp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_flow_toptalkers",
+      "template": "templates/cisco_ios/show_ip_flow_toptalkers.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_interface_brief",
+      "template": "templates/cisco_ios/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_spanning_tree_root",
+      "template": "templates/cisco_ios/show_spanning-tree_root.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interfaces_status",
+      "template": "templates/cisco_ios/show_interfaces_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_eigrp_topology",
+      "template": "templates/cisco_ios/show_ip_eigrp_topology.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_source_binding",
+      "template": "templates/cisco_ios/show_ip_source_binding.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_vrf_interfaces",
+      "template": "templates/cisco_ios/show_ip_vrf_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ipv6_access_lists",
+      "template": "templates/cisco_ios/show_ipv6_access-lists.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_mac_address_table",
+      "template": "templates/cisco_ios/show_mac-address-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_sdwan_bfd_summary",
+      "template": "templates/cisco_ios/show_sdwan_bfd_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ap_cdp_neighbors",
+      "template": "templates/cisco_ios/show_ap_cdp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_endpoint_tracker",
+      "template": "templates/cisco_ios/show_endpoint-tracker.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_bgp_neighbors",
+      "template": "templates/cisco_ios/show_ip_bgp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_ospf_database",
+      "template": "templates/cisco_ios/show_ip_ospf_database.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_ospf_neighbor",
+      "template": "templates/cisco_ios/show_ip_ospf_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_route_summary",
+      "template": "templates/cisco_ios/show_ip_route_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_cts_credentials",
+      "template": "templates/cisco_ios/show_cts_credentials.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_access_lists",
+      "template": "templates/cisco_ios/show_ip_access-lists.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_dhcp_binding",
+      "template": "templates/cisco_ios/show_ip_dhcp_binding.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_mpls_interfaces",
+      "template": "templates/cisco_ios/show_mpls_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_power_available",
+      "template": "templates/cisco_ios/show_power_available.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_sdwan_omp_peers",
+      "template": "templates/cisco_ios/show_sdwan_omp_peers.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_access_session",
+      "template": "templates/cisco_ios/show_access-session.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_alert_counters",
+      "template": "templates/cisco_ios/show_alert_counters.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interface_link",
+      "template": "templates/cisco_ios/show_interface_link.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_bgp_summary",
+      "template": "templates/cisco_ios/show_ip_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_prefix_list",
+      "template": "templates/cisco_ios/show_ip_prefix-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ipv6_neighbors",
+      "template": "templates/cisco_ios/show_ipv6_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_isis_neighbors",
+      "template": "templates/cisco_ios/show_isis_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_license_status",
+      "template": "templates/cisco_ios/show_license_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_lldp_neighbors",
+      "template": "templates/cisco_ios/show_lldp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_power_supplies",
+      "template": "templates/cisco_ios/show_power_supplies.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_snmp_community",
+      "template": "templates/cisco_ios/show_snmp_community.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_switch_virtual",
+      "template": "templates/cisco_ios/show_switch_virtual.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_cdp_neighbors",
+      "template": "templates/cisco_ios/show_cdp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_controller_t1",
+      "template": "templates/cisco_ios/show_controller_t1.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_hosts_summary",
+      "template": "templates/cisco_ios/show_hosts_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_cef_detail",
+      "template": "templates/cisco_ios/show_ip_cef_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_platform_diag",
+      "template": "templates/cisco_ios/show_platform_diag.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_processes_cpu",
+      "template": "templates/cisco_ios/show_processes_cpu.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_spanning_tree",
+      "template": "templates/cisco_ios/show_spanning-tree.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_standby_brief",
+      "template": "templates/cisco_ios/show_standby_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_file_systems",
+      "template": "templates/cisco_ios/show_file_systems.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_interface",
+      "template": "templates/cisco_ios/show_ip_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_object_group",
+      "template": "templates/cisco_ios/show_object-group.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_power_inline",
+      "template": "templates/cisco_ios/show_power_inline.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_power_status",
+      "template": "templates/cisco_ios/show_power_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_rep_topology",
+      "template": "templates/cisco_ios/show_rep_topology.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_access_list",
+      "template": "templates/cisco_ios/show_access-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_isdn_status",
+      "template": "templates/cisco_ios/show_isdn_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_stack_power",
+      "template": "templates/cisco_ios/show_stack-power.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ap_summary",
+      "template": "templates/cisco_ios/show_ap_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_dhcp_lease",
+      "template": "templates/cisco_ios/show_dhcp_lease.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_interfaces",
+      "template": "templates/cisco_ios/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ipv6_route",
+      "template": "templates/cisco_ios/show_ipv6_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_policy_map",
+      "template": "templates/cisco_ios/show_policy-map.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_power_used",
+      "template": "templates/cisco_ios/show_power_used.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_redundancy",
+      "template": "templates/cisco_ios/show_redundancy.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_snmp_group",
+      "template": "templates/cisco_ios/show_snmp_group.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_vlan_group",
+      "template": "templates/cisco_ios/show_vlan_group.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_vrf_detail",
+      "template": "templates/cisco_ios/show_vrf_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_vrrp_brief",
+      "template": "templates/cisco_ios/show_vrrp_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_vtp_status",
+      "template": "templates/cisco_ios/show_vtp_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_adjacency",
+      "template": "templates/cisco_ios/show_adjacency.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_dot1x_all",
+      "template": "templates/cisco_ios/show_dot1x_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_inventory",
+      "template": "templates/cisco_ios/show_inventory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_mroute",
+      "template": "templates/cisco_ios/show_ip_mroute.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_nve_peers",
+      "template": "templates/cisco_ios/show_nve_peers.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_route_map",
+      "template": "templates/cisco_ios/show_route-map.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_snmp_user",
+      "template": "templates/cisco_ios/show_snmp_user.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_cts_pacs",
+      "template": "templates/cisco_ios/show_cts_pacs.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_route",
+      "template": "templates/cisco_ios/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_platform",
+      "template": "templates/cisco_ios/show_platform.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_vrrp_all",
+      "template": "templates/cisco_ios/show_vrrp_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_aliases",
+      "template": "templates/cisco_ios/show_aliases.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_archive",
+      "template": "templates/cisco_ios/show_archive.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_license",
+      "template": "templates/cisco_ios/show_license.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_logging",
+      "template": "templates/cisco_ios/show_logging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_nve_vni",
+      "template": "templates/cisco_ios/show_nve_vni.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_standby",
+      "template": "templates/cisco_ios/show_standby.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_version",
+      "template": "templates/cisco_ios/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_arp",
+      "template": "templates/cisco_ios/show_ip_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_bgp",
+      "template": "templates/cisco_ios/show_ip_bgp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_ip_cef",
+      "template": "templates/cisco_ios/show_ip_cef.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_tacacs",
+      "template": "templates/cisco_ios/show_tacacs.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_clock",
+      "template": "templates/cisco_ios/show_clock.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_dmvpn",
+      "template": "templates/cisco_ios/show_dmvpn.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_users",
+      "template": "templates/cisco_ios/show_users.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_vlans",
+      "template": "templates/cisco_ios/show_vlans.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "traceroute",
+      "template": "templates/cisco_ios/traceroute.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_boot",
+      "template": "templates/cisco_ios/show_boot.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_vlan",
+      "template": "templates/cisco_ios/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_arp",
+      "template": "templates/cisco_ios/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "show_vrf",
+      "template": "templates/cisco_ios/show_vrf.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "ping",
+      "template": "templates/cisco_ios/ping.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_ios",
+      "commandKey": "dir",
+      "template": "templates/cisco_ios/dir.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_running_config_system_settings",
+      "template": "templates/cisco_nvfis/show_running-config_system_settings.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_running_config_system_upgrade",
+      "template": "templates/cisco_nvfis/show_running-config_system_upgrade.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_configuration_commit_changes",
+      "template": "templates/cisco_nvfis/show_configuration_commit_changes.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_running_config_snmp_enable",
+      "template": "templates/cisco_nvfis/show_running-config_snmp_enable.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_running_config_system_time",
+      "template": "templates/cisco_nvfis/show_running-config_system_time.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_running_config_snmp_group",
+      "template": "templates/cisco_nvfis/show_running-config_snmp_group.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_running_config_snmp_host",
+      "template": "templates/cisco_nvfis/show_running-config_snmp_host.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_running_config_snmp_user",
+      "template": "templates/cisco_nvfis/show_running-config_snmp_user.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_bridge_settings",
+      "template": "templates/cisco_nvfis/show_bridge-settings.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_version",
+      "template": "templates/cisco_nvfis/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nvfis",
+      "commandKey": "show_nic",
+      "template": "templates/cisco_nvfis/show_nic.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_bgp_vrf_all_ipv4_unicast_neighbors_routes",
+      "template": "templates/cisco_nxos/show_bgp_vrf_all_ipv4_unicast_neighbors_routes.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_hardware_internal_bigsur_all_ports_detail",
+      "template": "templates/cisco_nxos/show_hardware_internal_bigsur_all-ports_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_l2rib_internal_permanently_frozen_list",
+      "template": "templates/cisco_nxos/show_l2rib_internal_permanently-frozen-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_bgp_vrf_all_ipv4_unicast_detail",
+      "template": "templates/cisco_nxos/show_bgp_vrf_all_ipv4_unicast_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_pim_interface_brief_vrf_all",
+      "template": "templates/cisco_nxos/show_ip_pim_interface_brief_vrf_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_nve_vni_interface_nve_1_detail",
+      "template": "templates/cisco_nxos/show_nve_vni_interface_nve_1_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_configuration_session_summary",
+      "template": "templates/cisco_nxos/show_configuration_session_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_status_err_disabled",
+      "template": "templates/cisco_nxos/show_interface_status_err-disabled.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_transceiver_details",
+      "template": "templates/cisco_nxos/show_interface_transceiver_details.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_dhcp_snooping_statistics",
+      "template": "templates/cisco_nxos/show_ip_dhcp_snooping_statistics.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_pim_group_range_vrf_all",
+      "template": "templates/cisco_nxos/show_ip_pim_group-range_vrf_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_environment_temperature",
+      "template": "templates/cisco_nxos/show_environment_temperature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_msdp_summary_vrf_all",
+      "template": "templates/cisco_nxos/show_ip_msdp_summary_vrf_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_ospf_interface_brief",
+      "template": "templates/cisco_nxos/show_ip_ospf_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_pim_neighbor_vrf_all",
+      "template": "templates/cisco_nxos/show_ip_pim_neighbor_vrf_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_capabilities",
+      "template": "templates/cisco_nxos/show_interface_capabilities.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_snmp_ifindex",
+      "template": "templates/cisco_nxos/show_interface_snmp-ifindex.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_forwarding_ipv4_route",
+      "template": "templates/cisco_nxos/show_forwarding_ipv4_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_description",
+      "template": "templates/cisco_nxos/show_interface_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_transceiver",
+      "template": "templates/cisco_nxos/show_interface_transceiver.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_arp_detail_vrf_all",
+      "template": "templates/cisco_nxos/show_ip_arp_detail_vrf_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_dhcp_relay_address",
+      "template": "templates/cisco_nxos/show_ip_dhcp_relay_address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_lldp_neighbors_detail",
+      "template": "templates/cisco_nxos/show_lldp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_cdp_neighbors_detail",
+      "template": "templates/cisco_nxos/show_cdp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_forwarding_adjacency",
+      "template": "templates/cisco_nxos/show_forwarding_adjacency.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_switchport",
+      "template": "templates/cisco_nxos/show_interface_switchport.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_interface_vrf_all",
+      "template": "templates/cisco_nxos/show_ip_interface_vrf_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ipv6_interface_brief",
+      "template": "templates/cisco_nxos/show_ipv6_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_port_channel_summary",
+      "template": "templates/cisco_nxos/show_port-channel_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_cts_interface_brief",
+      "template": "templates/cisco_nxos/show_cts_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_breakout",
+      "template": "templates/cisco_nxos/show_interface_breakout.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_bgp_summary_vrf",
+      "template": "templates/cisco_nxos/show_ip_bgp_summary_vrf.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_eigrp_neighbors",
+      "template": "templates/cisco_nxos/show_ip_eigrp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_interface_brief",
+      "template": "templates/cisco_nxos/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_mroutes_vrf_all",
+      "template": "templates/cisco_nxos/show_ip_mroutes_vrf_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_spanning_tree_root",
+      "template": "templates/cisco_nxos/show_spanning-tree_root.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_cts_interface_all",
+      "template": "templates/cisco_nxos/show_cts_interface_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_community_list",
+      "template": "templates/cisco_nxos/show_ip_community-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_pim_rp_vrf_all",
+      "template": "templates/cisco_nxos/show_ip_pim_rp_vrf_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_mac_address_table",
+      "template": "templates/cisco_nxos/show_mac_address-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_fabricpath_route",
+      "template": "templates/cisco_nxos/show_fabricpath_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_status",
+      "template": "templates/cisco_nxos/show_interface_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_bgp_neighbors",
+      "template": "templates/cisco_nxos/show_ip_bgp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_ospf_database",
+      "template": "templates/cisco_nxos/show_ip_ospf_database.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_ospf_neighbor",
+      "template": "templates/cisco_nxos/show_ip_ospf_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface_brief",
+      "template": "templates/cisco_nxos/show_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_flogi_database",
+      "template": "templates/cisco_nxos/show_flogi_database.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_bgp_summary",
+      "template": "templates/cisco_nxos/show_ip_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_lldp_neighbors",
+      "template": "templates/cisco_nxos/show_lldp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_switching_mode",
+      "template": "templates/cisco_nxos/show_switching-mode.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_bfd_neighbors",
+      "template": "templates/cisco_nxos/show_bfd_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_cdp_neighbors",
+      "template": "templates/cisco_nxos/show_cdp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_arp_detail",
+      "template": "templates/cisco_nxos/show_ip_arp_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_license_usage",
+      "template": "templates/cisco_nxos/show_license_usage.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_processes_cpu",
+      "template": "templates/cisco_nxos/show_processes_cpu.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_vrf_interface",
+      "template": "templates/cisco_nxos/show_vrf_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_access_lists",
+      "template": "templates/cisco_nxos/show_access-lists.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_adjacency",
+      "template": "templates/cisco_nxos/show_ip_adjacency.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_interface",
+      "template": "templates/cisco_nxos/show_ip_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_environment",
+      "template": "templates/cisco_nxos/show_environment.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_vrf_detail",
+      "template": "templates/cisco_nxos/show_vrf_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_interface",
+      "template": "templates/cisco_nxos/show_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_inventory",
+      "template": "templates/cisco_nxos/show_inventory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_nve_peers",
+      "template": "templates/cisco_nxos/show_nve_peers.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_route_map",
+      "template": "templates/cisco_nxos/show_route-map.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_hostname",
+      "template": "templates/cisco_nxos/show_hostname.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_hsrp_all",
+      "template": "templates/cisco_nxos/show_hsrp_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_route",
+      "template": "templates/cisco_nxos/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_feature",
+      "template": "templates/cisco_nxos/show_feature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_nve_vni",
+      "template": "templates/cisco_nxos/show_nve_vni.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_version",
+      "template": "templates/cisco_nxos/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_fex_id",
+      "template": "templates/cisco_nxos/show_fex_id.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_arp",
+      "template": "templates/cisco_nxos/show_ip_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_ip_bgp",
+      "template": "templates/cisco_nxos/show_ip_bgp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_module",
+      "template": "templates/cisco_nxos/show_module.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_clock",
+      "template": "templates/cisco_nxos/show_clock.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_vlan",
+      "template": "templates/cisco_nxos/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_fex",
+      "template": "templates/cisco_nxos/show_fex.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_vdc",
+      "template": "templates/cisco_nxos/show_vdc.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_vpc",
+      "template": "templates/cisco_nxos/show_vpc.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "show_vrf",
+      "template": "templates/cisco_nxos/show_vrf.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_nxos",
+      "commandKey": "dir",
+      "template": "templates/cisco_nxos/dir.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_interfaces_description",
+      "template": "templates/cisco_s300/show_interfaces_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_interfaces_switchport",
+      "template": "templates/cisco_s300/show_interfaces_switchport.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_interfaces_status",
+      "template": "templates/cisco_s300/show_interfaces_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_mac_address_table",
+      "template": "templates/cisco_s300/show_mac_address-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_lldp_neighbors",
+      "template": "templates/cisco_s300/show_lldp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_ip_interface",
+      "template": "templates/cisco_s300/show_ip_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_system_id",
+      "template": "templates/cisco_s300/show_system_id.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_version",
+      "template": "templates/cisco_s300/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_system",
+      "template": "templates/cisco_s300/show_system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_s300",
+      "commandKey": "show_vlan",
+      "template": "templates/cisco_s300/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_viptela",
+      "commandKey": "show_control_connections",
+      "template": "templates/cisco_viptela/show_control_connections.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_viptela",
+      "commandKey": "show_interface",
+      "template": "templates/cisco_viptela/show_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_viptela",
+      "commandKey": "show_omp_peers",
+      "template": "templates/cisco_viptela/show_omp_peers.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_viptela",
+      "commandKey": "show_arp",
+      "template": "templates/cisco_viptela/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_flexconnect_group_summary",
+      "template": "templates/cisco_wlc_ssh/show_flexconnect_group_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_advanced_802.11a_channel",
+      "template": "templates/cisco_wlc_ssh/show_advanced_802.11a_channel.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_802.11a_cleanair_config",
+      "template": "templates/cisco_wlc_ssh/show_802.11a_cleanair_config.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_interface_group_summary",
+      "template": "templates/cisco_wlc_ssh/show_interface_group_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_interface_detailed_id",
+      "template": "templates/cisco_wlc_ssh/show_interface_detailed_id.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_cdp_neighbors_detail",
+      "template": "templates/cisco_wlc_ssh/show_cdp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_redundancy_summary",
+      "template": "templates/cisco_wlc_ssh/show_redundancy_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_rf_profile_summary",
+      "template": "templates/cisco_wlc_ssh/show_rf-profile_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_stats_port_summary",
+      "template": "templates/cisco_wlc_ssh/show_stats_port_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_ap_config_general",
+      "template": "templates/cisco_wlc_ssh/show_ap_config_general.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_interface_summary",
+      "template": "templates/cisco_wlc_ssh/show_interface_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_redundancy_detail",
+      "template": "templates/cisco_wlc_ssh/show_redundancy_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_mobility_anchor",
+      "template": "templates/cisco_wlc_ssh/show_mobility_anchor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_radius_summary",
+      "template": "templates/cisco_wlc_ssh/show_radius_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_tacacs_summary",
+      "template": "templates/cisco_wlc_ssh/show_tacacs_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_client_detail",
+      "template": "templates/cisco_wlc_ssh/show_client_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_exclusionlist",
+      "template": "templates/cisco_wlc_ssh/show_exclusionlist.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_ap_image_all",
+      "template": "templates/cisco_wlc_ssh/show_ap_image_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_mobility_sum",
+      "template": "templates/cisco_wlc_ssh/show_mobility_sum.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_port_summary",
+      "template": "templates/cisco_wlc_ssh/show_port_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_band_select",
+      "template": "templates/cisco_wlc_ssh/show_band-select.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_ap_summary",
+      "template": "templates/cisco_wlc_ssh/show_ap_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_inventory",
+      "template": "templates/cisco_wlc_ssh/show_inventory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_wlan_sum",
+      "template": "templates/cisco_wlc_ssh/show_wlan_sum.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_802.11a",
+      "template": "templates/cisco_wlc_ssh/show_802.11a.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_sysinfo",
+      "template": "templates/cisco_wlc_ssh/show_sysinfo.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_boot",
+      "template": "templates/cisco_wlc_ssh/show_boot.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_wlc_ssh",
+      "commandKey": "show_time",
+      "template": "templates/cisco_wlc_ssh/show_time.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_fabric_fia_errors_ingress_location",
+      "template": "templates/cisco_xr/show_controllers_fabric_fia_errors_ingress_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_fabric_fia_drops_ingress_location",
+      "template": "templates/cisco_xr/show_controllers_fabric_fia_drops_ingress_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_fabric_fia_errors_egress_location",
+      "template": "templates/cisco_xr/show_controllers_fabric_fia_errors_egress_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_fabric_fia_drops_egress_location",
+      "template": "templates/cisco_xr/show_controllers_fabric_fia_drops_egress_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_bgp_vrf_all_neighbors_advertised_routes",
+      "template": "templates/cisco_xr/show_bgp_vrf_all_neighbors_advertised-routes.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_l2vpn_mac_learning_mac_all_location",
+      "template": "templates/cisco_xr/show_l2vpn_mac-learning_mac_all_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_lpts_pifib_hardware_police_location",
+      "template": "templates/cisco_xr/show_lpts_pifib_hardware_police_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_HundredGigabitEthernet",
+      "template": "templates/cisco_xr/show_controllers_HundredGigabitEthernet.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_bgp_vrf_all_ipv4_unicast_summary",
+      "template": "templates/cisco_xr/show_bgp_vrf_all_ipv4_unicast_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "admin_show_controller_fabric_health",
+      "template": "templates/cisco_xr/admin_show_controller_fabric_health.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_platform_summary_location_all",
+      "template": "templates/cisco_xr/show_platform_summary_location_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ipv4_vrf_all_interface_brief",
+      "template": "templates/cisco_xr/show_ipv4_vrf_all_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ospf_vrf_all_interface_brief",
+      "template": "templates/cisco_xr/show_ospf_vrf_all_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controller_fabric_plane_all",
+      "template": "templates/cisco_xr/show_controller_fabric_plane_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_hundredgige_all",
+      "template": "templates/cisco_xr/show_controllers_hundredgige_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_configuration_commit_list",
+      "template": "templates/cisco_xr/show_configuration_commit_list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_asic_errors_all_location",
+      "template": "templates/cisco_xr/show_asic-errors_all_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_bgp_instance_all_summary",
+      "template": "templates/cisco_xr/show_bgp_instance_all_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "admin_show_environment_power",
+      "template": "templates/cisco_xr/admin_show_environment_power.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_dhcp_ipv4_proxy_binding",
+      "template": "templates/cisco_xr/show_dhcp_ipv4_proxy_binding.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_mpls_ldp_neighbor_brief",
+      "template": "templates/cisco_xr/show_mpls_ldp_neighbor_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_running_config_hostname",
+      "template": "templates/cisco_xr/show_running-config_hostname.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_interfaces_description",
+      "template": "templates/cisco_xr/show_interfaces_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "admin_show_environment_fan",
+      "template": "templates/cisco_xr/admin_show_environment_fan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_lldp_neighbors_detail",
+      "template": "templates/cisco_xr/show_lldp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ospf_vrf_all_neighbor",
+      "template": "templates/cisco_xr/show_ospf_vrf_all_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_cdp_neighbors_detail",
+      "template": "templates/cisco_xr/show_cdp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_controllers_all_phy",
+      "template": "templates/cisco_xr/show_controllers_all_phy.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_cef_drops_location",
+      "template": "templates/cisco_xr/show_cef_drops_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_interfaces_summary",
+      "template": "templates/cisco_xr/show_interfaces_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ip_interface_brief",
+      "template": "templates/cisco_xr/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_pim_ipv4_group_map",
+      "template": "templates/cisco_xr/show_pim_ipv4_group-map.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_pim_ipv4_interface",
+      "template": "templates/cisco_xr/show_pim_ipv4_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_redundancy_summary",
+      "template": "templates/cisco_xr/show_redundancy_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_pim_ipv4_neighbor",
+      "template": "templates/cisco_xr/show_pim_ipv4_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "admin_show_inventory",
+      "template": "templates/cisco_xr/admin_show_inventory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_eigrp_neighbors",
+      "template": "templates/cisco_xr/show_eigrp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_interface_brief",
+      "template": "templates/cisco_xr/show_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "admin_show_platform",
+      "template": "templates/cisco_xr/admin_show_platform.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_install_active",
+      "template": "templates/cisco_xr/show_install_active.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ip_bgp_summary",
+      "template": "templates/cisco_xr/show_ip_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ipv4_interface",
+      "template": "templates/cisco_xr/show_ipv4_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ipv6_neighbors",
+      "template": "templates/cisco_xr/show_ipv6_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_isis_neighbors",
+      "template": "templates/cisco_xr/show_isis_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_lldp_neighbors",
+      "template": "templates/cisco_xr/show_lldp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_rsvp_neighbors",
+      "template": "templates/cisco_xr/show_rsvp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_vrf_all_detail",
+      "template": "templates/cisco_xr/show_vrf_all_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_bgp_neighbors",
+      "template": "templates/cisco_xr/show_bgp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ospf_neighbor",
+      "template": "templates/cisco_xr/show_ospf_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_processes_cpu",
+      "template": "templates/cisco_xr/show_processes_cpu.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_version_brief",
+      "template": "templates/cisco_xr/show_version_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_bfd_sessions",
+      "template": "templates/cisco_xr/show_bfd_sessions.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_drops_np_all",
+      "template": "templates/cisco_xr/show_drops_np_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_pim_neighbor",
+      "template": "templates/cisco_xr/show_pim_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_interfaces",
+      "template": "templates/cisco_xr/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "admin_show_vm",
+      "template": "templates/cisco_xr/admin_show_vm.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_ip_route",
+      "template": "templates/cisco_xr/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_version",
+      "template": "templates/cisco_xr/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_hsrp",
+      "template": "templates/cisco_xr/show_hsrp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_arp",
+      "template": "templates/cisco_xr/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "show_bgp",
+      "template": "templates/cisco_xr/show_bgp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "ping",
+      "template": "templates/cisco_xr/ping.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "cisco_xr",
+      "commandKey": "dir",
+      "template": "templates/cisco_xr/dir.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dell_force10",
+      "commandKey": "show_ip_interface_brief",
+      "template": "templates/dell_force10/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dell_force10",
+      "commandKey": "show_vlan_brief",
+      "template": "templates/dell_force10/show_vlan_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dell_force10",
+      "commandKey": "show_version",
+      "template": "templates/dell_force10/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dell_force10",
+      "commandKey": "show_vlan",
+      "template": "templates/dell_force10/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dell_force10",
+      "commandKey": "show_arp",
+      "template": "templates/dell_force10/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dell_powerconnect",
+      "commandKey": "show_interfaces_description",
+      "template": "templates/dell_powerconnect/show_interfaces_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dell_powerconnect",
+      "commandKey": "show_bridge_address_table",
+      "template": "templates/dell_powerconnect/show_bridge_address_table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dell_powerconnect",
+      "commandKey": "show_interfaces_status",
+      "template": "templates/dell_powerconnect/show_interfaces_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "dlink_ds",
+      "commandKey": "show_arpentry",
+      "template": "templates/dlink_ds/show_arpentry.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "edgecore",
+      "commandKey": "show_interfaces_switchport",
+      "template": "templates/edgecore/show_interfaces_switchport.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "edgecore",
+      "commandKey": "show_interfaces_status",
+      "template": "templates/edgecore/show_interfaces_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "edgecore",
       "commandKey": "show_interfaces_brief",
-      "templatePath": "cisco_ios/show_interfaces_brief.textfsm"
+      "template": "templates/edgecore/show_interfaces_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "edgecore",
+      "commandKey": "show_ip_interface",
+      "template": "templates/edgecore/show_ip_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "edgecore",
+      "commandKey": "show_version",
+      "template": "templates/edgecore/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "edgecore",
+      "commandKey": "show_system",
+      "template": "templates/edgecore/show_system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "edgecore",
+      "commandKey": "show_vlan",
+      "template": "templates/edgecore/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "eltex",
+      "commandKey": "show_interfaces_description",
+      "template": "templates/eltex/show_interfaces_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "eltex",
+      "commandKey": "show_interfaces_switchport",
+      "template": "templates/eltex/show_interfaces_switchport.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "eltex",
+      "commandKey": "show_interfaces_status",
+      "template": "templates/eltex/show_interfaces_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "eltex",
+      "commandKey": "show_ip_interface",
+      "template": "templates/eltex/show_ip_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "eltex",
+      "commandKey": "show_interface",
+      "template": "templates/eltex/show_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "eltex",
+      "commandKey": "show_system_id",
+      "template": "templates/eltex/show_system_id.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "eltex",
+      "commandKey": "show_system",
+      "template": "templates/eltex/show_system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "eltex",
+      "commandKey": "show_vlan",
+      "template": "templates/eltex/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ericsson_ipos",
+      "commandKey": "show_isis_adjacency",
+      "template": "templates/ericsson_ipos/show_isis_adjacency.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ericsson_ipos",
+      "commandKey": "show_version",
+      "template": "templates/ericsson_ipos/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ericsson_ipos",
+      "commandKey": "show_arp",
+      "template": "templates/ericsson_ipos/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_exos",
+      "commandKey": "show_ports_information_detail",
+      "template": "templates/extreme_exos/show_ports_information_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_exos",
+      "commandKey": "show_ports_description",
+      "template": "templates/extreme_exos/show_ports_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_exos",
+      "commandKey": "show_ports_information",
+      "template": "templates/extreme_exos/show_ports_information.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_exos",
+      "commandKey": "show_vlan_description",
+      "template": "templates/extreme_exos/show_vlan_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_exos",
+      "commandKey": "show_ipconfig",
+      "template": "templates/extreme_exos/show_ipconfig.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_exos",
+      "commandKey": "show_sharing",
+      "template": "templates/extreme_exos/show_sharing.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_exos",
+      "commandKey": "show_iparp",
+      "template": "templates/extreme_exos/show_iparp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_exos",
+      "commandKey": "show_fdb",
+      "template": "templates/extreme_exos/show_fdb.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_slxos",
+      "commandKey": "show_ip_interface_brief",
+      "template": "templates/extreme_slxos/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "extreme_slxos",
+      "commandKey": "show_clock",
+      "template": "templates/extreme_slxos/show_clock.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "diagnose_lldprx_port_neighbor_details_port_name",
+      "template": "templates/fortinet/diagnose_lldprx_port_neighbor_details_port-name.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_router_info_routing_table_all",
+      "template": "templates/fortinet/get_router_info_routing-table_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_router_info_bgp_neighbors",
+      "template": "templates/fortinet/get_router_info_bgp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_system_interface_physical",
+      "template": "templates/fortinet/get_system_interface_physical.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_router_info_bgp_summary",
+      "template": "templates/fortinet/get_router_info_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_router_info_ospf_status",
+      "template": "templates/fortinet/get_router_info_ospf_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_hardware_nic_nic_name",
+      "template": "templates/fortinet/get_hardware_nic_nic-name.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "execute_dhcp_lease_list",
+      "template": "templates/fortinet/execute_dhcp_lease-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_system_ha_status",
+      "template": "templates/fortinet/get_system_ha_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_system_interface",
+      "template": "templates/fortinet/get_system_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "execute_log_display",
+      "template": "templates/fortinet/execute_log_display.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "execute_traceroute",
+      "template": "templates/fortinet/execute_traceroute.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "fnsysctl_ifconfig",
+      "template": "templates/fortinet/fnsysctl_ifconfig.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_system_status",
+      "template": "templates/fortinet/get_system_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "diagnose_sys_top",
+      "template": "templates/fortinet/diagnose_sys_top.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_hardware_nic",
+      "template": "templates/fortinet/get_hardware_nic.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "get_system_arp",
+      "template": "templates/fortinet/get_system_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "execute_date",
+      "template": "templates/fortinet/execute_date.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "execute_ping",
+      "template": "templates/fortinet/execute_ping.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fortinet",
+      "commandKey": "execute_time",
+      "template": "templates/fortinet/execute_time.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fsas_sir",
+      "commandKey": "show_system_information",
+      "template": "templates/fsas_sir/show_system_information.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fsas_sir",
+      "commandKey": "show_ip_ospf_neighbor",
+      "template": "templates/fsas_sir/show_ip_ospf_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fsas_sir",
+      "commandKey": "show_ip_route",
+      "template": "templates/fsas_sir/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fsas_sir",
+      "commandKey": "show_ether",
+      "template": "templates/fsas_sir/show_ether.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "fsas_sir",
+      "commandKey": "show_vlan",
+      "template": "templates/fsas_sir/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_lldp_neighbor_information_verbose",
+      "template": "templates/hp_comware/display_lldp_neighbor-information_verbose.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_lldp_neighbor_information_list",
+      "template": "templates/hp_comware/display_lldp_neighbor-information_list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_ip_vpn_instance_instance_name",
+      "template": "templates/hp_comware/display_ip_vpn-instance_instance-name.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_link_aggregation_member_port",
+      "template": "templates/hp_comware/display_link-aggregation_member-port.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_counters_bound_interface",
+      "template": "templates/hp_comware/display_counters_bound_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_link_aggregation_verbose",
+      "template": "templates/hp_comware/display_link-aggregation_verbose.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_ip_routing_table",
+      "template": "templates/hp_comware/display_ip_routing-table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_device_manuinfo",
+      "template": "templates/hp_comware/display_device_manuinfo.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_interface_brief",
+      "template": "templates/hp_comware/display_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_ip_vpn_instance",
+      "template": "templates/hp_comware/display_ip_vpn-instance.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_bgp_peer_ipv4",
+      "template": "templates/hp_comware/display_bgp_peer_ipv4.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_ip_interface",
+      "template": "templates/hp_comware/display_ip_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_mac_address",
+      "template": "templates/hp_comware/display_mac-address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_vlan_brief",
+      "template": "templates/hp_comware/display_vlan_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_interface",
+      "template": "templates/hp_comware/display_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_vlan_all",
+      "template": "templates/hp_comware/display_vlan_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_clock",
+      "template": "templates/hp_comware/display_clock.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_comware",
+      "commandKey": "display_arp",
+      "template": "templates/hp_comware/display_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_lldp_info_remote_device_detail",
+      "template": "templates/hp_procurve/show_lldp_info_remote-device_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_lldp_info_remote_device",
+      "template": "templates/hp_procurve/show_lldp_info_remote-device.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_cdp_neighbors_detail",
+      "template": "templates/hp_procurve/show_cdp_neighbors_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_interfaces_brief",
+      "template": "templates/hp_procurve/show_interfaces_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_port_security",
+      "template": "templates/hp_procurve/show_port-security.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_tech_buffers",
+      "template": "templates/hp_procurve/show_tech_buffers.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_mac_address",
+      "template": "templates/hp_procurve/show_mac-address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_interfaces",
+      "template": "templates/hp_procurve/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_ip_route",
+      "template": "templates/hp_procurve/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_version",
+      "template": "templates/hp_procurve/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_system",
+      "template": "templates/hp_procurve/show_system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_trunks",
+      "template": "templates/hp_procurve/show_trunks.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_vlans",
+      "template": "templates/hp_procurve/show_vlans.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_arp",
+      "template": "templates/hp_procurve/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "hp_procurve",
+      "commandKey": "show_ip",
+      "template": "templates/hp_procurve/show_ip.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_port_statistics_portid_0",
+      "template": "templates/huawei_ont/display_port_statistics_portid_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_portstatistics_portnum_0",
+      "template": "templates/huawei_ont/display_portstatistics_portnum_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_flashlock_status",
+      "template": "templates/huawei_ont/display_flashlock_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_wifi_information",
+      "template": "templates/huawei_ont/display_wifi_information.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_pppoe_em_result",
+      "template": "templates/huawei_ont/display_pppoe_em_result.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_epon_ont_info",
+      "template": "templates/huawei_ont/display_epon_ont_info.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_inner_version",
+      "template": "templates/huawei_ont/display_inner_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_swm_bootstate",
+      "template": "templates/huawei_ont/display_swm_bootstate.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_access_mode",
+      "template": "templates/huawei_ont/display_access_mode.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_machineItem",
+      "template": "templates/huawei_ont/display_machineItem.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_memory_info",
+      "template": "templates/huawei_ont/display_memory_info.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_deviceInfo",
+      "template": "templates/huawei_ont/display_deviceInfo.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_macaddress",
+      "template": "templates/huawei_ont/display_macaddress.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_productmac",
+      "template": "templates/huawei_ont/display_productmac.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_boardItem",
+      "template": "templates/huawei_ont/display_boardItem.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_rf_config",
+      "template": "templates/huawei_ont/display_rf_config.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_swm_state",
+      "template": "templates/huawei_ont/display_swm_state.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_log_info",
+      "template": "templates/huawei_ont/display_log_info.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_optmode",
+      "template": "templates/huawei_ont/display_optmode.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_sysinfo",
+      "template": "templates/huawei_ont/display_sysinfo.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_timeout",
+      "template": "templates/huawei_ont/display_timeout.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_version",
+      "template": "templates/huawei_ont/display_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_lanmac",
+      "template": "templates/huawei_ont/display_lanmac.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_wanmac",
+      "template": "templates/huawei_ont/display_wanmac.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_optic",
+      "template": "templates/huawei_ont/display_optic.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_ont",
+      "commandKey": "display_sn",
+      "template": "templates/huawei_ont/display_sn.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_info_summary_ont",
+      "template": "templates/huawei_smartax/display_ont_info_summary_ont.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_info_0_1_2",
+      "template": "templates/huawei_smartax/display_ont_info_0_1_2.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_port_vlan_0_1_byport_eth_0",
+      "template": "templates/huawei_smartax/display_ont_port_vlan_0_1_byport_eth_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_location_aaaa_aaaa_aaaa_ont",
+      "template": "templates/huawei_smartax/display_location_aaaa-aaaa-aaaa_ont.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_port_state_0_1_eth_port",
+      "template": "templates/huawei_smartax/display_ont_port_state_0_1_eth-port.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_port_vlan_0_1_byvlan_0",
+      "template": "templates/huawei_smartax/display_ont_port_vlan_0_1_byvlan_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_lineprofile_gpon_all",
+      "template": "templates/huawei_smartax/display_ont-lineprofile_gpon_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_mac_address_ont_0_1_2_0",
+      "template": "templates/huawei_smartax/display_mac-address_ont_0_1_2_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_srvprofile_gpon_all",
+      "template": "templates/huawei_smartax/display_ont-srvprofile_gpon_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_optical_info_0_all",
+      "template": "templates/huawei_smartax/display_ont_optical-info_0_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_snmp_profile_0_all",
+      "template": "templates/huawei_smartax/display_ont_snmp-profile_0_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_gemport_0_ontid_0",
+      "template": "templates/huawei_smartax/display_ont_gemport_0_ontid_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_version_summary_0",
+      "template": "templates/huawei_smartax/display_ont_version_summary_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_wlan_info_0_1_2_0",
+      "template": "templates/huawei_smartax/display_ont_wlan-info_0_1_2_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_wan_info_0_1_2_0",
+      "template": "templates/huawei_smartax/display_ont_wan-info_0_1_2_0.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_sysman_service_state",
+      "template": "templates/huawei_smartax/display_sysman_service_state.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_board_serial_number",
+      "template": "templates/huawei_smartax/display_board_serial-number.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_wlan_status_0_1",
+      "template": "templates/huawei_smartax/display_ont_wlan-status_0_1.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_capability_all",
+      "template": "templates/huawei_smartax/display_ont_capability_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_service_port_all",
+      "template": "templates/huawei_smartax/display_service-port_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_autofind",
+      "template": "templates/huawei_smartax/display_ont_autofind.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_ont_info_0_1",
+      "template": "templates/huawei_smartax/display_ont_info_0_1.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_mac_address",
+      "template": "templates/huawei_smartax/display_mac-address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_temperature",
+      "template": "templates/huawei_smartax/display_temperature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_port_info",
+      "template": "templates/huawei_smartax/display_port_info.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_sysuptime",
+      "template": "templates/huawei_smartax/display_sysuptime.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_location",
+      "template": "templates/huawei_smartax/display_location.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_version",
+      "template": "templates/huawei_smartax/display_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_board",
+      "template": "templates/huawei_smartax/display_board.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_cpu",
+      "template": "templates/huawei_smartax/display_cpu.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "display_mem",
+      "template": "templates/huawei_smartax/display_mem.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "port_vlan",
+      "template": "templates/huawei_smartax/port_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_smartax",
+      "commandKey": "ont_add",
+      "template": "templates/huawei_smartax/ont_add.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_vlan",
+      "template": "templates/huawei_vrp/display_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_traffic_filter_applied_record",
+      "template": "templates/huawei_vrp/display_traffic-filter_applied-record.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_module_information_verbose",
+      "template": "templates/huawei_vrp/display_module-information_verbose.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_ip_vpn_instance_interface",
+      "template": "templates/huawei_vrp/display_ip_vpn-instance_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_snmp_agent_community_read",
+      "template": "templates/huawei_vrp/display_snmp-agent_community_read.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_ip_routing_table_verbose",
+      "template": "templates/huawei_vrp/display_ip_routing-table_verbose.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_interface_description",
+      "template": "templates/huawei_vrp/display_interface_description.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_telnet_server_status",
+      "template": "templates/huawei_vrp/display_telnet_server_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_patch_information",
+      "template": "templates/huawei_vrp/display_patch-information.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_service_set_id_id",
+      "template": "templates/huawei_vrp/display_service-set_id_id.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_interface_brief",
+      "template": "templates/huawei_vrp/display_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_ip_vpn_instance",
+      "template": "templates/huawei_vrp/display_ip_vpn-instance.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_license_verbose",
+      "template": "templates/huawei_vrp/display_license_verbose.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_service_set_all",
+      "template": "templates/huawei_vrp/display_service-set_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_ipv6_neighbors",
+      "template": "templates/huawei_vrp/display_ipv6_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_mpls_te_tunnel",
+      "template": "templates/huawei_vrp/display_mpls_te_tunnel.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_lldp_neighbor",
+      "template": "templates/huawei_vrp/display_lldp_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_http_server",
+      "template": "templates/huawei_vrp/display_http_server.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_mac_address",
+      "template": "templates/huawei_vrp/display_mac-address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_temperature",
+      "template": "templates/huawei_vrp/display_temperature.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_nat_server",
+      "template": "templates/huawei_vrp/display_nat_server.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_ntp_status",
+      "template": "templates/huawei_vrp/display_ntp_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_sn_license",
+      "template": "templates/huawei_vrp/display_sn_license.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_vlan_brief",
+      "template": "templates/huawei_vrp/display_vlan_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "virtual_cable_test",
+      "template": "templates/huawei_vrp/virtual-cable-test.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_arp_brief",
+      "template": "templates/huawei_vrp/display_arp_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_eth_trunk",
+      "template": "templates/huawei_vrp/display_eth-trunk.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_interface",
+      "template": "templates/huawei_vrp/display_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_isis_peer",
+      "template": "templates/huawei_vrp/display_isis_peer.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_port_vlan",
+      "template": "templates/huawei_vrp/display_port_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_bgp_peer",
+      "template": "templates/huawei_vrp/display_bgp_peer.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_acl_all",
+      "template": "templates/huawei_vrp/display_acl_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_arp_all",
+      "template": "templates/huawei_vrp/display_arp_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_startup",
+      "template": "templates/huawei_vrp/display_startup.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_version",
+      "template": "templates/huawei_vrp/display_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_ap_all",
+      "template": "templates/huawei_vrp/display_ap_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_device",
+      "template": "templates/huawei_vrp/display_device.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "display_vlan",
+      "template": "templates/huawei_vrp/display_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "huawei_vrp",
+      "commandKey": "dir",
+      "template": "templates/huawei_vrp/dir.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ipinfusion_ocnos",
+      "commandKey": "show_lldp_table",
+      "template": "templates/ipinfusion_ocnos/show_lldp_table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_system_configuration_database_usage",
+      "template": "templates/juniper_junos/show_system_configuration_database_usage.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_ethernet_switching_interfaces",
+      "template": "templates/juniper_junos/show_ethernet-switching_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_chassis_cluster_interfaces",
+      "template": "templates/juniper_junos/show_chassis_cluster_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_ethernet_switching_table",
+      "template": "templates/juniper_junos/show_ethernet-switching_table.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_system_processes_summary",
+      "template": "templates/juniper_junos/show_system_processes_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_chassis_cluster_status",
+      "template": "templates/juniper_junos/show_chassis_cluster_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_system_processes_brief",
+      "template": "templates/juniper_junos/show_system_processes_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_chassis_firmware",
+      "template": "templates/juniper_junos/show_chassis_firmware.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_chassis_hardware",
+      "template": "templates/juniper_junos/show_chassis_hardware.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_lacp_interfaces",
+      "template": "templates/juniper_junos/show_lacp_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_arp_no_resolve",
+      "template": "templates/juniper_junos/show_arp_no-resolve.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_isis_adjacency",
+      "template": "templates/juniper_junos/show_isis_adjacency.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_lldp_neighbors",
+      "template": "templates/juniper_junos/show_lldp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_rsvp_interface",
+      "template": "templates/juniper_junos/show_rsvp_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_ospf_neighbor",
+      "template": "templates/juniper_junos/show_ospf_neighbor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_route_summary",
+      "template": "templates/juniper_junos/show_route_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_system_uptime",
+      "template": "templates/juniper_junos/show_system_uptime.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_bgp_summary",
+      "template": "templates/juniper_junos/show_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_interfaces",
+      "template": "templates/juniper_junos/show_interfaces.textfsm",
+      "shape": "list"
     },
     {
       "platform": "juniper_junos",
       "commandKey": "show_version",
-      "templatePath": "juniper_junos/show_version.textfsm"
+      "template": "templates/juniper_junos/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_junos",
+      "commandKey": "show_vlans",
+      "template": "templates/juniper_junos/show_vlans.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "juniper_screenos",
+      "commandKey": "get_route",
+      "template": "templates/juniper_screenos/get_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "dmidecode__t_processor",
+      "template": "templates/linux/dmidecode_-t_processor.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "iwlist_wlan0_scanning",
+      "template": "templates/linux/iwlist_wlan0_scanning.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "nmcli_connection_show",
+      "template": "templates/linux/nmcli_connection_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "dmidecode__t_memory",
+      "template": "templates/linux/dmidecode_-t_memory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "dmidecode__t_system",
+      "template": "templates/linux/dmidecode_-t_system.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "bluetoothctl_show",
+      "template": "templates/linux/bluetoothctl_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "dmidecode__t_bios",
+      "template": "templates/linux/dmidecode_-t_bios.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "ip_address_show",
+      "template": "templates/linux/ip_address_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "ip_route_show",
+      "template": "templates/linux/ip_route_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "ip_link_show",
+      "template": "templates/linux/ip_link_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "pct_config_1",
+      "template": "templates/linux/pct_config_1.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "ip_vrf_show",
+      "template": "templates/linux/ip_vrf_show.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "qm_config_1",
+      "template": "templates/linux/qm_config_1.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "pveversion",
+      "template": "templates/linux/pveversion.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "iwconfig",
+      "template": "templates/linux/iwconfig.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "pct_list",
+      "template": "templates/linux/pct_list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "qm_list",
+      "template": "templates/linux/qm_list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "arp__a",
+      "template": "templates/linux/arp_-a.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "vzlist",
+      "template": "templates/linux/vzlist.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "linux",
+      "commandKey": "top",
+      "template": "templates/linux/top.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_wireguard_peers_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/interface_wireguard_peers_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_firewall_connection_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/ip_firewall_connection_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_bridge_host_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/interface_bridge_host_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_hotspot_ip_binding_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/ip_hotspot_ip-binding_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "routing_ospf_neighbor_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/routing_ospf_neighbor_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_dhcp_server_lease_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/ip_dhcp-server_lease_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_wireguard_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/interface_wireguard_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "routing_bgp_peer_print_status_without_paging",
+      "template": "templates/mikrotik_routeros/routing_bgp_peer_print_status_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_ethernet_poe_print_without_paging",
+      "template": "templates/mikrotik_routeros/interface_ethernet_poe_print_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_firewall_filter_print_all_without_paging",
+      "template": "templates/mikrotik_routeros/ip_firewall_filter_print_all_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_dhcp_server_lease_print_without_paging",
+      "template": "templates/mikrotik_routeros/ip_dhcp-server_lease_print_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_firewall_nat_print_all_without_paging",
+      "template": "templates/mikrotik_routeros/ip_firewall_nat_print_all_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_dns_cache_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/ip_dns_cache_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_ethernet_monitor_name_once",
+      "template": "templates/mikrotik_routeros/interface_ethernet_monitor_name_once.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/interface_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_firewall_address_list_print_terse",
+      "template": "templates/mikrotik_routeros/ip_firewall_address-list_print_terse.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_route_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/ip_route_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "snmp_community_print_without_paging",
+      "template": "templates/mikrotik_routeros/snmp_community_print_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ipv6_neighbor_print_without_paging",
+      "template": "templates/mikrotik_routeros/ipv6_neighbor_print_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "routing_ospf_interface_print_terse",
+      "template": "templates/mikrotik_routeros/routing_ospf_interface_print_terse.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_arp_print_terse_without_paging",
+      "template": "templates/mikrotik_routeros/ip_arp_print_terse_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "log_print_detail_without_paging",
+      "template": "templates/mikrotik_routeros/log_print_detail_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_bonding_print_detail",
+      "template": "templates/mikrotik_routeros/interface_bonding_print_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "routing_bgp_peer_print_status",
+      "template": "templates/mikrotik_routeros/routing_bgp_peer_print_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_vlan_print_detail",
+      "template": "templates/mikrotik_routeros/interface_vlan_print_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_arp_print_without_paging",
+      "template": "templates/mikrotik_routeros/ip_arp_print_without-paging.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "routing_ospf_neighbor_print",
+      "template": "templates/mikrotik_routeros/routing_ospf_neighbor_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_dhcp_server_lease_print",
+      "template": "templates/mikrotik_routeros/ip_dhcp-server_lease_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_address_export_verbose",
+      "template": "templates/mikrotik_routeros/ip_address_export_verbose.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_ethernet_print",
+      "template": "templates/mikrotik_routeros/interface_ethernet_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_neighbor_print_detail",
+      "template": "templates/mikrotik_routeros/ip_neighbor_print_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "system_routerboard_print",
+      "template": "templates/mikrotik_routeros/system_routerboard_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "tool_speed_test_address",
+      "template": "templates/mikrotik_routeros/tool_speed-test_address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_print_detail",
+      "template": "templates/mikrotik_routeros/interface_print_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "interface_print_brief",
+      "template": "templates/mikrotik_routeros/interface_print_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_route_print_detail",
+      "template": "templates/mikrotik_routeros/ip_route_print_detail.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "system_identity_print",
+      "template": "templates/mikrotik_routeros/system_identity_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "system_resource_print",
+      "template": "templates/mikrotik_routeros/system_resource_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_route_print_terse",
+      "template": "templates/mikrotik_routeros/ip_route_print_terse.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "system_clock_print",
+      "template": "templates/mikrotik_routeros/system_clock_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "user_active_print",
+      "template": "templates/mikrotik_routeros/user_active_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_address_print",
+      "template": "templates/mikrotik_routeros/ip_address_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ip_arp_print",
+      "template": "templates/mikrotik_routeros/ip_arp_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "tool_profile",
+      "template": "templates/mikrotik_routeros/tool_profile.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "user_print",
+      "template": "templates/mikrotik_routeros/user_print.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "mikrotik_routeros",
+      "commandKey": "ping",
+      "template": "templates/mikrotik_routeros/ping.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_voice_dial_peer_voice_voip_all",
+      "template": "templates/oneaccess_oneos/show_voice_dial-peer_voice_voip_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_voice_voice_port_pri_all_histo",
+      "template": "templates/oneaccess_oneos/show_voice_voice-port_pri_all_histo.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_voice_voip_call_active_all",
+      "template": "templates/oneaccess_oneos/show_voice_voip-call_active_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_cellular_radio_equipment",
+      "template": "templates/oneaccess_oneos/show_cellular-radio_equipment.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_voice_voice_port_pri_all",
+      "template": "templates/oneaccess_oneos/show_voice_voice-port_pri_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_policy_interface_output",
+      "template": "templates/oneaccess_oneos/show_policy-interface_output.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_running_config_ip_route",
+      "template": "templates/oneaccess_oneos/show_running-config_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_voice_voip_call_any_all",
+      "template": "templates/oneaccess_oneos/show_voice_voip-call_any_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_cellular_radio_context",
+      "template": "templates/oneaccess_oneos/show_cellular-radio_context.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_cellular_radio_network",
+      "template": "templates/oneaccess_oneos/show_cellular-radio_network.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_ip_as_path_access_list",
+      "template": "templates/oneaccess_oneos/show_ip_as-path-access-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_running_config_ip_dhcp",
+      "template": "templates/oneaccess_oneos/show_running-config_ip_dhcp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_system_secure_crashlog",
+      "template": "templates/oneaccess_oneos/show_system_secure-crashlog.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_transceiver_equipment",
+      "template": "templates/oneaccess_oneos/show_transceiver_equipment.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_voice_voice_port_all",
+      "template": "templates/oneaccess_oneos/show_voice_voice-port_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_running_config_bind",
+      "template": "templates/oneaccess_oneos/show_running-config_bind.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_ip_interface_brief",
+      "template": "templates/oneaccess_oneos/show_ip_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_running_config_aaa",
+      "template": "templates/oneaccess_oneos/show_running-config_aaa.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_product_info_area",
+      "template": "templates/oneaccess_oneos/show_product-info-area.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_voice_sip_gateway",
+      "template": "templates/oneaccess_oneos/show_voice_sip-gateway.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_ip_access_lists",
+      "template": "templates/oneaccess_oneos/show_ip_access-lists.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_isdn_led_status",
+      "template": "templates/oneaccess_oneos/show_isdn_led-status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_isdn_status_all",
+      "template": "templates/oneaccess_oneos/show_isdn_status_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_reboot_counters",
+      "template": "templates/oneaccess_oneos/show_reboot_counters.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_system_hardware",
+      "template": "templates/oneaccess_oneos/show_system_hardware.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "cat_bsa_bsaboot.inf",
+      "template": "templates/oneaccess_oneos/cat_bsa_bsaboot.inf.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_ip_bgp_summary",
+      "template": "templates/oneaccess_oneos/show_ip_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_ip_prefix_list",
+      "template": "templates/oneaccess_oneos/show_ip_prefix-list.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_snmp_community",
+      "template": "templates/oneaccess_oneos/show_snmp_community.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_soft_file_info",
+      "template": "templates/oneaccess_oneos/show_soft-file_info.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_software_image",
+      "template": "templates/oneaccess_oneos/show_software-image.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_vrrp_interface",
+      "template": "templates/oneaccess_oneos/show_vrrp_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_system_status",
+      "template": "templates/oneaccess_oneos/show_system_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_tacacs_server",
+      "template": "templates/oneaccess_oneos/show_tacacs-server.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_ip_vrf_brief",
+      "template": "templates/oneaccess_oneos/show_ip_vrf_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_isdn_active",
+      "template": "templates/oneaccess_oneos/show_isdn_active.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_interfaces",
+      "template": "templates/oneaccess_oneos/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_route_map",
+      "template": "templates/oneaccess_oneos/show_route-map.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_track_all",
+      "template": "templates/oneaccess_oneos/show_track_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_voice_mos",
+      "template": "templates/oneaccess_oneos/show_voice_mos.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_helpers",
+      "template": "templates/oneaccess_oneos/show_helpers.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_ip_ssh",
+      "template": "templates/oneaccess_oneos/show_ip_ssh.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_memory",
+      "template": "templates/oneaccess_oneos/show_memory.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_tacacs",
+      "template": "templates/oneaccess_oneos/show_tacacs.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "show_sntp",
+      "template": "templates/oneaccess_oneos/show_sntp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "hostname",
+      "template": "templates/oneaccess_oneos/hostname.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "oneaccess_oneos",
+      "commandKey": "ls",
+      "template": "templates/oneaccess_oneos/ls.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_high_availability_path_monitoring",
+      "template": "templates/paloalto_panos/show_high-availability_path-monitoring.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_routing_protocol_bgp_summary",
+      "template": "templates/paloalto_panos/show_routing_protocol_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_running_security_policy",
+      "template": "templates/paloalto_panos/show_running_security-policy.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_high_availability_all",
+      "template": "templates/paloalto_panos/show_high-availability_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "test_security_policy_match",
+      "template": "templates/paloalto_panos/test_security-policy-match.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_interface_management",
+      "template": "templates/paloalto_panos/show_interface_management.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_interface_hardware",
+      "template": "templates/paloalto_panos/show_interface_hardware.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_running_nat_policy",
+      "template": "templates/paloalto_panos/show_running_nat-policy.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_interface_logical",
+      "template": "templates/paloalto_panos/show_interface_logical.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_routing_resource",
+      "template": "templates/paloalto_panos/show_routing_resource.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "request_license_info",
+      "template": "templates/paloalto_panos/request_license_info.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_counter_global",
+      "template": "templates/paloalto_panos/show_counter_global.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_routing_route",
+      "template": "templates/paloalto_panos/show_routing_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "debug_swm_status",
+      "template": "templates/paloalto_panos/debug_swm_status.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_system_info",
+      "template": "templates/paloalto_panos/show_system_info.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_jobs_all",
+      "template": "templates/paloalto_panos/show_jobs_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_arp_all",
+      "template": "templates/paloalto_panos/show_arp_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "paloalto_panos",
+      "commandKey": "show_mac_all",
+      "template": "templates/paloalto_panos/show_mac_all.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ruckus_fastiron",
+      "commandKey": "show_interfaces_brief",
+      "template": "templates/ruckus_fastiron/show_interfaces_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ruckus_fastiron",
+      "commandKey": "show_media_validation",
+      "template": "templates/ruckus_fastiron/show_media_validation.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ruckus_fastiron",
+      "commandKey": "show_mac_address",
+      "template": "templates/ruckus_fastiron/show_mac-address.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ruckus_fastiron",
+      "commandKey": "show_interfaces",
+      "template": "templates/ruckus_fastiron/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ruckus_fastiron",
+      "commandKey": "show_version",
+      "template": "templates/ruckus_fastiron/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ruckus_fastiron",
+      "commandKey": "show_vlan",
+      "template": "templates/ruckus_fastiron/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ruckus_fastiron",
+      "commandKey": "show_arp",
+      "template": "templates/ruckus_fastiron/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_interfaces_ethernet_physical",
+      "template": "templates/ubiquiti_edgerouter/show_interfaces_ethernet_physical.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_dhcpv6_server_leases",
+      "template": "templates/ubiquiti_edgerouter/show_dhcpv6_server_leases.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_ipv6_neighbors",
+      "template": "templates/ubiquiti_edgerouter/show_ipv6_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_dhcp_leases",
+      "template": "templates/ubiquiti_edgerouter/show_dhcp_leases.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_interfaces",
+      "template": "templates/ubiquiti_edgerouter/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_ipv6_route",
+      "template": "templates/ubiquiti_edgerouter/show_ipv6_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_nat_rules",
+      "template": "templates/ubiquiti_edgerouter/show_nat_rules.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_ip_route",
+      "template": "templates/ubiquiti_edgerouter/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_version",
+      "template": "templates/ubiquiti_edgerouter/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgerouter",
+      "commandKey": "show_arp",
+      "template": "templates/ubiquiti_edgerouter/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgeswitch",
+      "commandKey": "show_version",
+      "template": "templates/ubiquiti_edgeswitch/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgeswitch",
+      "commandKey": "show_vlan",
+      "template": "templates/ubiquiti_edgeswitch/show_vlan.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "ubiquiti_edgeswitch",
+      "commandKey": "show_arp",
+      "template": "templates/ubiquiti_edgeswitch/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "vmware_nsxv",
+      "commandKey": "show_ip_bgp_neighbors",
+      "template": "templates/vmware_nsxv/show_ip_bgp_neighbors.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "vmware_nsxv",
+      "commandKey": "show_ip_route",
+      "template": "templates/vmware_nsxv/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "vyatta_vyos",
+      "commandKey": "show_ip_bgp_summary",
+      "template": "templates/vyatta_vyos/show_ip_bgp_summary.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "vyatta_vyos",
+      "commandKey": "show_interfaces",
+      "template": "templates/vyatta_vyos/show_interfaces.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "vyatta_vyos",
+      "commandKey": "show_arp",
+      "template": "templates/vyatta_vyos/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "watchguard_firebox",
+      "commandKey": "show_arp",
+      "template": "templates/watchguard_firebox/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "yamaha",
+      "commandKey": "show_environment",
+      "template": "templates/yamaha/show_environment.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "yamaha",
+      "commandKey": "show_ip_route",
+      "template": "templates/yamaha/show_ip_route.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zte_zxros",
+      "commandKey": "show_mpls_traffic_eng_tunnels",
+      "template": "templates/zte_zxros/show_mpls_traffic-eng_tunnels.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zte_zxros",
+      "commandKey": "show_interface_brief",
+      "template": "templates/zte_zxros/show_interface_brief.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zte_zxros",
+      "commandKey": "show_isis_adjacency",
+      "template": "templates/zte_zxros/show_isis_adjacency.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zte_zxros",
+      "commandKey": "show_interface",
+      "template": "templates/zte_zxros/show_interface.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zte_zxros",
+      "commandKey": "show_version",
+      "template": "templates/zte_zxros/show_version.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zte_zxros",
+      "commandKey": "show_arp",
+      "template": "templates/zte_zxros/show_arp.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_lan_get___Name_name",
+      "template": "templates/zyxel_os/cfg_lan_get_--Name_name.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "zycli_Ethctl_media_type",
+      "template": "templates/zyxel_os/zycli_Ethctl_media-type.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_firewall_acl_get",
+      "template": "templates/zyxel_os/cfg_firewall_acl_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_nat_addr_map_get",
+      "template": "templates/zyxel_os/cfg_nat_addr_map_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_static_route_get",
+      "template": "templates/zyxel_os/cfg_static_route_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_static_dhcp_get",
+      "template": "templates/zyxel_os/cfg_static_dhcp_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_intf_group_get",
+      "template": "templates/zyxel_os/cfg_intf_group_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_lanhosts_get",
+      "template": "templates/zyxel_os/cfg_lanhosts_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_ipalias_get",
+      "template": "templates/zyxel_os/cfg_ipalias_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_snmp_get",
+      "template": "templates/zyxel_os/cfg_snmp_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_wlan_get",
+      "template": "templates/zyxel_os/cfg_wlan_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_lan_get",
+      "template": "templates/zyxel_os/cfg_lan_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "cfg_nat_get",
+      "template": "templates/zyxel_os/cfg_nat_get.textfsm",
+      "shape": "list"
+    },
+    {
+      "platform": "zyxel_os",
+      "commandKey": "sys_atsh",
+      "template": "templates/zyxel_os/sys_atsh.textfsm",
+      "shape": "list"
     }
   ]
 }

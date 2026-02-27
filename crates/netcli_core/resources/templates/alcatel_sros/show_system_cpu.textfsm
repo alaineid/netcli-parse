@@ -1,0 +1,24 @@
+Value NAME (\S.*?)
+Value CPU_TIME (\S+)
+Value CPU_USAGE (\S+)
+Value CAPACITY_USAGE (\S+)
+
+Start
+  ^=+
+  ^CPU\sUtil.+
+  ^Name\s+CPU\s+Time\s+CPU\s+Usage\s+Capacity\s*$$
+  ^\s+\(uSec\)\s+Usage
+  ^--.+ -> Resources
+  ^\s*$$
+
+Resources
+  ^${NAME}\s{4,}${CPU_TIME}\s+${CPU_USAGE}\s+${CAPACITY_USAGE}\s*$$ -> Record
+  ^--.+ -> Total
+  ^\s*$$
+
+Total
+  ^${NAME}\s{4,}${CPU_TIME}\s+${CPU_USAGE}\s+  -> Record
+  ^\s+${NAME}\s{4,}${CPU_TIME}\s+${CPU_USAGE}\s+  -> Record
+  ^=+ -> Done
+
+Done

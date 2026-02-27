@@ -1,0 +1,5 @@
+Value HOSTNAME (\S+)
+
+Start
+  ^Hostname\s+is\s+${HOSTNAME}$$
+  ^\s*$$

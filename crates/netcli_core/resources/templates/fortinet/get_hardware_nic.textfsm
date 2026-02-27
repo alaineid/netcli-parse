@@ -1,0 +1,6 @@
+Value NIC (\S+)
+
+Start
+  ^The\s+following\s+NICs\s+are\s+available:\s*$$
+  ^\s*${NIC}\s*$$ -> Record
+  ^\s*$$
