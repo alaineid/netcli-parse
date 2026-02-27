@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "textfsm_core",
+    "textfsm_ffi",
+]
+resolver = "2"
